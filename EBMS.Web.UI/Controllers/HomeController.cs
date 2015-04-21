@@ -28,5 +28,13 @@ namespace EBMS.Web.UI.Controllers
 
             return View();
         }
+
+        public ActionResult ProfileView()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
+
     }
 }
