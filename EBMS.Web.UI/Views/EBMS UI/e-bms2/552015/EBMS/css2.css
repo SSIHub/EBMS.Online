@@ -1,0 +1,50 @@
+
+.overtimeInfo li p
+{
+padding:10px;
+margin-top:20px;
+font-size:16px;
+color:#7cbc42;
+margin-left:-220px;
+}
+
+
+.overtimeInfo
+{
+margin-left:-200px;
+font:15px 'Corbel';
+font-weight:bold;
+}
+
+.hours
+{
+width:30px;
+border: solid 1px black;
+box-shadow: inset 1px 1px 2px#707070;
+}
+
+.minutes
+{
+width:30px;
+border: solid 1px black;
+box-shadow: inset 1px 1px 2px#707070;
+}
+
+
+.educationalInfo li p
+{
+padding:10px;
+margin-top:20px;
+font-size:16px;
+color:#7cbc42;
+margin-left:-170px;
+}
+
+
+
+.educationalInfo
+{
+margin-left:-200px;
+font:15px 'Corbel';
+font-weight:bold;
+}

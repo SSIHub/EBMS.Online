@@ -1,0 +1,55 @@
+table.empschedtable
+
+{margin-left:-90px;
+text-align: center; 
+ padding: 10px;
+
+}
+
+table.empschedtable td
+{
+border: 1px solid #d1d6eb;
+font:13px 'Corbel';
+background:transparent;
+
+}
+
+table.empschedtable th
+{
+border: 1px solid #d1d6eb;
+font:15px 'Corbel';
+font-weight:bold;
+background:#d1d6eb;
+
+}
+
+
+table.empschedtable td:nth-child(odd) {
+    background: white;
+}
+
+table.empschedtable td:nth-child(even) {
+    background: white;
+}
+
+table.empschedtable td:nth-last-of-type(1)
+{
+background:transparent;
+}
+table.empschedtable td:nth-last-of-type(2)
+{
+background:transparent;
+}
+table.empschedtable td:nth-last-of-type(5)
+{
+background:transparent;
+}
+
+.scheddata
+{
+height:340px;
+width:300px;
+background:#d1d6eb;
+margin-top:-347px;
+margin-left:665px;
+}

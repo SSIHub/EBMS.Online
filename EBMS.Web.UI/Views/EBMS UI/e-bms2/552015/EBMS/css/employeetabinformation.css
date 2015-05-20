@@ -1,0 +1,199 @@
+.div_popup
+{
+background:#717276;
+height:100%;
+width:100%;
+}
+
+
+.div_box
+{
+
+height:400px;
+width:400px;
+margin-left:-160px;
+margin-top:-80px;
+font-family:'corbel';
+background:#d1d6eb;
+}
+
+.div_box1
+{
+
+height:230px;
+width:400px;
+margin-left:-160px;
+margin-top:-80px;
+font-family:'corbel';
+background:#d1d6eb;
+}
+
+
+.div_image
+{
+
+margin-top:-50px;
+margin-right:-420px;;
+
+}
+
+
+#employeetabs:target, #employeetabs:target + #cover
+{ 
+display:block; 
+opacity:10; 
+} 
+
+
+#employeetabs
+{ 
+height:600px; 
+width:600px; 
+position:absolute; 
+z-index:10; display:none; 
+background:#717276; 
+border:5px solid #717276; 
+border-radius:0px;
+margin-top: -290px;
+margin-left:220px;
+
+} 
+p.name
+{
+margin-top:20px;
+margin-left:-450px;
+font:15px 'Corbel';
+font-weight:bold;
+padding:10px;
+color:#7cbc42;
+}
+
+p.work
+{
+margin-top:20px;
+margin-left:-430px;
+font:15px 'Corbel';
+font-weight:bold;
+padding:10px;
+color:#7cbc42;
+}
+
+.hr1
+{
+background-color: black;
+margin-top:-8px;
+width:400px;
+margin-left:-170px;
+
+}
+
+#blackborder
+{
+border: solid 1px black;
+box-shadow: inset 1px 1px 2px#707070;
+}
+
+.lbl_name
+{
+margin-top:10px;
+margin-left:-285px;
+
+}
+.txtarea_remarks
+{
+margin-top: -15px;
+margin-left:55px;
+}
+
+table.tableinfo1
+
+{
+margin-left:-30px;
+ text-align: center; 
+ padding: 10px;
+
+}
+
+table.tableinfo1 td
+{
+border: 1px solid;
+font:13px 'Corbel';
+background:#bbd2e2;
+}
+
+table.tableinfo1 th
+{
+border: 1px solid;
+font:15px 'Corbel';
+font-weight:bold;
+background:#717276;
+
+}
+
+.lbl_title
+{
+margin-left:-320px;
+}
+
+.dateposition
+{
+margin-top:-15px;
+margin-left:110px;
+
+}
+
+
+
+
+
+
+select
+{
+border:solid 1px black;
+box-shadow: inset 1px 1px 2px#707070;
+}
+
+table.info
+
+{
+margin-left:-30px;
+margin-top:-140px;
+ text-align: center; 
+ padding: 10px;
+
+}
+
+table.info td
+{
+border: 1px solid;
+font:13px 'Corbel';
+background:#bbd2e2;
+}
+
+table.info th
+{
+border: 1px solid;
+font:15px 'Corbel';
+font-weight:bold;
+background:#717276;
+
+}
+
+
+.savecancelbutton
+{
+height:25px;
+width:150px;
+margin-top:10px;
+float:right;
+}
+
+.add_savecancel
+{
+height:25px;
+width:150px;
+margin-right:-280px;
+
+}
+
+
