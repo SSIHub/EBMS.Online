@@ -1,0 +1,1149 @@
+* {
+    padding: 1px;
+    margin: 0;
+    border: 0;
+    outline: 0;
+}
+
+th, td { white-space: nowrap; }
+    div.dataTables_wrapper {
+        width: 800px;
+        margin: 0 auto;
+    }
+
+.whole
+{
+width:100%;
+min-height:100%;
+overflow:hidden;
+background:#e0e4e5;
+}
+
+.centerbody
+{
+width:80%;
+height:auto;
+background:#e0e4e5;
+}
+
+.menubar
+{
+width:100%;
+height:7%;
+background:#717276;
+margin-top:10px;
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d1d6eb), color-stop(100%,#717276));
+}
+
+.div_welcome
+{
+width:15%;
+height:75%;
+background:transparent;
+margin-top:4px;
+margin-left:5px;
+}
+
+.div_welcome img
+{
+margin-top:2px;
+margin-left:-125px;
+}
+
+.div_welcome p
+{
+font:13px 'Corbel';
+ color: #d1d6eb;
+ margin:-32px 0 0 20px;
+}
+
+.level p
+{
+font:13px 'Corbel';
+font-weight:bold;
+ color: black;
+ 
+margin:0 0 0 20px;
+}
+
+.menu
+{
+width:75%;
+height:55%;
+background:transparent;
+margin-top:10px;
+}
+
+
+ ul.cssMenu, ul.cssMenu ul
+        {
+        	list-style:none;
+        	margin:0; padding:0;
+        	position: relative;
+        }
+		
+		/*Style for 1st level menu header*/
+        ul.cssMenu li
+        { 
+        	position: relative; 
+        	float: left; 
+        	zoom: 1; /*Needed for IE*/
+        	/*background: #DDDDDD; background color of menu header (1st level)*/
+        }
+        ul.cssMenu li:hover
+			{ 
+        	background: #AAAAAA /*background color of menu header (1st level) on hover*/; 
+
+        }
+		
+		
+        ul.cssMenu li a
+        {
+			/*Menu link styles*/
+        	display: block; 
+        	padding: 5px; 
+        	font:13px 'Corbel';
+			 color: black;
+			 text-decoration:none;
+			
+        }
+        
+        /* Building menu items - for 2nd and more level menu items*/
+        ul.cssMenu ul 						
+        { 
+        	display:none; /*initially menu item is hidden*/
+        	position: absolute; /*absolute positioning is important for menu to float*/
+			width: 150px; 
+			
+			/*Formating of menu items*/
+        	border:1px solid #AAAAAA;
+        	padding:1px;
+        	background:#FFFFFF;
+			
+			/*optional - to change position of 2nd level menu item*/
+			top: 100%; 
+        	left: 0; 
+        }
+        ul.cssMenu ul li
+        { 
+        	background: #F5F5F5; 
+        	color: #000; 
+			border-bottom: 1px solid #DDDDDD; 
+			float: none; 
+		}
+									  
+        ul.cssMenu ul li a
+        { 
+        	width: 100%; 
+        	display: block; 
+        	color:#000000;
+        } 
+
+        /* Menu item position for 3rd level and more */
+        ul.cssMenu ul ul
+        { 
+        	left: 100%; 
+        	top: 0; 
+        }
+        
+        /* Hover effect for menu*/
+        ul.cssMenu li:hover > ul 			
+        { 
+        	display:block;
+        }
+
+
+
+
+/*
+.menu ul
+{
+float:left;
+}
+
+.menu li
+{
+display: inline-block;
+}
+
+
+.menu a
+{
+
+font:13px 'Corbel';
+ color: #d1d6eb;
+ text-decoration:none;
+ padding:0 8px 0 0;
+ }
+
+.menu a:hover
+{
+color:#7cbc42;
+}
+*/
+
+ #active
+{
+color: green;
+}
+.div_welcome, .menu
+{ display:inline-block;
+vertical-align:top;
+
+
+}
+
+
+.content
+{
+width:90%;
+height:85%;
+background:transparent;
+}
+
+.summarybar
+{
+width:20%;
+height:5%;
+background:#7cbc42;
+margin-top:20px;
+margin-right:800px;
+}
+
+.summarybar p
+{
+font:13px 'Corbel';
+ color: #d1d6eb;
+ margin-top:2px;
+}
+
+.summarycontent
+{
+width:20%;
+height:40%;
+background:#d1d6eb;
+margin-right:800px;
+}
+
+.summarycontent p
+{
+font:13px 'Corbel';
+ color: black;
+ margin-top:2px;
+}
+
+hr {
+    
+    
+    /* Set the hr color */
+    background-color: #8f959e; /* Modern Browsers */
+	margin-top:2px;
+}
+
+table,td{
+	margin-top:6px;
+    border-collapse: collapse;
+}
+
+td {
+    
+	font: 11px 'Corbel';
+	padding:0px;
+}
+
+
+.attendancebar
+{
+width:20%;
+height:5%;
+background:#7cbc42;
+margin-top:20px;
+margin-right:800px;
+
+}
+
+.attendancecontent
+{
+width:20%;
+height:20%;
+background:#d1d6eb;
+margin-right:800px;
+}
+
+.labelname p
+{
+font:13px 'Corbel';
+font-weight:bold;
+ color: black;
+ margin-top:1px;
+ margin-left:5px;
+}
+
+.crudbuttonbar
+{
+width:77%;
+height:8%;
+background:#7cbc42;
+margin-top:-395px;
+margin-left:220px;
+
+}
+
+/*Popup create*/
+/*.popup-position
+{
+display:none;
+position:absolute;
+top:0;
+left:0;
+background-color:rgba(0,0,0,0.7);
+width:100%;
+height:100%;
+
+
+}
+
+#popup-wrapper
+{width:500px;
+margin: 70px auto;
+text-align:left;
+
+
+}
+
+
+#popup-container
+{
+background-color:#FFF;
+padding:20px;
+border-radius:4px;
+
+
+}*/
+
+
+
+/*End of Popup Create*/
+
+/*Search*/
+.search
+{
+border:1px solid #000;
+	border-radius:10px;
+	height: 22px;
+	width: 150px;
+	margin-left:650px;
+	margin-top:-35px;
+}
+
+.searchicon
+{
+margin-left:820px;
+margin-top:-35px;
+
+}
+
+/*End of Search*/
+
+/*Print*/
+.printicon
+{
+margin-left:920px;
+margin-top:-37px;
+}
+
+
+
+/*End of print*/
+
+/* DAGDAG NA CODE for POP UP OVERLAY*/
+
+#createBut:target, #createBut:target + #cover
+{ 
+display:block; 
+opacity:10; 
+} 
+
+
+#createBut
+{ 
+height:600px; 
+width:600px; 
+margin:0 auto; 
+position:relative; 
+z-index:10; display:none; 
+background:#717276; 
+border:5px solid #717276; 
+border-radius:0px;
+margin-top: -100px;
+} 
+
+
+
+
+#restorebutton:target, #restorebutton:target + #cover
+{ 
+display:block; 
+opacity:10; 
+} 
+
+
+#restorebutton
+{ 
+height:600px; 
+width:600px; 
+margin:0 auto; 
+position:relative; 
+z-index:10; display:none; 
+background:#717276; 
+border:5px solid #717276; 
+border-radius:0px;
+margin-top: -100px;
+} 
+
+
+.cancel 
+{ 
+display:block; 
+position:absolute; 
+top:0px; 
+right:0px; 
+background:rgb(210,63,63); 
+color:white; 
+height:20px; 
+width:28px; 
+font-size:20px; 
+text-decoration:none; 
+text-align:center; 
+text-top:5px;
+font-weight:bold; 
+} 
+
+#cover
+{ 
+position:fixed; 
+top:0; 
+left:0; 
+background:rgba(0,0,0,0.8); 
+z-index:5; 
+width:100%; 
+height:100%; 
+display:none; 
+}
+
+
+.div_content
+{
+background:#717276;
+height:100%;
+width:100%;
+}
+
+.div_whiteArea
+{
+margin-top:25px;
+margin-left:-2px;
+background:white;
+height:94%;
+width:99%;
+}
+
+.div_whiteArea a
+{
+text-decoration:none;
+}
+
+.div_employeeImage
+{
+height:200px;
+width:170px;
+
+margin-top:-50px;
+margin-right:-420px;
+
+}
+
+.div_textBoxes
+{
+
+height:400px;
+width:400px;
+margin-left:-160px;
+margin-top:-120px;
+font-family:'corbel';
+background:transparent;
+}
+
+.nextcancelBut
+{
+
+float:right;
+height:25px;
+width:150px;
+margin-top:10px;
+}
+
+.inputin
+ {
+    padding:5px 10px;
+    -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+   border-radius: 15px;
+    background: -moz-linear-gradient(top, #f6e6b4 0%, #ed9017 100%); /* firefox */
+   /* border: solid #ccc 3px; */
+    box-shadow: 0 1px 2px #fff, 0 -1px 1px #666, inset 0 -1px 1px rgba(0,0,0,0.5), inset 0 1px 1px rgba(255,255,255,0.8);
+    -moz-box-shadow: 0 1px 2px #fff, 0 -1px 1px #666, inset 0 -1px 1px rgba(0,0,0,0.5), inset 0 1px 1px rgba(255,255,255,0.8);
+    -webkit-box-shadow: 0 1px 2px #fff, 0 -1px 1px #666, inset 0 -1px 1px rgba(0,0,0,0.5), inset 0 1px 1px rgba(255,255,255,0.8);
+    text-shadow: 0 1px 2px #fff;
+
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b4f6bd), color-stop(100%,#7cbc42)); /* webkit */
+	font:12px 'corbel';
+}
+
+
+#ipasa
+{
+background:#7cbc42;
+box-shadow: 
+  0 1px 2px rgb(180,170,185), /*bottom external highlight*/
+  0 -1px 1px blue, /*top external shadow*/ 
+  inset 0 -1px 1px green, /*bottom internal shadow*/ 
+  inset 0 1px 1px yellow; /*top internal highlight*/
+}
+
+
+
+
+}
+
+.txtbox
+{
+width:180px;
+}
+
+
+#lastname
+{
+border: solid 1px black;
+box-shadow: inset 1px 1px 2px#707070;
+}
+
+#middlename
+{
+border: solid 1px black;
+box-shadow: inset 1px 1px 2px#707070;
+}
+
+#firstname
+{
+border: solid 1px black;
+box-shadow: inset 1px 1px 2px#707070;
+}
+
+#address
+{
+border: solid 1px black;
+box-shadow: inset 1px 1px 2px#707070;
+}
+
+#birthday
+{
+border: solid 1px black;
+box-shadow: inset 1px 1px 2px#707070;
+}
+
+#contactno
+{
+border: solid 1px black;
+box-shadow: inset 1px 1px 2px#707070;
+}
+
+#email
+{
+border: solid 1px black;
+box-shadow: inset 1px 1px 2px#707070;
+}
+
+
+.txtarea
+{
+margin-top:1px;
+}
+
+
+.lbl_address
+{
+margin-top:10px;
+margin-left:-310px;
+
+}
+.gilid
+{
+margin-top: -15px;
+margin-left:55px;
+}
+
+
+.lbl_gender
+{
+margin-top:5px;
+margin-left:-43px 
+
+}
+
+.radBut
+{
+margin-top:0px;
+}
+
+.linkEmployeeInfo
+{
+margin-left:-200px;
+font:15px 'Corbel';
+font-weight:bold;
+
+}
+
+#inactive
+{
+color:#d1d6eb;
+
+}
+
+
+.hr_horizontalline
+{
+background-color: black;
+margin-top:-10px;
+width:400px;
+margin-left:37px;
+
+}
+
+.linkEmployeeInfo li a
+{float:left;
+padding:10px;
+margin-top:20px;
+
+
+}
+
+p.title
+{
+margin-top: -2px;
+margin-left:2px;
+float:left;
+font-size:18px;
+font-family:'Corbel';
+font-weight:bold; 
+
+}
+
+/*End of popup overlay*/
+
+
+
+
+table.empdata
+
+{
+float:right;
+text-align: center; 
+ padding: 10px;
+
+}
+
+table.empdata td
+{
+border: 1px solid #d1d6eb;
+font:13px 'Corbel';
+background:transparent;
+
+}
+
+table.empdata th
+{
+border: 1px solid #d1d6eb;
+font:15px 'Corbel';
+font-weight:bold;
+background:#d1d6eb;
+
+}
+
+table.empdata td:nth-child(odd) {
+    background: white;
+}
+
+table.empdata td:nth-child(even) {
+    background: white;
+}
+
+
+table.empdata td:nth-last-of-type(1)
+{
+background:transparent;
+}
+table.empdata td:nth-last-of-type(2)
+{
+background:transparent;
+}
+
+table.empdata td:nth-last-of-type(3)
+{
+background:transparent;
+}
+table.empdata td:nth-last-of-type(10)
+{
+background:transparent;
+}
+
+
+
+th#thborder	
+{
+ border-style: transparent;
+
+}
+
+th#wborder
+{
+
+
+
+}
+
+#image
+{
+margin-top:1px;
+
+}
+
+.buttons li
+{
+display:inline-block;
+}
+
+.buttons
+{
+margin-top:3px;
+margin-right:320px;
+}
+
+.div_tab
+{
+width:77%;
+height:25%;
+background:#d1d6eb;
+margin-top:-27px;
+margin-left:220px;
+
+}
+
+/*Tab*/
+#navbar
+{
+width:743px;
+height:110px;
+border:1px solid;
+margin-left:-1px;
+margin-top:20px;
+border-top:none;
+}
+
+#holder
+{width:600px;
+height:400px;
+border:1px solid;
+margin-left:-4px;
+margin-top:-25px;
+border-bottom:none;
+/*background:green;*/
+
+
+
+}
+
+#navbar #holder
+{
+width:746px;
+height:22px;
+border-top:none;
+border-right:none;
+border-left:none;
+border-bottom:1px solid #000;
+}
+#navbar #holder ul li a
+{
+text-decoration:none;
+
+font: 14px 'Corbel';
+font-weight:bold;
+color:#000;
+border:1px solid #000;
+background:white;
+border-bottom:none;
+padding:2px;
+text-align:center;
+display:block;
+
+}
+
+#navbar #holder ul li a:hover
+{
+	background:#7cbc42;
+	color:#FFF;
+	text-shadow: 1px 1px 1px #000;
+
+}
+
+#holder ul li a#onlink
+{	background:#69F;
+	color:#000;
+	border-bottom:1px solid transparent;
+
+}
+
+#holder ul li a#onlink:hover
+{
+background:#FFF;
+color:#69F;
+text-shadow: 1px 1px 1px #000;
+
+
+}
+ul.tabmenu, ul.tabmenu ul
+        {
+        	list-style:none;
+        	margin:0; padding:0;
+        	position: relative;
+        }
+		
+		/*Style for 1st level menu header*/
+        ul.tabmenu li
+        { 
+        	position: relative; 
+        	float: left; 
+        	zoom: 1; /*Needed for IE*/
+        
+        }
+			
+
+
+
+
+/*End of tab*/
+
+/*Crud button*/
+
+.crudbutton li
+{
+display:inline-block;
+margin-right:-8px;
+}
+
+.crudbutton
+{
+margin-top:305px;
+margin-left:880px;
+
+
+}
+/* End of Crudbutton*/
+
+/*Table data*/
+
+table.tabdata1
+{
+float:right;
+border: 1px solid;
+ text-align: center; 
+ padding: 10px;
+ margin-top:-110px;
+ margin-right:0px;
+}
+
+
+table.tabdata1 td
+{
+border: 1px solid;
+font:13px 'Corbel';
+}
+
+table.tabdata1  th
+{
+border: 1px solid;
+font:15px 'Corbel';
+font-weight:bold;
+background:#d1d6eb;
+}
+
+/*End of table data*/
+
+
+
+footer
+{
+margin-top:80px;
+}
+
+.footer1
+{
+width:100%;
+height:7%;
+background:#717276;
+bottom:0px;
+}
+
+
+.contact p
+{
+font:15px 'Corbel';
+color:#7cbc42;
+font-weight:bold;
+margin-left:-865px;
+}
+
+.footerimage li
+{
+display:inline-block;
+}
+
+.footerimage
+{
+margin-top:-4px;
+margin-left:-865px;
+}
+
+.linktab
+{
+margin-top:-45px;
+margin-left: 70px;
+}
+
+.linktab p
+{
+font:12px 'Corbel';
+color:#d1d6eb;
+}
+
+
+.linktab a
+{
+text-decoration: none;
+color:#d1d6eb;
+}
+
+.linktab a:hover
+{
+color:#7cbc42;
+}
+.copyright p
+{
+font:12px 'Corbel';
+color:#d1d6eb;
+}
+
+
+
+
+/*popup*/
+.class_hide
+{
+display:none;
+
+
+}
+/*Breadcrumbs*/
+.empprofile
+{
+font:25px 'Corbel';
+font-weight:bold;
+margin-top:-425px;
+margin-left:-340px;
+}
+
+.profile
+{
+font:12px 'Corbel';
+font-weight:bold;
+margin-top:-415px;
+margin-left:790px;
+}
+
+
+
+
+.empcashadvance
+{
+font:25px 'Corbel';
+font-weight:bold;
+margin-top:-425px;
+margin-left:-270px;
+
+}
+
+.cash_advance
+{
+font:12px 'Corbel';
+font-weight:bold;
+margin-top:-415px;
+margin-left:750px;
+}
+
+
+
+.empsched1
+{
+font:25px 'Corbel';
+font-weight:bold;
+margin-top:-425px;
+margin-left:-320px;
+
+}
+
+.schedule
+{
+font:12px 'Corbel';
+font-weight:bold;
+margin-top:-415px;
+margin-left:780px;
+}
+
+
+
+.empdtr1
+{
+font:25px 'Corbel';
+font-weight:bold;
+margin-top:-425px;
+margin-left:-220px;
+
+}
+
+.dtr2
+{
+font:12px 'Corbel';
+font-weight:bold;
+margin-top:-415px;
+margin-left:730px;
+}
+
+.emptimesheet
+{
+font:25px 'Corbel';
+font-weight:bold;
+margin-top:-425px;
+margin-left:-200px;
+
+}
+
+.timesheetrecords
+{
+font:12px 'Corbel';
+font-weight:bold;
+margin-top:-415px;
+margin-left:720px;
+}
+
+
+.emppayroll
+{
+font:25px 'Corbel';
+font-weight:bold;
+margin-top:-425px;
+margin-left:-340px;
+
+}
+
+.payroll1
+{
+font:12px 'Corbel';
+font-weight:bold;
+margin-top:-415px;
+margin-left:790px;
+}
+
+.home
+{
+font:25px 'Corbel';
+font-weight:bold;
+margin-top:-425px;
+margin-left:-130px;
+
+}
+
+.crm
+{
+font:25px 'Corbel';
+font-weight:bold;
+margin-top:-425px;
+margin-left:-185px;
+
+}
+.accounting
+{
+font:25px 'Corbel';
+font-weight:bold;
+margin-top:-425px;
+margin-left:-130px;
+
+}
+
+.purchasing
+{
+font:25px 'Corbel';
+font-weight:bold;
+margin-top:-425px;
+margin-left:-410px;
+}
+
+.assetmngt
+{
+font:25px 'Corbel';
+font-weight:bold;
+margin-top:-425px;
+margin-left:-130px;
+}
+
+.systemrecord
+{
+font:25px 'Corbel';
+font-weight:bold;
+margin-top:-425px;
+margin-left:-130px;
+}
+.reports
+{
+font:25px 'Corbel';
+font-weight:bold;
+margin-top:-425px;
+margin-left:-130px;
+}
+
+.c_drrecords1
+{
+font:25px 'Corbel';
+font-weight:bold;
+margin-top:-425px;
+margin-left:-260px;
+
+}
+
+.b_drrecords1
+{
+font:12px 'Corbel';
+font-weight:bold;
+margin-top:-415px;
+margin-left:780px;
+}
+
+
+/*Breadcrumbs*/
+
+
+html
+ {
+    background-color: red;
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,638 @@
+﻿html
+ {
+    background:pink; 
+    margin: 0;
+    padding: 0;
+   position:absolute;
+}
+
+body { 
+  margin: 0;
+    padding: 0;
+}
+
+.whole
+{
+max-width:100%;
+min-height:100%;
+}
+
+
+header img {
+   
+    width:100%;
+    height: 150px;
+   
+    
+}
+
+.menubar
+{
+width:100%;
+height:40px;
+background:#717276;
+margin-top:5px;
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d1d6eb), color-stop(100%,#717276));
+}
+
+.div_welcome
+{
+width:160px;
+height:35px;
+background:yellow;
+margin-left:70px;
+}
+
+.div_welcome img
+{
+margin-top:2px;
+margin-left:5px;
+}
+
+.greeting
+{
+font:13px 'Corbel';
+ color: #d1d6eb;
+ margin:-32px 0 0 40px;
+}
+
+.level
+{
+font:13px 'Corbel';
+font-weight:bold;
+ color: black;
+ margin:0 0 0 50px;
+}
+
+
+/*MENU*/
+
+nav {
+display:block;
+
+
+}
+.menu
+{
+width:780px;
+height:20px;
+background:transparent;
+margin-top:-30px;
+margin-left: 300px;
+}
+
+
+ul.cssMenu, ul.cssMenu ul {
+        	list-style:none;
+        	margin:0; padding:0;
+        	position: relative;
+}
+
+/*Style for 1st level menu header*/
+ul.cssMenu li{ 
+position: relative; 
+float: left; 
+ zoom: 1; /*Needed for IE*/
+/*background: #DDDDDD; background color of menu header (1st level)*/
+}
+
+ul.cssMenu li:hover{ 
+background: #AAAAAA /*background color of menu header (1st level) on hover*/; 
+}
+
+ ul.cssMenu li a {
+/*Menu link styles*/
+    display: block; 
+    padding: 5px; 
+    font:13px 'Corbel';
+	color: black;
+	text-decoration:none;
+ }
+
+    ul.cssMenu ul {
+        display: none; /*initially menu item is hidden*/
+        position: absolute; /*absolute positioning is important for menu to float*/
+        width: 150px;
+
+        /*Formating of menu items*/
+        	border:1px solid #AAAAAA;
+        	padding:1px;
+        	background:#FFFFFF;
+
+        /*optional - to change position of 2nd level menu item*/
+			top: 100%; 
+        	left: 0; 
+    }
+
+ ul.cssMenu ul li
+        { 
+        	background: #F5F5F5; 
+        	color: #000; 
+			border-bottom: 1px solid #DDDDDD; 
+			float: none; 
+		}
+
+ ul.cssMenu ul li a
+        { 
+        	width: 100%; 
+        	display: block; 
+        	color:#000000;
+        } 
+
+  /* Menu item position for 3rd level and more */
+        ul.cssMenu ul ul
+        { 
+        	left: 100%; 
+        	top: 0; 
+        }
+
+         /* Hover effect for menu*/
+        ul.cssMenu li:hover > ul 			
+        { 
+        	display:block;
+        }
+
+
+/*MENU*/
+
+
+/*SIDEBAR*/
+.sidebar {
+width:200px;
+height:398px;
+margin-left:70px;
+border:red;
+
+}
+
+
+.summary {
+width:200px;
+height:265px;
+background:transparent;
+/*margin-left:70px;*/
+
+
+}
+
+.summarybar
+{
+width:200px;
+height:20px;
+background:#7cbc42;
+margin-top:20px;
+margin-right:800px;
+}
+
+.summarybar p
+{
+font:13px 'Corbel';
+ color: #d1d6eb;
+ margin-top:2px;
+}
+
+.summarycontent
+{
+width:200px;
+height:250px;
+background:#d1d6eb;
+margin-right:800px;
+}
+
+.asofdate
+{
+font:13px 'Corbel';
+ color: black;
+ margin-top:-2px;
+}
+
+hr {
+    /* Set the hr color */
+     color: #8f959e; /* Modern Browsers */
+	margin-top:-5px;
+}
+
+.summary_name,.summary_value,.attendance_title
+{
+    font: 13px 'Corbel';
+    color: black;
+    font-weight:bold;
+}
+
+.summary_name {
+margin-top:-2px;
+margin-left:5px;
+}
+
+.summary_value {
+margin-top:-30px;
+margin-left:150px;
+}
+
+
+table.datasummarytable{
+	margin-top:6px;
+    border-collapse: collapse;
+    width:200px;
+}
+
+table.datasummarytable td {
+    
+	font: 11px 'Corbel';
+	padding:0px;
+}
+
+
+.attendance {
+width:200px;
+height:120px;
+background:transparent;
+/*margin-left:70px;*/
+}
+
+.attendancebar {
+
+width:200px;
+height:20px;
+background:#7cbc42;
+
+
+}
+
+.attendancebar_title,.attendance_name,.attendance_date
+{
+font:13px 'Corbel';
+ color: black;
+ font-weight:bold;
+}
+
+.attendance_content
+{
+width:200px;
+height:100px;
+background:#d1d6eb;
+margin-top:-13px;
+margin-right:800px;
+}
+
+.attendance_name
+{
+    
+    margin-left:5px;
+    
+}
+
+.attendance_date {
+margin-left:100px;
+margin-top:-27px;
+
+}
+
+table.listofattendancetable{
+	margin-top:6px;
+    border-collapse: collapse;
+    width:200px;
+}
+
+table.listofattendancetable td {
+    
+	font: 11px 'Corbel';
+	padding:0px;
+}
+
+
+/*SIDEBAR*/
+
+
+/*MAIN CONTENT*/
+
+/*#body_content {
+max-width:960px;
+height:auto;
+background:red;
+margin-top:-200px;
+margin-left:300px;
+
+}
+    
+    #body_content {
+background:blue;
+max-width:100px;
+    height:auto;
+    margin-top:-100px;
+
+
+}
+*/
+
+
+#body {
+    background-color: transparent;
+    clear: both;
+    margin-top:22px;
+   margin-left:300px;
+  
+}
+
+/*.content-wrapper {
+    margin: 0 auto;
+    max-width:900px;
+    background-color: blue;
+}
+
+    .main-content {
+       
+        padding-left: 10px;
+        padding-top: 30px;
+    }*/
+
+
+.crudbuttonbar {
+width:800px;
+height:40px;
+background:#7cbc42;
+margin-top:-10px;
+margin-left:40px;
+
+}
+
+.buttons li
+{
+display:inline-block;
+margin-top:3px;
+margin-right:10px;
+}
+
+.buttons
+{
+margin-left:-30px;
+}
+
+.searchbox {
+     margin-top:-30px;
+
+
+}
+
+
+
+.search
+{
+border:1px solid #000;
+	border-radius:10px;
+	height: 15px;
+	width: 150px;
+    
+    margin-left:500px;
+	
+}
+
+
+.search input[type="text"] {
+   
+    }
+
+
+.searchicon
+{
+margin-top:-17px;
+margin-left:655px;
+
+}
+
+.printicon
+{
+margin-left:700px;
+margin-top:-37px;
+}
+
+.image
+{
+margin-top:1px;
+
+}
+
+
+
+
+
+div.empprofiledata
+{
+height: 500px; 
+width: 800px; 
+font-size: 12px; 
+overflow: auto;
+margin-left:30px;
+
+
+}
+
+table.empdata
+
+{
+width:800px;
+table-layout: auto;
+
+}
+
+table.empdata td
+{
+border: 1px solid #d1d6eb;
+font:13px 'Corbel';
+background:white;
+
+}
+
+table.empdata th
+{
+border: 1px solid #d1d6eb;
+font:15px 'Corbel';
+font-weight:bold;
+background:#d1d6eb;
+}
+
+
+table.empdata td:nth-last-of-type(1)
+{
+background:transparent;
+}
+
+/*table.empdata
+
+{
+float:right;
+text-align: center; 
+ padding: 10px;
+
+}
+
+table.empdata td
+{
+border: 1px solid #d1d6eb;
+font:13px 'Corbel';
+background:transparent;
+
+}
+
+table.empdata th
+{
+border: 1px solid #d1d6eb;
+font:15px 'Corbel';
+font-weight:bold;
+background:#d1d6eb;
+
+}*/
+
+table.empdata td:nth-child(odd) {
+    background: white;
+}
+
+table.empdata td:nth-child(even) {
+    background: white;
+}
+
+
+table.empdata td:nth-last-of-type(1)
+{
+background:transparent;
+}
+table.empdata td:nth-last-of-type(2)
+{
+background:transparent;
+}
+
+table.empdata td:nth-last-of-type(3)
+{
+background:transparent;
+}
+table.empdata td:nth-last-of-type(10)
+{
+background:transparent;
+}
+
+
+
+
+
+
+
+
+/*MAIN CONTENT*/
+
+
+/*BREADCRUMBS*/
+.empprofile
+{
+font:25px 'Corbel';
+font-weight:bold;
+margin-top:-420px;
+margin-left:45px;
+}
+
+.profile
+{
+font:12px 'Corbel';
+font-weight:bold;
+margin-top:-40px;
+margin-left:570px;
+}
+
+/*BREADCRUMBS*/
+
+
+/*FOOTER*/
+footer {
+ width:100%;
+height:40px;
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d1d6eb), color-stop(100%,#717276));
+bottom:0px;
+}
+
+.footercontent {
+ 
+
+}
+
+
+.contact
+{
+font:15px 'Corbel';
+color:#7cbc42;
+font-weight:bold;
+margin-left:70px;
+}
+
+.footerimage li
+{
+display:inline-block;
+}
+
+.footerimage
+{
+margin-top:-15px;
+margin-left:30px;
+}
+
+.linktab
+{
+width:700px;
+height:20px;
+background:transparent;
+margin-top:-55px;
+margin-left: 300px;
+}
+
+.linktab p
+{
+font:12px 'Corbel';
+color:#d1d6eb;
+}
+
+
+.linktab a
+{
+text-decoration: none;
+color:#d1d6eb;
+}
+
+.linktab a:hover
+{
+color:#7cbc42;
+}
+
+.copyright {
+ width:260px;
+height:20px;
+background:transparent;
+margin-top:-15px;
+margin-left: 500px;
+
+}
+
+.copyright p
+{
+font:12px 'Corbel';
+color:#d1d6eb;
+}
+
+
+/*FOOTER*/
+
+
+/*THIS IS FOR TABS*/
+
+#tabsemployeeprofile
+{
+margin-top:-85px;
+margin-left:38px;
+width:800px;
+font-weight:bold;
+font: 12px 'Corbel';
+
+}
+
+.panel{
+    max-height:160px;
+    overflow: auto;
+	border:1px solid red;
+}

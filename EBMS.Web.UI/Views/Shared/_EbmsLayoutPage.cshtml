@@ -1,0 +1,284 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title-EBMS</title>
+    @Styles.Render("~/Content/css")
+
+
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            $("#tabsemployeeprofile").tabs();
+
+
+        });
+
+
+</script>
+
+</head>
+<body>
+    <div class="whole">
+    <header>
+        <img src="Images/bannerEBMS.jpg"/>
+     </header>
+
+    <div class="menubar">
+        <div class="div_welcome">
+			<img src ="Images/emp.png" height="30" width="30"/>
+			<p class="greeting">Welcome JAYCEE</p>
+            <p class="level">Administrator</p>
+           
+				
+		</div><!--div_welcome-->
+
+        <nav>
+        <div class="menu">
+					
+					<ul class="cssMenu">
+							<li><a href="Home.html">HOME</a></li>
+							<li><a href="Crm.html">CRM</a></li>
+							<li><a href="#">SALES</a>
+								<ul>
+									<li><a href="OrderSlip.html">Order Slip</a></li>
+									<li><a href="DeliveryReceiptRecords.html">Delivery Receipt</a></li>
+								</ul>
+							
+							</li>
+							<li><a href="Accounting.html">ACCOUNTING</a></li>
+							<li><a href="#">PURCHASING</a>
+								<ul>
+									<li><a href="PurchaseRequisition.html">Purchase Requisition</a></li>
+									<li><a href="PurchaseOrder.html">Purchase Order</a></li>
+									<li><a href="SepplierManagement.html">Supplier Management</a></li>
+								</ul>
+							
+							
+							
+							</li>
+							<li><a href="#">PERSONNEL</a>
+								<ul>
+									<li><a href="EmployeeProfile.html">Employee Profile</a></li>
+									<li><a href="EmployeeSchedule.html">Employee Schedule</a></li>
+									<li><a href="EmployeeCashAdvance.html">Employee Cash Advance</a></li>
+									<li><a href="EmployeeDTR.html">Employee DTR</a></li>
+									<li><a href="Payroll.html">Payroll</a></li>
+									<li><a href="TimeSheetRecords.html">Time Sheet Records</a></li>
+								
+								</ul>
+							
+							
+							
+							
+							</li>
+							<li><a href="AssetManagement.html">ASSET MANAGEMENT</a></li>
+							<li><a href="SystemRecords.html">SYSTEM RECORDS</a></li>
+							<li><a href="Reports.html">REPORTS</a></li>
+							<li><a href="Security.html">SECURITY</a></li>
+					</ul>
+				
+					
+				</div><!--menu-->
+        </nav>
+
+    </div><!--menubar-->
+        <div class="sidebar">
+
+         @*   @if(IsSectionDefined("Sidebar")){
+            @RenderSection("Sidebar")
+            }
+
+
+            else
+            {
+            <p>Default SideBar content..</p>
+            
+            }*@
+
+
+           
+              <div class="summary">
+                   <div class="summarybar">
+					     <p>SUMMARY<p>
+	               </div>
+
+                   <div class="summarycontent">
+                       <p class="asofdate">As of 05/21/2015</p>
+                       <hr>
+                       <p class="summary_name">NAME</p>
+                       <p class="summary_value">VALUE</p>
+                       <hr>
+
+                       <div class="datasummary">
+							<table class="datasummarytable">
+									 <tr>
+										<td><img src ="Images/emp.png" height="15" width="15"></td>
+										<td>New Customer</td>		
+										<td>1</td>
+									</tr>
+									  
+									  <tr>
+										<td><img src ="Images/emp.png" height="15" width="15"></td>
+										<td>Total Active</td>		
+										<td>13</td>
+										
+									  </tr>
+									  
+									  <tr>
+										<td><img src ="Images/emp.png" height="15" width="15"></td>
+										<td>Total Inactive</td>		
+										<td>9</td>
+										
+									  </tr>
+									  
+									  <tr>
+										<td><img src ="Images/emp.png" height="15" width="15"></td>
+										<td>Total Order</td>		
+										<td>0</td>
+										
+									  </tr>
+									  
+									  
+									  
+									  <tr>
+										<td><img src ="Images/emp.png" height="15" width="15"></td>
+										<td>Total Collected</td>		
+										<td>P 0.00</td>
+										
+									  </tr>
+									  
+									  <tr>
+										<td><img src ="Images/emp.png" height="15" width="15"></td>
+										<td>Cash on Hand</td>		
+										<td>P 0.00</td>
+										
+									  </tr>
+									  
+									  <tr>
+										<td><img src ="Images/emp.png" height="15" width="15"></td>
+										<td>Total Sales</td>		
+										<td>P 0.00</td>
+										
+									  </tr>
+									  
+									  <tr>
+										<td><img src ="Images/emp.png" height="15" width="15"></td>
+										<td>Exp. Voucher</td>		
+										<td>P 0.00</td>
+										
+									  </tr>
+									  
+									  <tr>
+										<td><img src ="Images/emp.png" height="15" width="15"></td>
+										<td>Exp. A/P</td>		
+										<td>P 0.00</td>
+										
+									  </tr>
+						</table>
+					</div><!--datasummary-->
+                    </div><!--summarycontent"-->
+    
+                </div>
+
+                <div class="attendance">
+                <div class="attendancebar">
+					<p class="attendance_title">ATTENDANCE<p>
+                     
+				</div><!--attendancebar-->
+
+                <div class="attendance_content">
+                    <p class="attendance_name">NAME</p>
+                     <p class="attendance_date">Tue Apr 21, 2015</p>
+                    <hr>
+
+                    <div class="listofattendance">
+							<table class="listofattendancetable">
+									 <tr>
+										<td><img src ="Images/emp.png"" height="15" width="15"></td>
+										<td>Rosejelynn Bulante</td>		
+										
+									</tr>
+									  
+									  <tr>
+										<td><img src ="Images/emp.png" height="15" width="15"></td>
+										<td>Kimberly Jean Senados</td>		
+										
+										
+									  </tr>
+									  
+									  <tr>
+										<td><img src ="Images/emp.png" height="15" width="15"></td>
+										<td>Joseph John Javier Jr.</td>		
+										
+										
+									  </tr>
+									  
+							</table>
+						</div><!--attendancename-->
+
+
+
+                </div>
+                </div><!--attendance-->
+
+
+
+
+
+
+             
+        </div><!--sidebar-->
+    
+
+   @* <div id="body_content">
+        adsa
+        @RenderBody()
+    </div>*@
+
+         <div id="body">
+            @RenderBody()
+          @*  <section class="content-wrapper main-content clear-fix">
+                
+            </section>*@
+
+            
+        </div>
+
+    <footer>
+        
+        <div class="footercontent">
+            <div>
+				<p class="contact">Get Connected</p>
+						
+				<ul class="footerimage">
+					<li><a href="#" ><img src="Images/facebook.png" width="20" height="20"></a></li>
+					<li><a href="#" ><img src="Images/instagram.png" width="20" height="20"></a></li>
+					<li><a href="#" ><img src="Images/twitter.png"  width="20" height="20"></a></li>
+				</ul>
+			</div><!--contact-->
+
+            <div class="linktab">
+							<p><a href="Home.html">HOME</a> | <a href="#">CRM</a> | <a href="#">SALES</a> | <a href="#">ACCOUNTING</a> |  
+							<a href="#">PURCHASING |</a>
+							<a href="#">PERSONNEL</a> | <a href="#">ASSET MANAGEMENT</a> | <a href="#">SYSTEM RECORDS</a> | 
+							<a href="#">REPORTS</a> | <a href="#">SECURITY</a></p>
+			</div><!--linktab-->
+
+            <div class="copyright">
+				<p>Copyright 2015  smesoft.com.ph All Rights Reserved</p>
+			</div><!--copyright-->
+
+        </div>
+        
+    </footer>
+
+  </div><!--whole-->
+</body>
+</html>
