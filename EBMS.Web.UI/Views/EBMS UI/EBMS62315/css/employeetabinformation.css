@@ -1,0 +1,1201 @@
+.div_image
+{
+
+margin-top:-50px;
+margin-right:-420px;;
+
+}
+
+/*leave*/
+
+#employeetableave:target, #employeetableave:target + #cover
+{ 
+display:block; 
+opacity:10; 
+} 
+
+
+#employeetableave
+{ 
+height:450px; 
+width:600px; 
+position:absolute; 
+z-index:10; display:none; 
+background:#717276; 
+border:5px solid #717276; 
+border-radius:0px;
+margin-top: -350px;
+
+} 
+.div_leavepopup
+{
+background:#717276;
+height:100%;
+width:100%;
+}
+.div_leavewhiteArea
+{
+margin-top:25px;
+margin-left:-2px;
+background:white;
+height:94%;
+width:99%;
+}
+
+.div_leavebox
+{
+
+height:400px;
+width:400px;
+margin-left:-160px;
+margin-top:-80px;
+font-family:'corbel';
+}
+.div_leaveimage
+{
+
+margin-top:-30px;
+margin-right:-420px;;
+
+}
+
+p.name_leave
+{
+margin-top:20px;
+margin-left:-450px;
+font:15px 'Corbel';
+font-weight:bold;
+padding:10px;
+color:#7cbc42;
+}
+
+.leaveemployeename
+{
+font:16px 'Corbel';
+font-weight:bold;
+margin-top:-40px;
+margin-left:-320;
+}
+
+.leavetypeemployee
+{
+font:16px 'Corbel';
+font-weight:bold;
+margin-top:10px;
+margin-left:-280;
+}
+
+.paid
+{
+font:16px 'Corbel';
+font-weight:bold;
+margin-top:10px;
+margin-left:20;
+}
+
+.unpaid
+{
+font:16px 'Corbel';
+font-weight:bold;
+margin-top:-21px;
+margin-left:180;
+}
+
+.dateFrom
+{
+font:16px 'Corbel';
+font-weight:bold;
+margin-top:10px;
+margin-left:-282;
+}
+
+.dateTo
+{
+font:16px 'Corbel';
+font-weight:bold;
+margin-top:10px;
+margin-left:-300;
+}
+
+.leaveremarks
+{
+font:16px 'Corbel';
+font-weight:bold;
+margin-top:20px;
+margin-left:-295;
+}
+
+.txt_leaveemployeename,.cmb_leavetypeemployee,.txt_dateFrom,.txt_dateTo,.txt_leaveremarks
+{
+margin-top:-20px;
+margin-left:130px;
+
+}
+
+.leavebuttons
+{
+
+float:right;
+height:25px;
+width:150px;
+margin-top:-150px;
+}
+
+
+.textboxemp
+{
+width:220px;
+}
+/*leave*/
+
+/*overtime*/
+#employeetabovertime:target, #employeetabovertime:target + #cover
+{ 
+display:block; 
+opacity:10; 
+} 
+
+
+#employeetabovertime
+{ 
+height:450px; 
+width:600px; 
+position:absolute; 
+z-index:10; display:none; 
+background:#717276; 
+border:5px solid #717276; 
+border-radius:0px;
+margin-top: -400px;
+
+} 
+
+.div_overtimepopup
+{
+background:#717276;
+height:100%;
+width:100%;
+}
+.div_overtimewhiteArea
+{
+margin-top:25px;
+margin-left:-2px;
+background:white;
+height:94%;
+width:99%;
+}
+
+.div_overtimebox
+{
+
+height:400px;
+width:400px;
+margin-left:-160px;
+margin-top:-80px;
+font-family:'corbel';
+}
+.div_overtimeimage
+{
+
+margin-top:-30px;
+margin-right:-420px;;
+
+}
+p.name_overtime
+{
+margin-top:10px;
+margin-left:-430px;
+font:15px 'Corbel';
+font-weight:bold;
+padding:10px;
+color:#7cbc42;
+}
+
+.overtimeempNo
+{
+font:16px 'Corbel';
+font-weight:bold;
+margin-top:-50px;
+margin-left:-280;
+}
+
+
+.overtimeempName
+{
+font:16px 'Corbel';
+font-weight:bold;
+margin-top:20px;
+margin-left:-265;
+}
+
+.overtimepaid
+{
+font:16px 'Corbel';
+font-weight:bold;
+margin-top:10px;
+margin-left:20;
+}
+
+.overtimeunpaid
+{
+font:16px 'Corbel';
+font-weight:bold;
+margin-top:-21px;
+margin-left:180;
+}
+
+.lbl_date
+{
+font:16px 'Corbel';
+font-weight:bold;
+margin-top:20px;
+margin-left:-340;
+}
+
+
+.oT
+{
+font:16px 'Corbel';
+font-weight:bold;
+margin-top:10px;
+margin-left:-310;
+}
+
+
+.txt_hours
+{
+font:15px 'Corbel';
+font-weight:bold;
+margin-top:-20px;
+margin-left:20;
+}
+.txt_mins
+{
+font:15px 'Corbel';
+font-weight:bold;
+margin-top:-25px;
+margin-left:200;
+}
+
+.overtimeremarks
+{
+font:16px 'Corbel';
+font-weight:bold;
+margin-top:20px;
+margin-left:-310;
+}
+
+.txt_overtimeempNo,.txt_overtimeempName,.txt_dateposition,.txt_overtimeremarks
+{
+margin-top:-20px;
+margin-left:130px;
+
+}
+
+.overtimebuttons
+{
+
+float:right;
+height:25px;
+width:150px;
+margin-top:-150px;
+}
+
+/*overtime*/
+
+
+/*workexp*/
+
+#employeetabworkexp:target, #employeetabworkexp:target + #cover
+{ 
+display:block; 
+opacity:10; 
+} 
+
+
+#employeetabworkexp
+{ 
+height:600px; 
+width:600px; 
+position:absolute; 
+z-index:10; display:none; 
+background:#717276; 
+border:5px solid #717276; 
+border-radius:0px;
+margin-top: -420px;
+
+}
+
+
+.div_workbox
+{
+
+height:250px;
+width:400px;
+margin-left:-160px;
+margin-top:-120px;
+font-family:'corbel';
+
+}
+
+.div_workpopup
+{
+background:#717276;
+height:100%;
+width:100%;
+}
+.div_workwhiteArea
+{
+margin-top:25px;
+margin-left:-2px;
+background:white;
+height:94%;
+width:99%;
+}
+
+.div_workimage
+{
+
+margin-top:-30px;
+margin-right:-420px;;
+
+}
+
+.workCompany
+{
+font:16px 'Corbel';
+font-weight:bold;
+margin-top:10px;
+margin-left:-300;
+}
+
+
+.dateStarted
+{
+font:16px 'Corbel';
+font-weight:bold;
+margin-top:10px;
+margin-left:-275;
+}
+
+.dateEnded
+{
+font:16px 'Corbel';
+font-weight:bold;
+margin-top:10px;
+margin-left:-283;
+}
+
+.workremarks
+{
+font:16px 'Corbel';
+font-weight:bold;
+margin-top:20px;
+margin-left:-303;
+}
+
+.txt_workCompany,.txt_dateStarted,.txt_dateEnded,.txt_workremarks
+{
+margin-top:-20px;
+margin-left:130px;
+
+}
+
+.workbuttons
+{
+height:25px;
+width:150px;
+margin-top:10px;
+margin-right:-280px;
+
+}
+
+.workexpbuttons
+{
+height:25px;
+width:150px;
+margin-top:15px;
+float:right;
+
+}
+
+div.div_infowork
+{
+max-width: 100%;
+max-height:30%;
+font-size: 12px; 
+overflow: auto;
+margin-top:-5px;
+margin-left:-10px;
+
+}
+
+
+table.infoworktable
+
+{ 
+ padding: 10px;
+ margin-left: 0px;
+ margin-top:-1px;
+
+}
+
+table.infoworktable td
+{padding:2px 10px 2px 10px;
+border: 1px solid #d1d6eb;
+font:12px 'Corbel';
+background:transparent;
+
+}
+
+table.infoworktable th
+{
+padding:2px 10px 2px 10px;
+border: 1px solid #d1d6eb;
+font:14px 'Corbel';
+font-weight:bold;
+background:#d1d6eb;
+
+}
+
+
+
+/*workexp*/
+
+/*educbackground*/
+
+#employeetabeduc:target, #employeetabeduc:target + #cover
+{ 
+display:block; 
+opacity:10; 
+} 
+
+
+#employeetabeduc
+{ 
+height:600px; 
+width:600px; 
+position:absolute; 
+z-index:10; display:none; 
+background:#717276; 
+border:5px solid #717276; 
+border-radius:0px;
+margin-top: -400px;
+
+}
+
+.div_educbox
+{
+
+height:250px;
+width:400px;
+margin-left:-160px;
+margin-top:-120px;
+font-family:'corbel';
+
+}
+
+.div_educpopup
+{
+background:#717276;
+height:100%;
+width:100%;
+}
+.div_educwhiteArea
+{
+margin-top:25px;
+margin-left:-2px;
+background:white;
+height:94%;
+width:99%;
+}
+
+.div_educimage
+{
+
+margin-top:-40px;
+margin-right:-420px;;
+
+}
+
+
+.schoolName
+{
+font:16px 'Corbel';
+font-weight:bold;
+margin-top:-30px;
+margin-left:-303;
+}
+
+.yearGraduated
+{
+font:16px 'Corbel';
+font-weight:bold;
+margin-top:20px;
+margin-left:-258;
+}
+.educremarks
+{
+font:16px 'Corbel';
+font-weight:bold;
+margin-top:20px;
+margin-left:-305;
+}
+.txt_schoolName,.cmb_year,.txt_educremarks
+{
+margin-top:-20px;
+margin-left:130px;
+
+}
+
+.educbuttons
+{
+height:25px;
+width:150px;
+margin-top:10px;
+margin-right:-280px;
+
+}
+
+.educsavebuttons
+{
+height:25px;
+width:150px;
+margin-top:15px;
+float:right;
+
+}
+
+div.div_tableinfo
+{
+max-width: 100%;
+max-height:30%;
+font-size: 12px; 
+overflow: auto;
+margin-top:-20px;
+margin-left:-10px;
+
+}
+table.tableinfo1
+
+{ 
+ padding: 10px;
+ margin-left: 0px;
+ margin-top:-1px;
+
+}
+
+table.tableinfo1 td
+{padding:2px 10px 2px 10px;
+border: 1px solid #d1d6eb;
+font:12px 'Corbel';
+background:transparent;
+
+}
+
+table.tableinfo1 th
+{
+padding:2px 10px 2px 10px;
+border: 1px solid #d1d6eb;
+font:14px 'Corbel';
+font-weight:bold;
+background:#d1d6eb;
+
+}
+
+/*educbackground*/
+
+ 
+/*cashadvance popup*/
+
+.box
+{
+
+height:400px;
+width:400px;
+margin-left:-160px;
+margin-top:-80px;
+font-family:'corbel';
+background:transparent;
+}
+
+
+
+#empcashadvance:target, #empcashadvance:target + #cover
+{ 
+display:block; 
+opacity:10; 
+} 
+
+
+#empcashadvance
+{ 
+height:600px; 
+width:600px; 
+margin:0 auto; 
+position:relative; 
+z-index:10; display:none; 
+background:#717276; 
+border:5px solid #717276; 
+border-radius:0px;
+margin-top: -100px;
+}
+
+p.vname
+{
+margin-top:20px;
+margin-left:-360px;
+font:15px 'Corbel';
+font-weight:bold;
+padding:10px;
+color:#7cbc42;
+
+}
+
+.labelline
+{
+margin-top:20px;
+font:15px 'Corbel';
+font-weight:bold;
+padding:10px;
+color:black;
+
+}
+
+p.namedate
+
+{margin-top:-38px;
+margin-left:20px;
+
+font:15px 'Corbel';
+font-weight:bold;
+padding:10px;
+color:#7cbc42;
+
+}
+
+.employeename
+{
+margin-left:-270px;
+
+}
+
+.textname
+{
+margin-top:-20px;
+margin-left:160px;
+
+}
+
+.ptype
+{
+margin-left:-280px;
+
+}
+
+.ptypedropdown
+{
+margin-top:-20px;
+margin-left:160px;
+
+}
+
+.amt
+{
+margin-left:-318px;
+
+}
+
+.bankname
+{
+margin-left:-200px;
+
+}
+
+.actname
+{
+margin-left:-180px;
+
+}
+
+.actno
+{
+margin-left:-197px;
+
+}
+
+.checkno
+{
+margin-left:-210px;
+
+}
+
+.checktype
+{
+margin-left:-200px;
+
+}
+
+.checks
+{
+margin-left:-192px;
+
+}
+
+.issue
+{
+margin-left:-206px;
+
+}
+
+.due
+{
+margin-left:-212px;
+
+}
+
+.dates
+{
+margin-top:-20px;
+margin-left:160px;
+
+}
+
+.lbl_remarks
+{
+margin-left:-310px;
+
+}
+
+
+/*cashadvance popup*/
+
+p.name
+{
+margin-top:20px;
+margin-left:-450px;
+font:15px 'Corbel';
+font-weight:bold;
+padding:10px;
+color:#7cbc42;
+}
+
+p.work
+{
+margin-top:20px;
+margin-left:-430px;
+font:15px 'Corbel';
+font-weight:bold;
+padding:10px;
+color:#7cbc42;
+}
+
+.hr1
+{
+background-color: black;
+margin-top:-8px;
+width:400px;
+margin-left:-170px;
+
+}
+
+#blackborder
+{
+border: solid 1px black;
+box-shadow: inset 1px 1px 2px#707070;
+}
+
+.lbl_name
+{
+margin-top:10px;
+margin-left:-285px;
+
+}
+.txtarea_remarks
+{
+margin-top: -15px;
+margin-left:55px;
+}
+
+table.tableinfo1
+
+{
+margin-left:-30px;
+ text-align: center; 
+ padding: 10px;
+
+}
+
+table.tableinfo1 td
+{
+border: 1px solid #d1d6eb;
+font:13px 'Corbel';
+background:white;;
+}
+
+table.tableinfo1 th
+{
+border: 1px solid #d1d6eb;
+font:15px 'Corbel';
+font-weight:bold;
+background:#d1d6eb;
+
+}
+
+
+.dateposition
+{
+margin-top:-15px;
+margin-left:110px;
+
+}
+
+
+
+
+
+
+select
+{
+border:solid 1px black;
+box-shadow: inset 1px 1px 2px#707070;
+}
+
+table.info
+
+{
+margin-left:-30px;
+margin-top:-140px;
+ text-align: center; 
+ padding: 10px;
+
+}
+
+table.info td
+{
+border: 1px solid;
+font:13px 'Corbel';
+background:#bbd2e2;
+}
+
+table.info th
+{
+border: 1px solid;
+font:15px 'Corbel';
+font-weight:bold;
+background:#717276;
+
+}
+
+/*cashadvance*/
+
+table.cashadvancetable
+
+{
+margin-left:220px;
+text-align: center; 
+ padding: 10px;
+
+}
+
+table.cashadvancetable td
+{
+border: 1px solid #d1d6eb;
+font:13px 'Corbel';
+background:white;
+
+}
+
+table.cashadvancetable th
+{
+border: 1px solid #d1d6eb;
+font:15px 'Corbel';
+font-weight:bold;
+background:#d1d6eb;
+
+}
+
+/*cashadvance*/
+
+.container{
+    width: 100%;
+	
+}
+
+.panel{
+    max-height:160px;
+    overflow: auto;
+	border:1px solid red;
+}
+
+#tabsemployeeprofile
+{
+margin-top:320px;
+margin-left:210px;
+width:76%;
+font-weight:bold;
+font: 12px 'Corbel';
+
+}
+
+
+
+/*leave*/
+
+#leave
+{width:100%;
+height:130px;
+border:1px solid #d1d6eb;
+border-radius:5px;
+}
+
+.crudfileleave
+{
+margin-left:600px;
+margin-top:-5px;
+
+
+}
+
+.crudfileleave li
+{
+display:inline-block;
+margin-right:-8px;
+}
+
+div.div_leave
+{
+max-width: 100%;
+max-height:70%;
+font-size: 12px; 
+overflow: auto;
+margin-top:5px;
+margin-left:-10px;
+
+}
+
+
+table.leavetable
+
+{ 
+ padding: 10px;
+ margin-left: 0px;
+ margin-top:-1px;
+
+}
+
+table.leavetable td
+{
+padding:2px 10px 2px 10px;
+border: 1px solid #d1d6eb;
+font:12px 'Corbel';
+background:transparent;
+
+}
+
+table.leavetable th
+{padding:2px 10px 2px 10px;
+border: 1px solid #d1d6eb;
+font:14px 'Corbel';
+font-weight:bold;
+background:#d1d6eb;
+
+}
+/*leave*/
+
+
+/*overtime*/
+
+
+
+#overtime
+{width:100%;
+height:130px;
+border:1px solid #d1d6eb;
+border-radius:5px;
+}
+
+.crudfileovertime
+{
+margin-left:600px;
+margin-top:-5px;
+
+
+}
+
+.crudfileovertime li
+{
+display:inline-block;
+margin-right:-8px;
+}
+
+div.div_overtime
+{
+max-width: 100%;
+max-height:70%;
+font-size: 12px; 
+overflow: auto;
+margin-top:5px;
+margin-left:-10px;
+
+}
+
+
+table.overtimetable
+
+{ 
+ padding: 10px;
+ margin-left: 0px;
+ margin-top:-1px;
+
+}
+
+table.overtimetable td
+{
+padding:2px 10px 2px 10px;
+border: 1px solid #d1d6eb;
+font:12px 'Corbel';
+background:transparent;
+
+}
+
+table.overtimetable th
+{padding:2px 10px 2px 10px;
+border: 1px solid #d1d6eb;
+font:14px 'Corbel';
+font-weight:bold;
+background:#d1d6eb;
+
+}
+
+/*overtime*/
+
+/*workexp*/
+#workexperience
+{width:100%;
+height:130px;
+border:1px solid #d1d6eb;
+border-radius:5px;
+}
+
+.crudworkexperience
+{
+margin-left:600px;
+margin-top:-5px;
+
+
+}
+
+.crudworkexperience li
+{
+display:inline-block;
+margin-right:-8px;
+}
+
+div.div_workexperience
+{
+max-width: 100%;
+max-height:70%;
+font-size: 12px; 
+overflow: auto;
+margin-top:5px;
+margin-left:-10px;
+
+}
+
+
+table.workexperiencetable
+
+{ 
+ padding: 10px;
+ margin-left: 0px;
+ margin-top:-1px;
+
+}
+
+table.workexperiencetable td
+{
+padding:2px 10px 2px 10px;
+border: 1px solid #d1d6eb;
+font:12px 'Corbel';
+background:transparent;
+
+}
+
+table.workexperiencetable th
+{padding:2px 10px 2px 10px;
+border: 1px solid #d1d6eb;
+font:14px 'Corbel';
+font-weight:bold;
+background:#d1d6eb;
+
+}
+
+/*workexp*/
+
+/*educbackground*/
+#educbackground
+{width:100%;
+height:130px;
+border:1px solid #d1d6eb;
+border-radius:5px;
+}
+
+.crudeducbackground
+{
+margin-left:600px;
+margin-top:-5px;
+
+
+}
+
+.crudeducbackground li
+{
+display:inline-block;
+margin-right:-8px;
+}
+
+div.div_educbackground
+{
+max-width: 100%;
+max-height:70%;
+font-size: 12px; 
+overflow: auto;
+margin-top:5px;
+margin-left:-10px;
+
+}
+
+
+table.educbackgroundtable
+
+{ 
+ padding: 10px;
+ margin-left: 0px;
+ margin-top:-1px;
+
+}
+
+table.educbackgroundtable td
+{
+padding:2px 10px 2px 10px;
+border: 1px solid #d1d6eb;
+font:12px 'Corbel';
+background:transparent;
+
+}
+
+table.educbackgroundtable th
+{padding:2px 10px 2px 10px;
+border: 1px solid #d1d6eb;
+font:14px 'Corbel';
+font-weight:bold;
+background:#d1d6eb;
+
+}
+
+
+/*educbackground*/
+
+
+
+

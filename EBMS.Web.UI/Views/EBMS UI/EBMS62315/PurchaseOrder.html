@@ -1,0 +1,997 @@
+<html>
+<head>
+<link type="text/css" rel="stylesheet" href="css/css-home.css"/>
+<link type="text/css" rel="stylesheet" href="css/css-purchasing.css"/>
+<link type="text/css" rel="stylesheet" href="css/employeetabinformation.css"/>
+ <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"/>
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+
+<script type="text/javascript">
+$(function(){
+$("#tabspurchaseorder").tabs();
+
+
+});
+
+
+</script>
+
+
+<title>EBMS- Purchase Order</title>
+
+
+
+</head>
+<body>
+	<div class="whole">
+		<center>
+		<div class="centerbody">
+			<div class="header">	
+				<img src ="images/EBMS1.png" height="25%" width="100%">
+			
+			</div><!--header-->
+			
+			
+			<div class="menubar">
+			
+				<div class="div_welcome">
+					<img src ="images/emp.png" height="30" width="30">
+					<p>Welcome JAYCEE</p>
+					
+					<div class="level">
+						<p>Administrator</p>
+					
+					</div><!--level-->
+					
+				
+				</div><!--div_welcome-->
+				
+				<div class="menu">
+					
+					<ul class="cssMenu">
+							<li><a href="Home.html">HOME</a></li>
+							<li><a href="Crm.html">CRM</a></li>
+							<li><a href="#">SALES</a>
+								<ul>
+									<li><a href="OrderSlip.html">Order Slip</a></li>
+									<li><a href="DeliveryReceiptRecords.html">Delivery Receipt</a></li>
+								</ul>
+							
+							</li>
+							<li><a href="Accounting.html">ACCOUNTING</a></li>
+							<li><a href="#" id="active">PURCHASING</a>
+								
+							<ul>
+									<li><a href="PurchaseRequisition.html">Purchase Requisition</a></li>
+									<li><a href="PurchaseOrder.html">Purchase Order</a></li>
+									<li><a href="SupplierManagement.html">Supplier Management</a></li>
+								</ul>
+							
+							</li>
+							<li><a href="#">PERSONNEL</a>
+								<ul>
+									<li><a href="EmployeeProfile.html">Employee Profile</a></li>
+									<li><a href="EmployeeSchedule.html">Employee Schedule</a></li>
+									<li><a href="EmployeeCashAdvance.html">Employee Cash Advance</a></li>
+									<li><a href="EmployeeDTR.html">Employee DTR</a></li>
+									<li><a href="Payroll.html">Payroll</a></li>
+									<li><a href="TimeSheetRecords.html">Time Sheet Records</a></li>
+								
+								</ul>
+							
+							</li>
+							<li><a href="AssetManagement.html">ASSET MANAGEMENT</a></li>
+							<li><a href="SystemRecords.html">SYSTEM RECORDS</a></li>
+							<li><a href="Reports.html">REPORTS</a></li>
+							<li><a href="Security.html">SECURITY</a></li>
+					</ul>
+				
+					
+				</div><!--menu-->
+				
+			
+				
+			</div><!--menubar-->
+			
+			<div class="content">
+			
+				<div class="summarybar">
+					<p>SUMMARY<p>
+				</div>
+				
+				<div class="summarycontent">
+					<p>As of 05/21/2015</p>
+					<hr></hr>
+					<p style="font-weight:bold;">NAME &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VALUE</p>
+					<hr></hr>
+					
+					<div class="datasummary">
+							<table style="width:200px">
+									 <tr>
+										<td><img src ="images/emp.png" height="15" width="15"></td>
+										<td>New Customer</td>		
+										<td>1</td>
+									</tr>
+									  
+									  <tr>
+										<td><img src ="images/emp.png" height="15" width="15"></td>
+										<td>Total Active</td>		
+										<td>13</td>
+										
+									  </tr>
+									  
+									  <tr>
+										<td><img src ="images/emp.png" height="15" width="15"></td>
+										<td>Total Inactive</td>		
+										<td>9</td>
+										
+									  </tr>
+									  
+									  <tr>
+										<td><img src ="images/emp.png" height="15" width="15"></td>
+										<td>Total Order</td>		
+										<td>0</td>
+										
+									  </tr>
+									  
+									  
+									  
+									  <tr>
+										<td><img src ="images/emp.png" height="15" width="15"></td>
+										<td>Total Collected</td>		
+										<td>P 0.00</td>
+										
+									  </tr>
+									  
+									  <tr>
+										<td><img src ="images/emp.png" height="15" width="15"></td>
+										<td>Cash on Hand</td>		
+										<td>P 0.00</td>
+										
+									  </tr>
+									  
+									  <tr>
+										<td><img src ="images/emp.png" height="15" width="15"></td>
+										<td>Total Sales</td>		
+										<td>P 0.00</td>
+										
+									  </tr>
+									  
+									  <tr>
+										<td><img src ="images/emp.png" height="15" width="15"></td>
+										<td>Exp. Voucher</td>		
+										<td>P 0.00</td>
+										
+									  </tr>
+									  
+									  <tr>
+										<td><img src ="images/emp.png" height="15" width="15"></td>
+										<td>Exp. A/P</td>		
+										<td>P 0.00</td>
+										
+									  </tr>
+						</table>
+					</div><!--datasummary-->
+					
+					
+				</div><!--summarycontent-->
+				
+				<div class="attendancebar">
+					<p>ATTENDANCE<p>
+				</div><!--attendancebar-->
+				
+				<div class="attendancecontent">
+						<div class="labelname">
+							<p>NAME <font color="green">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tue Apr 21,2015 </font><p>
+						</div><!--labelname-->
+						
+						
+						<hr></hr>
+						
+						<div class="attendancename">
+							<table class="aName"style="width:200px">
+									 <tr>
+										<td><img src ="images/emp.png" height="15" width="15"></td>
+										<td>Rosejelynn Bulante</td>		
+										
+									</tr>
+									  
+									  <tr>
+										<td><img src ="images/emp.png" height="15" width="15"></td>
+										<td>Kimberly Jean Senados</td>		
+										
+										
+									  </tr>
+									  
+									  <tr>
+										<td><img src ="images/emp.png" height="15" width="15"></td>
+										<td>Joseph John Javier Jr.</td>		
+										
+										
+									  </tr>
+									  
+							</table>
+						</div><!--attendancename-->
+				</div><!--attendancecontent-->
+			
+			
+			<div class="c_purchasing">
+					<p class="purchasing">Purchasing</p>
+				
+			</div>
+				
+			<div class="b_purchaseorder">
+					<p class="purchaseorder">Purchasing > Purchase Order</p>
+				
+			</div>
+			
+			<div class="crudbuttonbar">
+				<ul class="buttons">
+				
+						
+						<li><a href="#div_createPurchaseOrder"><img src="images/createIcon.png" height="32"></a></li>
+						<li><a href="#"><img src="images/editIcon.png" height="32"></a></li>
+						<li><a href="#"><img src="images/deleteIcon.png" height="32"></a></li>
+						<li><a href="#" ><img src="images/restoreIcon.png" height="32"></a></li>
+						<li><a href="#"><img src="images/import.png" height="32"></a></li>
+				</ul>
+			
+			</div><!--crudbuttonbar-->
+			
+			
+			<div id="div_createPurchaseOrder"> 
+				<div class="div_purchaseordercontent">
+											
+											<a href="#" class="cancel">&times;</a> 
+												<p class="title">Purchase Order</p>
+												
+								<div class="div_purchaseorderwhiteArea">
+												
+									<div class="div_purchaseordertFields" id="sectionHide">
+													
+									<form id="form1" class="styled" action="" method="post"> 
+											
+											<p class="purchaseorderinfo">PO Information</p>
+											
+											<p class="pono">PO No.</p>
+											<p  class="txt_pono"><input id="blackborder" type="text" disabled class="textboxpr" placeholder="<Auto>" ></p>
+											
+											<p class="posoldto">Request Name</p>
+											<p  class="txt_posoldto"><input id="blackborder" type="text" class="textboxpr"></p>
+											
+											<p class="posupplier">Supplier</p>
+											<p  class="txt_posupplier"><input id="blackborder" type="text" class="textboxpr"  ></p>
+											
+											<p class="podate">Date</p>
+											<p class="txt_podate"><input type="text" disabled class="textboxpr" id="blackborder" placeholder="2015-06-10"></p>
+											
+											<p class="podateneeded">Date Needed</p>
+											<p class="txt_podateneeded"><input type="date" class="textboxpr" id="blackborder"></p>
+											
+											
+											<p class="popaymenttype">Payment Type</p>
+											<p class="cmb_popaymenttype">
+													<select id="blackborder" class="textboxpr">
+														<option value="#">Cash</option>
+														<option value="#">Check</option>
+														
+													</select> 
+											</p>
+											
+											<p class="poterms">Terms</p>
+											<p class="txt_poterms"><input type="text" class="textboxpr" id="blackborder"></p>
+											
+											
+											
+											<p class="posgrossamt">Gross Amount</p>
+											<p  class="txt_posgrossamt"><input id="blackborder" disabled type="text" class="textboxpr"></p>
+											
+											<p class="podiscount">Discount</p>
+											<p  class="txt_podiscount"><input id="blackborder" type="text" class="textboxpr"></p>
+											
+											<p class="ponetamt">Net Amount</p>
+											<p  class="txt_ponetamt"><input id="blackborder" type="text" class="textboxpr"></p>
+											
+											
+											<p class="poremarks">Remarks</p>
+											<p  class="txt_poremarks"><textarea rows="7" class="textboxpr" id="blackborder"></textarea></p>
+									
+									
+									
+											<p class="poitemlist">Item List</p>
+											<p class="cmb_poitemlist">
+													<select id="blackborder" class="textboxpr1">
+														<option value="#">PR-2011-000001</option>
+														<option value="#">PR-2011-000002</option>
+														<option value="#">PR-2011-000003</option>
+														<option value="#">PR-2011-000004</option>
+														<option value="#">PR-2011-000005</option>
+														
+														
+													</select> 
+											</p>
+									
+									
+									<div class="div_poitemlist">
+							<table class="poitemlisttable">
+										<tr>
+											<th>Item Code</th>
+											<th>Name</th>
+											<th>Description</th>
+											<th>Category</th>
+											<th>Unit Price</th>
+										<tr>
+										
+										<tr>
+											<td>WR-PWR-RND-000001</td>
+											<td>Aquabest</td>
+											<td>5 Gallons Round Purified Water(Refill)</td>
+											<td>Purified Water</td>
+											<td>50.00</td>
+										<tr>
+									
+										<tr>
+											<td>WR-PWR-SLM-000001</td>
+											<td>Aquabest</td>
+											<td>5 Gallons Slim Purified Water(Refill)</td>
+											<td>Purified Water</td>
+											<td>45.00</td>
+										<tr>
+											<tr>
+											<td>WR-ALK-RDA-000001</td>
+											<td>Wilkins</td>
+											<td>5 Gallons Round Alkaline Water(Refill)</td>
+											<td>Alkaline Water</td>
+											<td>75.00</td>
+										<tr>
+											<tr>
+											<td>WR-MIN-RNM-000001</td>
+											<td>Wilkins</td>
+											<td>5 Gallons Round Mineral Water(Refill)</td>
+											<td>Mineral Water</td>
+											<td>35.00</td>
+										<tr>
+											<tr>
+											<td>WR-MIN-SLM-000001</td>
+											<td>Wilkins</td>
+											<td>5 Gallons Slim Mineral Water(Refill)</td>
+											<td>Mineral Water</td>
+											<td>30.00</td>
+										<tr>
+										
+										
+										
+										
+										<tr>
+											<tr>
+											<td>WR-PWR-RNP-000002</td>
+											<td>Aquabest</td>
+											<td>5 Gallons Round Purified Water(Refill)</td>
+											<td>Purified Water</td>
+											<td>50.00</td>
+										<tr>
+										<tr>
+											<tr>
+											<td>SC-PWR-RNP-000003</td>
+											<td>Aquabest</td>
+											<td>5 Gallons Round Purified Water(Refill)</td>
+											<td>Purified Water</td>
+											<td>50.00</td>
+										<tr>
+										
+										
+										
+										
+										<tr>
+											<tr>
+											<td>WR-MIN-SLM-000002</td>
+											<td>Wilkins</td>
+											<td>5 Gallons Slim Mineral Water(Refill)</td>
+											<td>Mineral Water</td>
+											<td>40.00</td>
+										<tr>
+										<tr>
+											<tr>
+											<td>SC-PWR-RNP-000004</td>
+											<td>Aquabest</td>
+											<td>5 Gallons Round Purified Water(Refill)</td>
+											<td>Purified Water</td>
+											<td>70.00</td>
+										<tr>
+										
+										
+										<tr>
+											<tr>
+											<td>WR-MIN-SLM-000003</td>
+											<td>Wilkins</td>
+											<td>5 Gallons Slim Mineral Water(Refill)</td>
+											<td>Mineral Water</td>
+											<td>45.00</td>
+										<tr>
+										<tr>
+											<tr>
+											<td>WR-PWR-RNP-000003</td>
+											<td>Aquabest</td>
+											<td>5 Gallons Round Purified Water(Refill)</td>
+											<td>Purified Water</td>
+											<td>55.00</td>
+										<tr>
+										
+										<tr>
+											<tr>
+											<td>WR-PWR-RNP-000004</td>
+											<td>Aquabest</td>
+											<td>5 Gallons Round Purified Water(Refill)</td>
+											<td>Purified Water</td>
+											<td>60.00</td>
+										<tr>
+										<tr>
+											<tr>
+											<td>WR-PWR-RNP-000001</td>
+											<td>Wilkins</td>
+											<td>5 Gallons Round Purified Water(Refill)</td>
+											<td>Purified Water</td>
+											<td>60.00</td>
+										<tr>
+										
+										<tr>
+											<tr>
+											<td>WR-MIN-SLM-000004</td>
+											<td>Wilkins</td>
+											<td>5 Gallons Slim Mineral Water(Refill)</td>
+											<td>Mineral Water</td>
+											<td>30.00</td>
+										<tr>
+										<tr>
+											<tr>
+											<td>WR-MIN-SLM-000005</td>
+											<td>Wilkins</td>
+											<td>5 Gallons Slim Mineral Water(Refill)</td>
+											<td>Mineral Water</td>
+											<td>35.00</td>
+										<tr>
+										
+										
+									
+									</table><!--poitemlisttable-->
+									
+							</div><!--div_poitemlist-->
+							
+									
+				<p class="ordereditemspo">Ordered Items</p>
+				
+				<div class="div_ordereditemspo">
+								<table class="ordereditemspotable">
+										<tr>
+											<th>Quantity</th>
+											<th>Unit</th>
+											<th>Reference No.</th>
+											<th>Item Code</th>
+											<th>Unit Price</th>
+											<th>Category</th>
+											<th>Item Description</th>
+										<tr>
+										
+										<tr>
+											<td>5</td>
+											<td>PCS</td>
+											<td></td>
+											<td>WR-MIN-SLM-000005</td>
+											<td>35.00</td>
+											<td>Water Refill</td>
+											<td></td>
+										
+										<tr>
+										
+										<tr>
+											<td>2</td>
+											<td>PCS</td>
+											<td></td>
+											<td>WR-MIN-SLM-000004</td>
+											<td>30.00</td>
+											<td>Water Refill</td>
+											<td></td>
+										
+										<tr>
+										
+										<tr>
+											<td>3</td>
+											<td>PCS</td>
+											<td></td>
+											<td>WR-PWR-RNP-000001</td>
+											<td>60.00</td>
+											<td>Water Refill</td>
+											<td></td>
+											
+										<tr>
+										
+										<tr>
+											<td>2</td>
+											<td>PCS</td>
+											<td></td>
+											<td>SC-PWR-RNP-000004</td>
+											<td>70.00</td>
+											<td>Water Refill</td>
+											<td></td>
+											
+											
+										
+										<tr>
+										
+										<tr>
+											<td>2</td>
+											<td>PCS</td>
+											<td></td>
+											<td>>WR-ALK-RDA-000001</td>
+											<td>75.00</td>
+											<td>Water Refill</td>
+											<td></td>
+											
+										
+										<tr>	
+										<tr>
+											<td>2</td>
+											<td>PCS</td>
+											<td></td>
+											<td>>WR-ALK-RDA-000001</td>
+											<td>75.00</td>
+											<td>Water Refill</td>
+											<td></td>
+											
+										
+										<tr>	
+										<tr>
+											<td>2</td>
+											<td>PCS</td>
+											<td></td>
+											<td>>WR-ALK-RDA-000001</td>
+											<td>75.00</td>
+											<td>Water Refill</td>
+											<td></td>
+											
+										
+										<tr>	
+										<tr>
+											<td>2</td>
+											<td>PCS</td>
+											<td></td>
+											<td>>WR-ALK-RDA-000001</td>
+											<td>75.00</td>
+											<td>Water Refill</td>
+											<td></td>
+											
+										
+										<tr><tr>
+											<td>2</td>
+											<td>PCS</td>
+											<td></td>
+											<td>>WR-ALK-RDA-000001</td>
+											<td>75.00</td>
+											<td>Water Refill</td>
+											<td></td>
+											
+										
+										<tr>
+								</table>
+							
+							
+							</div><!--div_ordereditems-->
+									
+									
+									
+									</div><!--div_purchaserequestFields-->
+								
+									<div class="purchaseorderbuttons">
+											
+												<input id="btn" class="inputin" class="btn-submit" type="submit" value="SAVE"/>&nbsp; <!--onclick="showHideform()"-->
+												<input class="inputin" type="button" value="CLEAR" onclick="this.form.reset()"/>
+												
+											
+									</div><!--NEXT AND CANCEL Button-->
+							
+								</div><!--div_purchaserequestwhiteArea-->
+									</form>
+														
+					</div><!--div_purchaserequestcontent-->	
+		
+				</div><!--div_createPurchaseRequestr-->
+											
+				<div id="cover" align="center"> </div>
+				
+				
+				
+			
+			<div class="searchbox">
+					<input class="search" type="text" placeholder=" Search...">
+					<p class="searchicon"><a href="#"><img src ="images/searchbut.png" height="15" width="15"></a></p>
+				
+			</div><!--searchbox-->
+				
+				<div class="printicon">
+					<a href="#"><img src ="images/printIcon.png" height="25" width="25"></a>
+				</div><!--printicon-->
+				
+			
+			
+			<div class="div_purchaseorder">
+				
+						<table class="purchaseordertable">
+									 <tr> 
+									    <th></th>
+										<th>PO. #</th>		
+										<th>Supplier Name</th>
+										<th>PO Date Needed</th>
+										<th>Sold To</th>
+										<th>Department</th>
+										<th>Job Title</th>
+										<th>Net Amount</th>
+										<th>Remarks</th>
+									  </tr>
+									  
+									  <tr>
+										
+										<td ><img src ="images/emp.png" height="15" width="15"></td>
+										<td>P0-2011-000001</td>	
+										<td>OpenText(GXS)</td>
+										<td>Thurs Jun 11, 2015</td>
+										<td>Jc Evangelista</td>
+										<td>Finance Department</td>
+										<td>Sales Manager</td>
+										<td>1,000.00</td>
+										<td></td>
+										
+									  </tr>
+									  
+									  <tr>
+									 
+										<td><img src ="images/emp.png" height="15" width="15"></td>
+										<td>P0-2011-000002</td>
+										<td>OpenText(GXS)</td>	
+										<td>Fri Jun 12, 2015</td>
+										<td>Cyrill Peralta</td>
+										<td>Finance Department</td>
+										<td>Sales Manager</td>
+										<td>1,000.00</td>
+										<td></td>
+									</tr>
+									  
+									  <tr>
+									  
+										<td><img src ="images/emp.png" height="15" width="15"></td>
+										<td>PO-2011-000003</td>	
+										<td>OpenText(GXS)</td>
+										<td>Sat Jun 13, 2015</td>
+										<td>Joseph Javier</td>
+										<td>Finance Department</td>
+										<td>Sales Manager</td>
+										<td>10,000.00</td>
+										<td></td>
+										
+									  </tr>
+									  
+									   <tr>
+									  
+										<td><img src ="images/emp.png" height="15" width="15"></td>
+										<td>PO-2011-000004</td>
+										<td>OpenText(GXS)</td>
+										<td>Sun Jun 14, 2015</td>
+										<td>John Rodriguez</td>
+										<td>Accounting Department</td>
+										<td>Accountant</td>
+										<td>3,500.00</td>
+										<td></td>
+										
+									  </tr>
+									  
+									   <tr>
+									  
+										<td><img src ="images/emp.png" height="15" width="15"></td>
+										<td>PO-2011-000005</td>
+										<td>OpenText(GXS)</td>
+										<td>Mon Jun 15, 2015</td>
+										<td>Denzel Senados</td>
+										<td>Accounting Department</td>
+										<td>Accountant</td>
+										<td>700.00</td>
+										<td></td>
+										
+									  </tr>
+									  
+									
+									  
+									  <tr>
+									  
+										<td><img src ="images/emp.png" height="15" width="15"></td>
+										<td>PO-2011-000006</td>
+										<td>OpenText(GXS)</td>
+										<td>Thurs Jun 11, 2015</td>
+										<td>Kim Senados</td>
+										<td>IT Department</td>
+										<td>IT Consultant/Specialist</td>
+										<td>1,000.00</td>
+										<td></td>
+										
+										</tr>
+									  
+									  <tr>
+									
+										<td><img src ="images/emp.png" height="15" width="15"></td>
+										<td>PO-2011-000007</td>
+										<td>OpenText(GXS)</td>
+										<td>Fri Jun 12, 2015</td>
+										<td>Heidy Viray</td>
+										<td>IT Department</td>
+										<td>IT Consultant/Specialist</td>
+										<td>3,800.00</td>
+										<td></td>
+										
+									  </tr>
+									  
+									  <tr>
+									 
+										<td><img src ="images/emp.png" height="15" width="15"></td>
+										<td>PO-2011-000008</td>
+										<td>OpenText(GXS)</td>
+										<td>Fri Jun 12, 2015</td>
+										<td>Chechan Amba</td>
+										<td>IT Department</td>
+										<td>IT Consultant/Specialist</td>
+										<td>13,000.00</td>
+										<td></td>
+										
+									  </tr>
+									  
+									  <tr>
+									 
+										<td><img src ="images/emp.png" height="15" width="15"></td>
+										<td>PO-2011-000009</td>
+										<td>OpenText(GXS)</td>
+										<td>Mon Jun 15, 2015</td>
+										<td>Grace Abuel </td>
+										<td>IT Department</td>
+										<td>IT Consultant/Specialist</td>
+										<td>1,000.00</td>
+										<td></td>
+										
+									  </tr>
+									  
+									  <tr>
+									 
+										<td><img src ="images/emp.png" height="15" width="15"></td>
+										<td>PO-2011-000010</td>
+										<td>OpenText(GXS)</td>
+										<td>Mon Jun 15, 2015</td>
+										<td>Ruby Rose </td>
+										<td>IT Department</td>
+										<td>IT Consultant/Specialist</td>
+										<td>1,300.00</td>
+										<td></td>
+										
+									  </tr>
+									  
+									  
+									   <tr>
+									   
+										<td><img src ="images/emp.png" height="15" width="15"></td>
+										<td>PO-2011-000011</td>	
+										<td>OpenText(GXS)</td>
+										<td>Fri Jun 12, 2015</td>
+										<td>Miguel San Juan</td>
+										<td>Human Resource Department</td>
+										<td>Human Resource Officer</td>
+										<td>500.00</td>
+										<td></td>
+										
+									  </tr>
+									  
+									  
+									  <tr>
+									  
+										<td><img src ="images/emp.png" height="15" width="15"></td>
+										<td>PO-2011-000012</td>
+										<td>OpenText(GXS)</td>
+										<td>Fri Jun 12, 2015</td>
+										<td>Mark Salonga </td>
+										<td>Finance Department</td>
+										<td>Sales Manager</td>
+										<td>1,900.00</td>
+										<td></td>
+										
+									  </tr>
+									  
+									 
+									  
+									  <tr>
+									 
+										<td><img src ="images/emp.png" height="15" width="15"></td>
+										<td>PO-2011-000013</td>
+										<td>OpenText(GXS)</td>
+										<td>Thurs Jun 11, 2015</td>
+										<td>Michelle Mike</td>
+										<td>Finance Department</td>
+										<td>Sales Manager</td>
+										<td>1,000.00</td>
+										<td></td>
+										
+									  </tr>
+									  
+									  <tr>
+									  
+										<td><img src ="images/emp.png" height="15" width="15"></td>
+										<td>PO-2011-000014</td>
+										<td>OpenText(GXS)</td>
+										<td>Wed Jun 10, 2015</td>
+										<td>Shella Ramon</td>
+										<td>Accounting Department</td>
+										<td>Accountant</td>
+										<td>1,000.00</td>
+										<td></td>
+									</tr>
+									  
+									  <tr>
+									 
+										<td><img src ="images/emp.png" height="15" width="15"></td>
+										<td>PO-2011-000015</td>	
+										<td>OpenText(GXS)</td>
+										<td>Thurs Jun 11, 2015</td>
+										<td>RoseJelynn Bulante</td>
+										<td>IT Department</td>
+										<td>IT Consultant/Specialist</td>
+										<td>5,000.00</td>
+										<td></td>
+										
+									  </tr>
+									 
+									 
+			</table>
+				</div><!--div_payroll-->
+			
+			
+			<div class="po_itemdetails">
+			<div id="tabspurchaseorder" class="container">
+				<ul>
+					<li><a href="#tabs-itemdetails">Item Details</a></li>
+				</ul>
+				
+				<div id="tabs-itemdetails" class="panel">
+						
+						<div id="border_itemdetails">
+							<div class="div_itemdetails">
+							<table class="itemdetailstable">
+									<tr>
+											
+											<th>Quantity</th>
+											<th>Unit</th>
+											<th>Item Code</th>
+											<th>Item Description</th>
+											<th>Item Status</th>
+											
+											
+											
+									</tr>
+									
+									<tr>
+											
+											<td>5</td>
+											<td>PIECES</td>
+											<td>CE-K-4</td>
+											<td>General Description: Acer Keyboard HKB.0013.002</td>
+											<td>APPROVED</td>
+											
+											
+											
+									</tr>
+									
+									<tr>
+											
+											<td>1</td>
+											<td>PIECES</td>
+											<td>CE-M-1</td>
+											<td>General Description: LG M22W7A, Screen Size: 21.5, Resolution: 1920x1080</td>
+											<td>APPROVED</td>
+									</tr>
+									
+									<tr>
+											
+											<td>5</td>
+											<td>PIECES</td>
+											<td>CE-K-4</td>
+											<td>General Description: Acer Keyboard HKB.0013.002</td>
+											<td>APPROVED</td>
+									
+									</tr>
+									
+									<tr>
+											
+											<td>5</td>
+											<td>PIECES</td>
+											<td>CE-K-4</td>
+											<td>General Description: Acer Keyboard HKB.0013.002</td>
+											<td>APPROVED</td>
+											
+											
+											
+									</tr>
+									
+									<tr>
+											
+											<td>1</td>
+											<td>PIECES</td>
+											<td>CE-M-1</td>
+											<td>General Description: LG M22W7A, Screen Size: 21.5, Resolution: 1920x1080</td>
+											<td>APPROVED</td>
+									</tr>
+											
+									
+									<tr>
+											
+											<td>1</td>
+											<td>PIECES</td>
+											<td>CE-M-1</td>
+											<td>General Description: LG M22W7A, Screen Size: 21.5, Resolution: 1920x1080</td>
+											<td>APPROVED</td>
+									</tr>
+								
+							</table>
+						</div><!--div_requestitem-->
+						
+						
+						</div>
+				</div><!--tabs-requestitem-->
+				
+				
+			
+			</div><!--tabspurchaserequest-->
+			
+			</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			</div><!--content-->
+			
+			<footer>
+			<div class="footer1">
+				<div class="contact">
+						<p>Get Connected</p>
+						
+						<ul class="footerimage">
+									<li><a href="#" ><img src="images/facebook.png" width="25" height="25"></a></li>
+									<li><a href="#" ><img src="images/instagram.png"  width="25" height="25"></a></li>
+									<li><a href="#" ><img src="images/twitter.png"  width="25" height="25"></a></li>
+						</ul>
+				</div><!--contact-->
+				
+				<div class="linktab">
+							<p><a href="Home.html">HOME</a> | <a href="#">CRM</a> | <a href="#">SALES</a> | <a href="#">ACCOUNTING</a> |  
+							<a href="#" id="active">PURCHASING </a> |
+							<a href="#">PERSONNEL</a> | <a href="#">ASSET MANAGEMENT</a> | <a href="#">SYSTEM RECORDS</a> | <a href="#">REPORTS</a> | 
+							<a href="#">SECURITY</a></p>
+				</div><!--linktab-->
+				
+				<div class="copyright">
+					
+						<p>Copyright 2015  smesoft.com.ph All Rights Reserved</p>
+				</div><!--copyright-->
+			
+			</div><!--footer1>
+			</footer>
+		</div><!--centerbody-->
+		</center>
+	
+	
+	
+	
+	
+	
+	</div><!--whole-->
+</body>
+</html>

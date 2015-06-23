@@ -1,0 +1,286 @@
+table.empschedtable
+
+{margin-left:220px;
+text-align: center; 
+ padding: 10px;
+
+}
+
+table.empschedtable td
+{
+border: 1px solid #d1d6eb;
+font:13px 'Corbel';
+background:transparent;
+
+}
+
+table.empschedtable th
+{
+border: 1px solid #d1d6eb;
+font:15px 'Corbel';
+font-weight:bold;
+background:#d1d6eb;
+
+}
+
+table.sched
+{
+margin-left:220px;
+text-align: center; 
+ padding: 10px;
+}
+
+table.sched td
+{
+border: 1px solid #d1d6eb;
+font:13px 'Corbel';
+background:white;
+
+}
+
+table.sched th
+{
+border: 1px solid #d1d6eb;
+font:15px 'Corbel';
+font-weight:bold;
+background:#d1d6eb;
+
+}
+
+
+
+table.timesheettable
+{
+margin-left:220px;
+text-align: center; 
+ padding: 10px;
+}
+
+table.timesheettable td
+{
+border: 1px solid #d1d6eb;
+font:13px 'Corbel';
+background:white;
+
+}
+
+table.timesheettable th
+{
+border: 1px solid #d1d6eb;
+font:15px 'Corbel';
+font-weight:bold;
+background:#d1d6eb;
+
+}
+
+table.dtr
+{
+margin-left:220px;
+text-align: center; 
+ padding: 10px;
+}
+
+table.dtr td
+{
+border: 1px solid #d1d6eb;
+font:13px 'Corbel';
+background:white;
+
+}
+
+table.dtr th
+{
+border: 1px solid #d1d6eb;
+font:15px 'Corbel';
+font-weight:bold;
+background:#d1d6eb;
+
+}
+
+
+
+table.sched td:nth-last-of-type(1)
+{
+background:transparent;
+}
+
+
+table.empschedtable td:nth-child(odd) {
+    background: white;
+}
+
+table.empschedtable td:nth-child(even) {
+    background: white;
+}
+
+table.empschedtable td:nth-last-of-type(1)
+{
+background:transparent;
+}
+
+
+
+.scheddata
+{
+height:340px;
+width:300px;
+background:#d1d6eb;
+margin-top:-347px;
+margin-left:665px;
+}
+
+.days
+{margin-left:-270px;
+
+}
+
+.nameofdays
+
+{margin-top:-18px;
+margin-left:76px;
+
+}
+
+.monday
+{
+margin-top:-18px;
+margin-left:72px;
+}
+
+.tuesday
+{
+margin-top:1px;
+margin-left:73px;
+}
+
+.wed
+{
+margin-top:1px;
+margin-left:96px;
+}
+
+.thurs
+{
+margin-top:1px;
+margin-left:80px;
+}
+.fri
+{
+margin-top:1px;
+margin-left:59px;
+}
+
+.sat
+{
+margin-top:1px;
+margin-left:78px;
+}
+
+.sun
+{
+margin-top:1px;
+margin-left:68px;
+}
+
+.nametimein
+{
+margin-left:-250px;
+}
+
+.nametimeout
+{
+margin-left:-238px;
+}
+
+
+input[type="time"]
+{width:170px;
+
+}
+
+.ebt
+{
+margin-left:-190px;
+
+}
+
+.sbt
+{
+margin-left:-188px;
+
+}
+
+.schedtime
+{
+margin-top:-20px;
+margin-left:180px;
+}
+
+
+/*employee dtr*/
+
+.nametitle
+{
+margin-left:-310px;
+
+
+}
+
+.bgmode
+{
+height:22px;
+width:220px;
+background:#d1d6eb;
+margin-top:-20px;
+margin-left:160px;
+border-radius:5px;
+
+
+}
+
+.radiotimein
+{
+margin-left:-10px;
+
+}
+
+.nametext
+{margin-top:-15px;
+margin-left:160px;
+width:220px;
+
+}
+
+.pass
+{margin-left:-282px;
+
+}
+
+table.dtrtable1
+
+{
+margin-top:-250px;
+text-align: center; 
+ padding: 10px;
+
+}
+
+table.dtrtable1 td
+{
+border: 1px solid #d1d6eb;
+font:13px 'Corbel';
+background:#bbd2e2;
+
+}
+
+table.dtrtable1 th
+{
+border: 1px solid #d1d6eb;
+font:15px 'Corbel';
+font-weight:bold;
+background:#d1d6eb;
+
+}
+
+
+/*employee dtr*/

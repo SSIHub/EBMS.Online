@@ -1,0 +1,919 @@
+.purchaserequest
+{
+font:12px 'Corbel';
+font-weight:bold;
+margin-top:-415px;
+margin-left:780px;
+}
+
+
+
+div.div_purchaserequest
+{
+max-width: 100%;
+max-height:70%;
+font-size: 12px; 
+overflow: auto;
+margin-left:220px;
+}
+
+
+table.purchaserequesttable
+
+{
+
+ padding: 10px;
+
+}
+
+table.purchaserequesttable td
+{
+border: 1px solid #d1d6eb;
+font:13px 'Corbel';
+background:white;
+
+}
+
+table.purchaserequesttable th
+{padding:2px 10px 2px 10px;
+border: 1px solid #d1d6eb;
+font:15px 'Corbel';
+font-weight:bold;
+background:#d1d6eb;
+
+}
+
+
+.container{
+    width: 100%;
+	
+}
+
+.panel{
+    max-height:160px;
+    overflow: auto;
+	border:1px solid red;
+}
+
+
+
+#tabspurchaserequest
+{
+margin-top:10px;
+margin-left:215px;
+width:76%;
+font-weight:bold;
+font: 12px 'Corbel';
+
+}
+
+
+#border_request
+{width:100%;
+height:130px;
+border:1px solid #d1d6eb;
+border-radius:5px;
+}
+
+
+div.div_requestitem
+{
+max-width: 100%;
+max-height:70%;
+font-size: 12px; 
+overflow: auto;
+margin-top:5px;
+margin-left:10px;
+
+}
+
+
+table.requestitemtable
+
+{ 
+ padding: 10px;
+ margin-left: 0px;
+ margin-top:-1px;
+
+}
+
+table.requestitemtable td
+{
+padding:1px 5px 1px 5px;
+border: 1px solid #d1d6eb;
+font:12px 'Corbel';
+background:transparent;
+
+}
+
+table.requestitemtable th
+{
+padding:2px 10px 2px 10px;
+border: 1px solid #d1d6eb;
+font:14px 'Corbel';
+font-weight:bold;
+background:#d1d6eb;
+
+}
+
+
+/*Purchase Request*/
+#div_createPurchaseRequest:target, #div_createPurchaseRequest:target + #cover
+{ 
+display:block; 
+opacity:10; 
+} 
+
+
+#div_createPurchaseRequest
+{ 
+height:600px; 
+width:900px; 
+position:absolute; 
+z-index:10; display:none; 
+background:#717276; 
+border:5px solid #717276; 
+border-radius:0px;
+margin-top:-50px;
+margin-left:30px;
+
+} 
+
+.div_div_purchaserequestcontent
+{
+background:#717276;
+height:100%;
+width:100%;
+}
+
+.div_purchaserequestwhiteArea
+{
+margin-top:25px;
+margin-left:-2px;
+background:white;
+height:94%;
+width:99%;
+}
+.div_purchaserequestFields
+{
+
+height:400px;
+width:400px;
+margin-left:-160px;
+margin-top:-120px;
+font-family:'corbel';
+background:transparent;
+}
+
+.purchaserequestbuttons
+{
+
+float:right;
+height:25px;
+width:150px;
+margin-top:250px;
+}
+
+
+.textboxpr
+{
+width:220px;
+}
+
+.textboxpr1
+{
+width:150px;
+}
+
+.purchaserequestinfo
+{
+font:16px 'Corbel' red;
+font-weight:bold;
+margin-top:130px;
+margin-left:-580;
+}
+
+.prno
+{
+font:16px 'Corbel';
+font-weight:bold;
+margin-top:15px;
+margin-left:-636;
+}
+
+.prname
+{
+font:16px 'Corbel';
+font-weight:bold;
+margin-top:15px;
+margin-left:-581;
+}
+
+.prdate
+{
+font:16px 'Corbel';
+font-weight:bold;
+margin-top:15px;
+margin-left:-648;
+}
+
+.prdateneeded
+{
+font:16px 'Corbel';
+font-weight:bold;
+margin-top:15px;
+margin-left:-590;
+}
+.prremarks
+{
+font:16px 'Corbel';
+font-weight:bold;
+margin-top:15px;
+margin-left:-618;
+}
+
+
+
+.txt_prno,.txt_prname,.txt_prdate,.txt_prdateneeded,.txt_prremarks
+{
+margin-top:-22px;
+margin-left:-200px;
+
+}
+
+.pritemlist
+{
+font:16px 'Corbel' red;
+font-weight:bold;
+margin-top:-308px;
+margin-left:130;
+}
+
+
+.cmb_itemlist
+{
+margin-top:10px;
+margin-left:220;
+
+}
+
+.searchpr
+{
+border:1px solid #000;
+	border-radius:10px;
+	height: 20px;
+	width: 150px;
+	margin-top:-25px;
+margin-left:550;
+	}
+
+	
+.searchpr
+{
+
+} 
+.searchiconpr
+{
+	margin-top:-22px;
+	margin-left:530;
+
+}
+
+
+
+div.div_itemlist
+{
+width: 470px;
+max-height:200px;
+font-size: 12px; 
+overflow: auto;
+margin-top:10px;
+margin-left: 230px;
+
+}
+
+
+table.itemlisttable
+
+{
+ padding: 10px;
+ margin-left: 0px;
+ margin-top:-1px;
+
+}
+
+table.itemlisttable td
+{
+border: 1px solid #d1d6eb;
+font:13px 'Corbel';
+background:transparent;
+
+}
+
+table.itemlisttable th
+{
+border: 1px solid #d1d6eb;
+font:15px 'Corbel';
+font-weight:bold;
+background:#d1d6eb;
+
+}
+
+.ordereditemspr
+{
+font:18px 'Corbel';
+font-weight:bold;
+margin-top:10px;
+margin-left:170;
+
+}
+
+
+div.div_ordereditems
+{
+width: 470px;
+max-height:200px;
+font-size: 12px; 
+overflow: auto;
+margin-top:10px;
+margin-left:230px;
+
+}
+
+table.ordereditemstable
+
+{
+ padding: 10px;
+ margin-left: 0px;
+ margin-top:-1px;
+
+}
+
+table.ordereditemstable td
+{
+border: 1px solid #d1d6eb;
+font:13px 'Corbel';
+background:transparent;
+
+}
+
+table.ordereditemstable th
+{
+border: 1px solid #d1d6eb;
+font:15px 'Corbel';
+font-weight:bold;
+background:#d1d6eb;
+
+}
+
+
+
+/*Purchase Request*/
+
+
+/*Edit PR*/
+
+#div_editPurchaseRequest:target, #div_editPurchaseRequest:target + #cover
+{ 
+display:block; 
+opacity:10; 
+} 
+
+
+#div_editPurchaseRequest
+{ 
+height:420px; 
+width:900px; 
+position:absolute; 
+z-index:10; display:none; 
+background:#717276; 
+border:5px solid #717276; 
+border-radius:0px;
+margin-top:50px;
+margin-left:30px;
+
+} 
+
+.div_editpurchaserequestcontent
+{
+background:#717276;
+height:100%;
+width:100%;
+}
+
+.div_editpurchaserequestwhiteArea
+{
+margin-top:25px;
+margin-left:-2px;
+background:white;
+height:380px; 
+width:98%;
+}
+.div_editpurchaserequestFields
+{
+
+height:400px;
+width:400px;
+margin-left:-160px;
+margin-top:-120px;
+font-family:'corbel';
+background:transparent;
+}
+
+
+
+
+.editpurchaserequestinfo
+{
+font:16px 'Corbel' red;
+font-weight:bold;
+margin-top:130px;
+margin-left:-580;
+}
+
+.editprno
+{
+font:16px 'Corbel';
+font-weight:bold;
+margin-top:15px;
+margin-left:-636;
+}
+
+.editprname
+{
+font:16px 'Corbel';
+font-weight:bold;
+margin-top:15px;
+margin-left:-581;
+}
+
+.editprdate
+{
+font:16px 'Corbel';
+font-weight:bold;
+margin-top:15px;
+margin-left:-648;
+}
+
+.editprdateneeded
+{
+font:16px 'Corbel';
+font-weight:bold;
+margin-top:15px;
+margin-left:-590;
+}
+.editprremarks
+{
+font:16px 'Corbel';
+font-weight:bold;
+margin-top:15px;
+margin-left:-618;
+}
+
+
+
+.txt_editprno,.txt_editprname,.txt_editprdate,.txt_editprdateneeded,.txt_editprremarks
+{
+margin-top:-22px;
+margin-left:-200px;
+
+}
+
+.prrequesteditem
+{
+font:18px 'Corbel';
+font-weight:bold;
+margin-top:-300px;
+margin-left:200;
+
+}
+
+
+div.div_requesteditem
+{
+width: 470px;
+max-height:200px;
+font-size: 12px; 
+overflow: auto;
+margin-top:10px;
+margin-left:230px;
+
+}
+
+table.requesteditemtable
+
+{
+ padding: 10px;
+ margin-left: 0px;
+ margin-top:-1px;
+
+}
+
+table.requesteditemtable td
+{
+border: 1px solid #d1d6eb;
+font:13px 'Corbel';
+background:transparent;
+
+}
+
+table.requesteditemtable th
+{
+border: 1px solid #d1d6eb;
+font:15px 'Corbel';
+font-weight:bold;
+background:#d1d6eb;
+
+}
+
+.editprbuttons
+{
+
+float:right;
+height:25px;
+width:150px;
+margin-top:-30px;
+margin-right:50px;
+}
+/*Edit PR*/
+
+
+/*PURCHASE ORDER*/
+.purchaseorder
+{
+font:12px 'Corbel';
+font-weight:bold;
+margin-top:-415px;
+margin-left:780px;
+}
+
+
+div.div_purchaseorder
+{
+max-width: 100%;
+max-height:70%;
+font-size: 12px; 
+overflow: auto;
+margin-left:220px;
+}
+
+
+table.purchaseordertable
+
+{
+
+ padding: 10px;
+
+}
+
+table.purchaseordertable td
+{padding:0px 2px 0px 2px;
+border: 1px solid #d1d6eb;
+font:13px 'Corbel';
+background:white;
+
+}
+
+table.purchaseordertable th
+{padding:2px 10px 2px 10px;
+border: 1px solid #d1d6eb;
+font:15px 'Corbel';
+font-weight:bold;
+background:#d1d6eb;
+
+}
+
+#tabspurchaseorder
+{
+margin-top:10px;
+margin-left:215px;
+width:76%;
+font-weight:bold;
+font: 12px 'Corbel';
+
+}
+
+#border_itemdetails
+{width:100%;
+height:130px;
+border:1px solid #d1d6eb;
+border-radius:5px;
+}
+
+
+div.div_itemdetails
+{
+max-width: 100%;
+max-height:70%;
+font-size: 12px; 
+overflow: auto;
+margin-top:5px;
+margin-left:10px;
+
+}
+
+
+table.itemdetailstable
+
+{ 
+ padding: 10px;
+ margin-left: 0px;
+ margin-top:-1px;
+
+}
+
+table.itemdetailstable td
+{
+padding:1px 5px 1px 5px;
+border: 1px solid #d1d6eb;
+font:12px 'Corbel';
+background:transparent;
+
+}
+
+table.itemdetailstable th
+{
+padding:2px 10px 2px 10px;
+border: 1px solid #d1d6eb;
+font:14px 'Corbel';
+font-weight:bold;
+background:#d1d6eb;
+
+}
+
+
+/*Create PO*/
+#div_createPurchaseOrder:target, #div_createPurchaseOrder:target + #cover
+{ 
+display:block; 
+opacity:10; 
+} 
+
+
+#div_createPurchaseOrder
+{ 
+height:600px; 
+width:900px; 
+position:absolute; 
+z-index:10; display:none; 
+background:#717276; 
+border:5px solid #717276; 
+border-radius:0px;
+margin-top:-20px;
+margin-left:30px;
+
+} 
+
+.div_purchaseordercontent
+{
+background:#717276;
+height:100%;
+width:100%;
+}
+
+.div_purchaseorderwhiteArea
+{
+margin-top:25px;
+margin-left:-2px;
+background:white;
+height:94%;
+width:99%;
+}
+.div_purchaseorderFields
+{
+
+height:400px;
+width:400px;
+margin-left:-160px;
+margin-top:-120px;
+font-family:'corbel';
+background:transparent;
+}
+
+
+
+
+.purchaseorderinfo
+{
+font:16px 'Corbel' red;
+font-weight:bold;
+margin-top:20px;
+margin-left:-750;
+}
+
+.pono
+{
+font:16px 'Corbel';
+font-weight:bold;
+margin-top:15px;
+margin-left:-806;
+}
+
+.posoldto
+{
+font:16px 'Corbel';
+font-weight:bold;
+margin-top:15px;
+margin-left:-752;
+}
+
+.posupplier
+{
+font:16px 'Corbel';
+font-weight:bold;
+margin-top:15px;
+margin-left:-798;
+}
+
+.podate
+{
+font:16px 'Corbel';
+font-weight:bold;
+margin-top:15px;
+margin-left:-820;
+}
+
+.podateneeded
+{
+font:16px 'Corbel';
+font-weight:bold;
+margin-top:15px;
+margin-left:-762;
+}
+
+.popaymenttype
+{
+font:16px 'Corbel';
+font-weight:bold;
+margin-top:15px;
+margin-left:-750;
+}
+
+
+.poterms
+{
+font:16px 'Corbel';
+font-weight:bold;
+margin-top:15px;
+margin-left:-808;
+}
+
+
+.posgrossamt
+{
+font:16px 'Corbel';
+font-weight:bold;
+margin-top:15px;
+margin-left:-752;
+}
+
+
+.podiscount
+{
+font:16px 'Corbel';
+font-weight:bold;
+margin-top:15px;
+margin-left:-787;
+}
+
+.ponetamt
+{
+font:16px 'Corbel';
+font-weight:bold;
+margin-top:15px;
+margin-left:-760;
+}
+
+
+.poremarks
+{
+font:16px 'Corbel';
+font-weight:bold;
+margin-top:15px;
+margin-left:-785;
+}
+
+.poitemlist
+{
+font:16px 'Corbel' red;
+font-weight:bold;
+margin-top:-510px;
+margin-left:130;
+}
+
+
+.cmb_poitemlist
+{
+margin-top:10px;
+margin-left:220;
+
+}
+
+
+
+
+.txt_pono,.txt_posoldto,.txt_posupplier,.txt_podate,.txt_podateneeded,.cmb_popaymenttype,.txt_poterms,.txt_posgrossamt,.txt_podiscount,.txt_ponetamt,.txt_poremarks
+{
+margin-top:-22px;
+margin-left:-200px;
+
+}
+
+
+.purchaseorderbuttons
+{
+
+float:right;
+height:25px;
+width:150px;
+margin-top:250px;
+}
+
+
+div.div_poitemlist
+{
+width: 400px;
+max-height:200px;
+font-size: 12px; 
+overflow: auto;
+margin-top:10px;
+margin-left: 470px;
+
+}
+
+
+table.poitemlisttable
+
+{
+ padding: 10px;
+ margin-left: 0px;
+ margin-top:-1px;
+
+}
+
+table.poitemlisttable td
+{
+border: 1px solid #d1d6eb;
+font:13px 'Corbel';
+background:transparent;
+
+}
+
+table.poitemlisttable th
+{
+border: 1px solid #d1d6eb;
+font:15px 'Corbel';
+font-weight:bold;
+background:#d1d6eb;
+
+}
+
+.ordereditemspo
+{
+font:18px 'Corbel';
+font-weight:bold;
+margin-top:10px;
+margin-left:180;
+
+}
+
+
+div.div_ordereditemspo
+{
+width: 400px;
+max-height:200px;
+font-size: 12px; 
+overflow: auto;
+margin-top:10px;
+margin-left: 470px;
+
+}
+
+table.ordereditemspotable
+
+{
+ padding: 10px;
+ margin-left: 0px;
+ margin-top:-1px;
+
+}
+
+table.ordereditemspotable td
+{
+border: 1px solid #d1d6eb;
+font:13px 'Corbel';
+background:transparent;
+
+}
+
+table.ordereditemspotable th
+{
+border: 1px solid #d1d6eb;
+font:15px 'Corbel';
+font-weight:bold;
+background:#d1d6eb;
+
+}
+
+
+/*Create PO*/

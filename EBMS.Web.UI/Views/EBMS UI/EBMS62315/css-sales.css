@@ -1,0 +1,33 @@
+table.salestable
+
+{margin-left:220px;
+text-align: center; 
+ padding: 10px;
+
+}
+
+table.salestable td
+{
+border: 1px solid #d1d6eb;
+font:13px 'Corbel';
+background:transparent;
+
+}
+
+table.salestable th
+{
+border: 1px solid #d1d6eb;
+font:15px 'Corbel';
+font-weight:bold;
+background:#d1d6eb;
+
+}
+
+.sales
+{
+font:25px 'Corbel';
+font-weight:bold;
+margin-top:-425px;
+margin-left:-470px;
+
+}

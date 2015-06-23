@@ -1,0 +1,443 @@
+div.div_payroll
+{
+height: 100%; 
+width: 77%; 
+font-size: 12px; 
+overflow: auto;
+margin-left:220px;
+
+
+}
+
+table.payroll
+
+{
+text-align: center; 
+ padding: 10px;
+ 
+
+}
+
+table.payroll td
+{
+border: 1px solid #d1d6eb;
+font:13px 'Corbel';
+background:white;
+
+}
+
+table.payroll th
+{
+border: 1px solid #d1d6eb;
+font:15px 'Corbel';
+font-weight:bold;
+background:#d1d6eb;
+
+}
+
+
+/*create popup*/
+#createpayroll:target, #createpayroll:target + #cover
+{ 
+display:block; 
+opacity:10; 
+} 
+
+
+#createpayroll
+{ 
+height:600px; 
+width:600px; 
+margin:0 auto; 
+position:relative; 
+z-index:10; display:none; 
+background:#717276; 
+border:5px solid #717276; 
+border-radius:0px;
+margin-top: -100px;
+} 
+/*create popup*/
+
+
+.payrolldatefrom
+{
+margin-top:20px;
+margin-left:-450px;
+font: 15px 'Corbel';
+font-weight:bold;
+
+}
+.txtpayrollfrom
+{
+margin-top:-20px;
+margin-left: -220px;
+
+}
+
+.payrolldateto
+{margin-top:-22px;
+margin-left:30px;
+font: 15px 'Corbel';
+font-weight:bold;
+
+}
+.txtpayrollto
+{
+margin-top:-20px;
+margin-left: 250px;
+
+}
+
+
+.hr2
+{
+background-color: black;
+margin-top:5px;
+width:595px;
+margin-left:-2px;
+
+}
+
+.pname
+{
+margin-left:-520px;
+font: 15px 'Corbel';
+font-weight:bold;
+}
+
+.pposition
+{
+margin-top:5px;
+margin-left:-505px;
+font: 15px 'Corbel';
+font-weight:bold;
+}
+
+.emptxt
+{
+margin-top:-20px;
+margin-left: -230px;
+
+}
+
+.posttxt
+{
+margin-top:-20px;
+margin-left: -230px;
+
+}
+
+.pempno
+{
+margin-top:-45px;
+margin-left:115px;
+font: 15px 'Corbel';
+font-weight:bold;
+}
+
+.pdept
+{
+margin-top:4px;
+margin-left:103px;
+font: 15px 'Corbel';
+font-weight:bold;
+}
+
+.empnotxt
+{
+margin-top:-20px;
+margin-left:390px;
+
+}
+.depttxt
+{
+margin-top:-20px;
+margin-left:390px;
+
+}
+
+
+
+.earnings
+{
+
+border:1px solid black;
+border-radius:5px;
+height:250px;
+width:290px;
+margin-top:10px;
+margin-left:-290px;
+}
+
+.learnings
+{background: #d1d6eb;
+    color:black;
+	font: 14px 'Corbel';
+	padding: 2px 5px;
+	margin-left:-200px;
+
+
+}
+
+.deductions
+{
+margin-top:-253px;
+margin-left:300px;
+border:1px solid black;
+border-radius:5px;
+height:200px;
+width:270px;
+}
+
+.deduct
+{background: #d1d6eb;
+    color:black;
+	font: 14px 'Corbel';
+	padding: 2px 5px;
+	margin-left:-180px;
+}
+
+.leavedetails
+{
+margin-top:55px;
+margin-left:-290px;
+border:1px solid black;
+border-radius:5px;
+height:170px;
+width:290px;
+}
+
+.details
+{background: #d1d6eb;
+    color:black;
+	font: 14px 'Corbel';
+	padding: 2px 5px;
+	margin-left:-170px;
+
+}
+
+.total
+{
+margin-top:-220px;
+margin-left:300px;
+border:1px solid black;
+border-radius:5px;
+height:130px;
+width:270px;
+}
+
+.totaldetails
+{
+background: #d1d6eb;
+    color:black;
+	font: 14px 'Corbel';
+	padding: 2px 5px;
+	margin-left:-210px;
+
+
+}
+
+.txtbox1
+{
+width:160px;
+}
+
+
+.txtbox2
+{
+width:180px;
+}
+
+
+.tax
+{
+font: 14px 'Corbel';
+margin-left:-160px;
+}
+
+.txttax,.txtcash,.txtloans,.txtsss,.txtpagibig,.txtphealth,.txtcarita,.txttotalearnings,.txttotaldeductions,.txtnetpay,.txtleavepaid
+{
+margin-top:-20px;
+margin-left:105px;
+}
+
+.cashadv
+{
+font: 14px 'Corbel';
+margin-top:5px;
+margin-left:-170px;
+}
+
+
+.companyloans
+{
+font: 14px 'Corbel';
+margin-top:5px;
+margin-left:-160px;
+}
+
+.sss
+{
+font: 14px 'Corbel';
+margin-top:5px;
+margin-left:-225px;
+}
+
+.pagibig
+{
+font: 14px 'Corbel';
+margin-top:5px;
+margin-left:-200px;
+}
+
+.phealth
+{
+font: 14px 'Corbel';
+margin-top:5px;
+margin-left:-190px;
+}
+
+.carita
+{
+font: 14px 'Corbel';
+margin-top:5px;
+margin-left:-220px;
+}
+
+.totalearnings
+{
+font: 14px 'Corbel';
+margin-top:10px;
+margin-left:-185px;
+
+}
+
+.totaldeductions
+{
+font: 14px 'Corbel';
+margin-top:10px;
+margin-left:-170px;
+
+}
+
+.netpay
+{
+font: 14px 'Corbel';
+margin-top:10px;
+margin-left:-220px;
+
+}
+
+.leavepaid
+{
+font: 14px 'Corbel';
+margin-top:10px;
+margin-left:-200px;
+}
+
+/*save and clear button*/
+.saveclearbutton
+{
+
+margin-top:60px;
+margin-left:460px;
+
+}
+
+.regpay
+{
+font: 14px 'Corbel';
+margin-top:5px;
+margin-left:-220px;
+}
+
+.txtregpay,.txthoursrate,.txthoursworked,.txtminrate,.txtminworked,.txtovertime,.txtdailyrate,.txtdailyworked,.txtregholiday
+{
+margin-top:-20px;
+margin-left:90px;
+}
+
+.hoursrate
+{
+font: 14px 'Corbel';
+margin-top:5px;
+margin-left:-222px;
+}
+
+.hoursworked
+{
+font: 14px 'Corbel';
+margin-top:5px;
+margin-left:-205px;
+}
+
+.minrate
+{
+font: 14px 'Corbel';
+margin-top:5px;
+margin-left:-217px;
+}
+
+.minworked
+{
+font: 14px 'Corbel';
+margin-top:5px;
+margin-left:-196px;
+}
+
+.overtime
+{
+font: 14px 'Corbel';
+margin-top:5px;
+margin-left:-232px;
+}
+
+.dailyrate
+{
+font: 14px 'Corbel';
+margin-top:5px;
+margin-left:-225px;
+}
+
+.dailyworked
+{
+font: 14px 'Corbel';
+margin-top:5px;
+margin-left:-205px;
+}
+
+.regholiday
+{
+font: 14px 'Corbel';
+margin-top:5px;
+margin-left:-200px;
+}
+
+
+
+/*save and clear button*/
+
+table.leave
+
+{
+text-align: center; 
+ padding: 10px;
+
+}
+
+table.leave td
+{
+border: 1px solid #d1d6eb;
+font:13px 'Corbel';
+background:transparent;
+
+}
+
+table.leave th
+{
+border: 1px solid #d1d6eb;
+font:15px 'Corbel';
+font-weight:bold;
+background:#d1d6eb;
+
+}

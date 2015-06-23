@@ -1,0 +1,1427 @@
+<html>
+<head>
+<!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>-->
+<link type="text/css" rel="stylesheet" href="css/css-home.css"/>
+<link type="text/css" rel="stylesheet" href="css/css-crm.css"/>
+ <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"/>
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+
+<link type="text/css" rel="stylesheet" href="css/employeetabinformation.css"/>
+
+
+<script type="text/JavaScript">
+
+$(document).ready(function() { 
+
+	$('.btn-submit').click(function(e){
+	
+		// Declare the function variables:
+		// Parent form, form URL, email regex and the error HTML
+		var $formId = $("#form1").parents();
+		var formAction = $formId.attr('action');
+		var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+		var mobile= /([0-9]{10})|(\([0-9]{3}\)\s+[0-9]{3}\-[0-9]{4})/;
+		var $error = $('<span class="error"></span>');
+
+		// Prepare the form for validation - remove previous errors
+		$('p',$formId).removeClass('error');
+		$('span.error').remove();
+
+		// Validate all inputs with the class "required"
+		$('.required',$formId).each(function(){
+			var inputVal = $(this).val();
+			var $parentTag = $(this).parent();
+			if(inputVal == ''){
+				$parentTag.addClass('error').append($error.clone().text('Required Field'));
+			}
+			
+			// Run the email validation using the regex for those input items also having class "email"
+			if($(this).hasClass('email') == true){
+				if(!emailReg.test(inputVal)){
+					$parentTag.addClass('error').append($error.clone().text('Enter valid email'));
+				}
+			}
+			
+			
+			if($(this).hasClass('num') == true){
+				if(!mobile.test(inputVal)){
+					$parentTag.addClass('error').append($error.clone().text('Enter valid contact number'));
+				}
+			}
+			
+			
+			// Check passwords match for inputs with class "password"
+			/*if($(this).hasClass('password') == true){
+				var password1 = $('#password-1').val();
+				var password2 = $('#password-2').val();
+				if(password1 != password2){
+				$parentTag.addClass('error').append($error.clone().text('Passwords must match'));
+				}
+			}*/
+		});
+
+		// All validation complete - Check if any errors exist
+		// If has errors
+		if ($('span.error').length > 0) {
+			
+			$('span.error').each(function(){
+				
+				// Set the distance for the error animation
+				var distance = 5;
+				
+				// Get the error dimensions
+				var width = $(this).outerWidth();
+				
+				// Calculate starting position
+				var start = width + distance;
+				
+				// Set the initial CSS
+				$(this).show().css({
+					display: 'block',
+					opacity: 0,
+					right: -start+'px'
+				})
+				// Animate the error message
+				.animate({
+					right: -width+'px',
+					opacity: 1
+				}, 'slow');
+				
+			});
+		} else {
+			$formId.submit();
+		}
+		// Prevent form submission
+			e.preventDefault();
+	});
+	
+	// Fade out error message when input field gains focus
+	$('.required').focus(function(){
+		var $parent = $(this).parent();
+		$parent.removeClass('error');
+		$('span.error',$parent).fadeOut();
+	});
+});
+
+
+
+
+
+
+</script>
+
+
+
+<script type="text/javascript">
+$(function(){
+$("#tabscrm").tabs();
+
+
+});
+
+
+</script>
+
+<script type="text/javascript">
+$(function(){
+$("#crud").tabs();
+
+
+});
+
+
+</script>
+
+
+
+<title>EBMS- Customer Record Management </title>
+</head>
+<body>
+	<div class="whole">
+		<center>
+		<div class="centerbody">
+			<div class="header">	
+				<img src ="images/EBMS1.png" height="25%" width="100%">
+			
+			</div><!--header-->
+			
+			
+			<div class="menubar">
+			
+				<div class="div_welcome">
+					<img src ="images/emp.png" height="30" width="30">
+					<p>Welcome JAYCEE</p>
+					
+					<div class="level">
+						<p>Administrator</p>
+					
+					</div><!--level-->
+					
+				
+				</div><!--div_welcome-->
+				
+				<div class="menu">
+					
+					<ul class="cssMenu">
+							<li><a href="Home.html">HOME</a></li>
+							<li><a href="Crm.html" id="active">CRM</a></li>
+							<li><a href="#">SALES</a>
+								<ul>
+									<li><a href="OrderSlip.html">Order Slip</a></li>
+									<li><a href="#">Delivery Receipt</a></li>
+								</ul>
+							
+							</li>
+							<li><a href="Accounting.html">ACCOUNTING</a></li>
+							<li><a href="Purchasing.html">PURCHASING</a></li>
+							<li><a href="#">PERSONNEL</a>
+								<ul>
+									<li><a href="EmployeeProfile.html">Employee Profile</a></li>
+									<li><a href="EmployeeSchedule.html">Employee Schedule</a></li>
+									<li><a href="EmployeeCashAdvance.html">Employee Cash Advance</a></li>
+									<li><a href="EmployeeDTR.html">Employee DTR</a></li>
+									<li><a href="Payroll.html">Payroll</a></li>
+									<li><a href="TimeSheetRecords.html">Time Sheet Records</a></li>
+								
+								</ul>
+							
+							</li>
+							<li><a href="AssetManagement.html">ASSET MANAGEMENT</a></li>
+							<li><a href="SystemRecords.html">SYSTEM RECORDS</a></li>
+							<li><a href="Reports.html">REPORTS</a></li>
+							<li><a href="Security.html">SECURITY</a></li>
+					</ul>
+				
+					
+				</div><!--menu-->
+				
+			
+				
+			</div><!--menubar-->
+			
+			<div class="content">
+			
+				<div class="summarybar">
+					<p>SUMMARY<p>
+				</div>
+				
+				<div class="summarycontent">
+					<p>As of 05/21/2015</p>
+					<hr></hr>
+					<p style="font-weight:bold;">NAME &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VALUE</p>
+					<hr></hr>
+					
+					<div class="datasummary">
+							<table style="width:200px">
+									 <tr>
+										<td><img src ="images/emp.png" height="15" width="15"></td>
+										<td>New Customer</td>		
+										<td>1</td>
+									</tr>
+									  
+									  <tr>
+										<td><img src ="images/emp.png" height="15" width="15"></td>
+										<td>Total Active</td>		
+										<td>13</td>
+										
+									  </tr>
+									  
+									  <tr>
+										<td><img src ="images/emp.png" height="15" width="15"></td>
+										<td>Total Inactive</td>		
+										<td>9</td>
+										
+									  </tr>
+									  
+									  <tr>
+										<td><img src ="images/emp.png" height="15" width="15"></td>
+										<td>Total Order</td>		
+										<td>0</td>
+										
+									  </tr>
+									  
+									  
+									  
+									  <tr>
+										<td><img src ="images/emp.png" height="15" width="15"></td>
+										<td>Total Collected</td>		
+										<td>P 0.00</td>
+										
+									  </tr>
+									  
+									  <tr>
+										<td><img src ="images/emp.png" height="15" width="15"></td>
+										<td>Cash on Hand</td>		
+										<td>P 0.00</td>
+										
+									  </tr>
+									  
+									  <tr>
+										<td><img src ="images/emp.png" height="15" width="15"></td>
+										<td>Total Sales</td>		
+										<td>P 0.00</td>
+										
+									  </tr>
+									  
+									  <tr>
+										<td><img src ="images/emp.png" height="15" width="15"></td>
+										<td>Exp. Voucher</td>		
+										<td>P 0.00</td>
+										
+									  </tr>
+									  
+									  <tr>
+										<td><img src ="images/emp.png" height="15" width="15"></td>
+										<td>Exp. A/P</td>		
+										<td>P 0.00</td>
+										
+									  </tr>
+						</table>
+					</div><!--datasummary-->
+					
+					
+				</div><!--summarycontent-->
+				
+				<div class="attendancebar">
+					<p>ATTENDANCE<p>
+				</div><!--attendancebar-->
+				
+				<div class="attendancecontent">
+						<div class="labelname">
+							<p>NAME <font color="green">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tue Apr 21,2015 </font><p>
+						</div><!--labelname-->
+						
+						
+						<hr></hr>
+						
+						<div class="attendancename">
+							<table class="aName"style="width:200px">
+									 <tr>
+										<td><img src ="images/emp.png" height="15" width="15"></td>
+										<td>Rosejelynn Bulante</td>		
+										
+									</tr>
+									  
+									  <tr>
+										<td><img src ="images/emp.png" height="15" width="15"></td>
+										<td>Kimberly Jean Senados</td>		
+										
+										
+									  </tr>
+									  
+									  <tr>
+										<td><img src ="images/emp.png" height="15" width="15"></td>
+										<td>Joseph John Javier Jr.</td>		
+										
+										
+									  </tr>
+									  
+							</table>
+						</div><!--attendancename-->
+				</div><!--attendancecontent-->
+			
+			<div class="c_crm">
+					<p class="crm">Customer Records Management</p>
+				
+			</div>
+			
+			<div class="crudbuttonbar">
+				<ul class="buttons">
+				
+						
+						<li><a href="#div_createcustomer"><img src="images/createIcon.png" height="32"></a></li>
+						<li><a href="#"><img src="images/editIcon.png" height="32"></a></li>
+						<li><a href="#" ><img src="images/deleteIcon.png" height="32"></a></li>
+						<li><a href="#" ><img src="images/restoreIcon.png" height="32"></a></li>
+						<li><a href="#"><img src="images/approveicon.png" height="32"></a></li>
+				</ul>
+			</div>
+			
+			
+			<div id="div_createcustomer"> 
+				<div class="div_customercontent">
+											
+											<a href="#" class="cancel">&times;</a> 
+												<p class="title">Customer Profile</p>
+												
+								<div class="div_customerwhiteArea">
+												<p class="custname">Customer Information</p>
+												<hr class="hr1"></hr>
+
+									<div class="div_customerimage">
+												<image src="images/workex.png" height=170 width=170>
+									</div>
+												
+									<div class="div_customerFields" id="sectionHide">
+													
+									<form id="form1" class="styled" action="" method="post"> <!--onsubmit="return validate(this)"-->
+											
+											<p class="custcode">Customer Code</p>
+											<p  class="txt_custcode"><input id="blackborder" type="text" disabled class="textbox" placeholder="<Auto>" ></p>
+											
+											<p class="customername">Customer Name</p>
+											<p  class="txt_customername"><input id="blackborder" type="text" class="textbox" class="text-input required"></p>
+											
+											<p class="customertype">Customer Type</p>
+											<p class="cmb_custtype">
+													<select class="textbox"" id="blackborder">
+														<option value="#">Walk-In</option>
+														<option value="#">Residential</option>
+														
+													</select> 
+											</p>
+											
+											<p class="industrytype">Industry Type</p>
+											<p class="cmb_industrytype">
+													<select class="textbox" id="blackborder">
+														<option value="#">Information Technology</option>
+														<option value="#">Manufacturing</option>
+														
+													</select> 
+											</p>
+											
+											<p class="emailaddress">Email Address</p>
+											<p  class="txt_emailaddress"><input name="email" id="blackborder" type="text" class="textbox" class="text-input required email"></p>
+											
+											<p class="mobilenum">Mobile Number</p>
+											<p  class="txt_mobilenum"><input id="blackborder" type="text" class="textbox" class="num" class="text-input required num"></p>
+											
+											<p class="phonenum">Phone Number</p>
+											<p  class="txt_phonenum"><input id="blackborder" type="text" class="textbox" class="text-input required"></p>
+											
+											<p class="faxnum">Fax Number</p>
+											<p  class="txt_faxnum"><input id="blackborder" type="text" class="textbox" class="text-input required"></p>
+											
+											<p class="custremarks">Remarks</p>
+											<p  class="txt_rem"><textarea id="blackborder" rows="5" class="textbox" ></textarea></p>
+											
+									
+											
+									</div><!--div_customerFields-->
+											
+									<br>
+								
+									<div class="createcustomerbuttons">
+											
+											
+											
+											
+												
+												<input id="btn" class="inputin" class="btn-submit" type="submit" value="SAVE"/>&nbsp; <!--onclick="showHideform()"-->
+												<input class="inputin" type="button" value="CLEAR" onclick="this.form.reset()"/>
+												
+											
+									</div><!--NEXT AND CANCEL Button-->
+							
+								</div><!--div_customerwhiteArea-->
+									</form>
+														
+					</div><!--customercontent-->	
+		
+				</div><!--div_createcustomer-->
+											
+				<div id="cover" align="center"> </div>
+			
+			<div class="searchbox">
+					<input class="search" type="text" placeholder=" Search...">
+					<p class="searchicon"><a href="#"><img src ="images/searchbut.png" height="15" width="15"></a></p>
+				
+				</div><!--searchbox-->
+				
+				<div class="printicon">
+					<a href="#"><img src ="images/printIcon.png" height="25" width="25"></a>
+				</div><!--printicon-->
+			
+			<div class="customerrecord">
+				
+									<table class="crmtable">
+									  <tr> 
+									    <th></th>
+										<th>Customer Code</th>		
+										<th>Customer Name</th>
+										<th>Customer Type</th>
+										<th>Phone/Mobile No.</th>
+										<th>Industry Type</th>
+										<th>Email</th>
+										
+									  </tr>
+									  
+									  <tr>
+										
+										<td><img id="image" src ="images/emp.png" height="12" width="12"></a></td>
+										<td>CUS-2011-000001</td>		
+										<td>Jc Evangelista</td>
+										<td>Walk-In</td>
+										<td>09123412341</td>
+										<td>Information Technology</td>
+										<td>jc@yahoo.com</td>
+										
+										
+										
+									  </tr>
+									  
+									  <tr>
+										<td><img id="image" src ="images/emp.png" height="12" width="12"></a></td>
+										<td>CUS-2011-000002</td>		
+										<td>Cyrill Peralta</td>
+										<td>Residential</td>
+										<td>09178712341</td>
+										<td>Information Technology</td>
+										<td>cyril@yahoo.com</td>
+									  </tr>
+									  
+									  <tr>
+										<td><img id="image" src ="images/emp.png" height="12" width="12"></a></td>
+										<td>CUS-2011-000003</td>		
+										<td>Joseph Javier</td>
+										<td>Walk-In</td>
+										<td>09112454365</td>
+										<td>Information Technology</td>
+										<td>joseph@yahoo.com</td>
+									  </tr>
+									  
+									   <tr>
+										<td><img id="image" src ="images/emp.png" height="12" width="12"></a></td>
+										<td>CUS-2011-000004</td>		
+										<td>John Rodriguez</td>
+										<td>Residential</td>
+										<td>09109765432</td>
+										<td>Marketing</td>
+										<td>john@yahoo.com</td>
+									  </tr>
+									  
+									   <tr>
+										<td><img id="image" src ="images/emp.png" height="12" width="12"></a></td>
+										<td>CUS-2011-000005</td>		
+										<td>Denzel Senados</td>
+										<td>Residential</td>
+										<td>09119087654</td>
+										<td>Manufacturing</td>
+										<td>denzel@yahoo.com</td>
+									  </tr>
+									  
+									
+									  
+									  <tr>
+										<td><img id="image" src ="images/emp.png" height="12" width="12"></a></td>
+										<td>CUS-2011-000006</td>		
+										<td>Kim Senados</td>
+										<td>Office</td>
+										<td>09786543212</td>
+										<td>Information Technology</td>
+										<td>kim@yahoo.com</td>
+									  </tr>
+									  
+									  <tr>
+										<td><img id="image" src ="images/emp.png" height="12" width="12"></a></td>
+										<td>CUS-2011-000007</td>		
+										<td>Heidy Viray</td>
+										<td>Office</td>
+										<td>09908765432</td>
+										<td>Information Technology</td>
+										<td>heidy@yahoo.com</td>
+									  </tr>
+									  
+									  <tr>
+										<td><img id="image" src ="images/emp.png" height="12" width="12"></a></td>
+										<td>CUS-2011-000008</td>		
+										<td>Chechan Amba</td>
+										<td>Office</td>
+										<td>09453234512</td>
+										<td>Information Technology</td>
+										<td>chechan@yahoo.com</td>
+									  </tr>
+									  
+									  <tr>
+										<td><img id="image" src ="images/emp.png" height="12" width="12"></a></td>
+										<td>EMP-2011IT-000009</td>		
+										<td>Grace Abuel </td>
+										<td>Residential</td>
+										<td>09786543123</td>
+										<td>Manufacturing</td>
+										<td>grace@yahoo.com</td>
+									  </tr>
+									  
+									  <tr>
+										<td><img id="image" src ="images/emp.png" height="12" width="12"></a></td>
+										<td>CUS-2011-000010</td>		
+										<td>Ruby Rose </td>
+										<td>Walk-In</td>
+										<td>09098712341</td>
+										<td>Manufacturing</td>
+										<td>ruby@yahoo.com</td>
+									  </tr>
+									  
+									  
+									   <tr>
+										<td><img id="image" src ="images/emp.png" height="12" width="12"></a></td>
+										<td>CUS-2011-000011</td>		
+										<td>Miguel San Juan</td>
+										<td>Walk-In</td>
+										<td>09126712891</td>
+										<td>Information Technology</td>
+										<td>miguelsanjuan@yahoo.com</td>
+									  </tr>
+									  
+									  
+									  <tr>
+										<td><img id="image" src ="images/emp.png" height="12" width="12"></a></td>
+										<td>CUS-2011-000012</td>		
+										<td>Mark Salonga </td>
+										<td>Residential</td>
+										<td>09986751231</td>
+										<td>Manufacturing</td>
+										<td>mark@yahoo.com</td>
+									  </tr>
+									  
+									 
+									  
+									  <tr>
+										<td><img id="image" src ="images/emp.png" height="12" width="12"></a></td>
+										<td>CUS-2011-000013</td>		
+										<td>Michelle Mike</td>
+										<td>Office</td>
+										<td>09907861251</td>
+										<td>Marketing</td>
+										<td>michelle@yahoo.com</td>
+									  </tr>
+									  
+									  <tr>	
+										<td><img id="image" src ="images/emp.png" height="12" width="12"></a></td>
+										<td>CUS-2011-000014</td>		
+										<td>Shella Ramon</td>
+										<td>Walk-In</td>
+										<td>09907612451</td>
+										<td>Manufacturing</td>
+										<td>shella@yahoo.com</td>
+									  </tr>
+									  
+									  <tr>
+										<td><img id="image" src ="images/emp.png" height="12" width="12"></a></td>
+										<td>CUS-2011-000015</td>		
+										<td>RoseJelynn Bulante</td>
+										<td>Residential</td>
+										<td>09127856901</td>
+										<td>Manufacturing</td>
+										<td>rosejelynn@yahoo.com</td>
+									  </tr>
+									 
+									 
+			</table>
+				</div><!--crmtable-->
+				
+			
+			<!--TABS-->
+			
+			
+			
+			<div class="main">
+			<div id="tabscrm" class="container">
+				<ul>
+					<li><a href="#tabs-transact">Transactions</a></li>
+					<li><a href="#tabs-location">Location</a></li>
+					<li><a href="#tabs-issueditem">Issued Item</a></li>
+					<li><a href="#tabs-checkpayment">Check Payment</a></li>
+			
+					<!--<li><a href="#tabs-2">Tab 2</a></li>-->
+				
+				</ul>
+				
+				
+				
+				<div id="tabs-transact" class="panel">
+					<div id="div1">
+						<p id="transaction">Transactions -</p> <p id="transact_name">Jc Evangelista</p>
+						
+						<div class="div_transact">
+							<table class="transacttable">
+									<tr>
+											<th>Doc. No.</th>
+											<th>Date</th>
+											<th>Gross Amount</th>
+											<th>Net Amount</th>
+											<th>Discount Amount</th>
+											<th>Sales Person</th>
+											<th>Created By</th>
+											
+									<tr>
+									
+									<tr>
+											<td>OS-2011-000001</td>
+											<td>Jun-01-2011</td>
+											<td>700.00</td>
+											<td>700.00</td>
+											<td>0.00</td>
+											<td>Gregorio Del Pilar</td>
+											<td>Gregorio Del Pilar</td>
+											<td style="border-style:none;"><a href="#" ><img id="image" src ="images/load.png" height="12" width="12"></a></td>
+											
+									</tr>
+									
+									<tr>
+											<td>OS-2011-000001</td>
+											<td>Jun-02-2011</td>
+											<td>900.00</td>
+											<td>000.00</td>
+											<td>0.00</td>
+											<td>Gregorio Del Pilar</td>
+											<td>Gregorio Del Pilar</td>
+											<td style="border-style:none;"><a href="#" ><img id="image" src ="images/load.png" height="12" width="12"></a></td>
+									</tr>
+									
+									<tr>
+											<td>OS-2011-000001</td>
+											<td>Jun-03-2011</td>
+											<td>700.00</td>
+											<td>700.00</td>
+											<td>0.00</td>
+											<td>Gregorio Del Pilar</td>
+											<td>Gregorio Del Pilar</td>
+											<td style="border-style:none;"><a href="#" ><img id="image" src ="images/load.png" height="12" width="12"></a></td>
+									</tr>
+									
+									<tr>
+											<td>OS-2011-000001</td>
+											<td>Jun-04-2011</td>
+											<td>3000.00</td>
+											<td>3000.00</td>
+											<td>0.00</td>
+											<td>Gregorio Del Pilar</td>
+											<td>Gregorio Del Pilar</td>
+											<td style="border-style:none;"><a href="#" ><img id="image" src ="images/load.png" height="12" width="12"></a></td>
+									</tr>
+									
+									<tr>
+											<td>OS-2011-000001</td>
+											<td>Jun-05-2011</td>
+											<td>5000.00</td>
+											<td>5000.00</td>
+											<td>0.00</td>
+											<td>Gregorio Del Pilar</td>
+											<td>Gregorio Del Pilar</td>
+											<td style="border-style:none;"><a href="#" ><img id="image" src ="images/load.png" height="12" width="12"></a></td>
+									</tr>
+									
+									<tr>
+											<td>OS-2011-000001</td>
+											<td>Jun-06-2011</td>
+											<td>1000.00</td>
+											<td>1000.00</td>
+											<td>0.00</td>
+											<td>Gregorio Del Pilar</td>
+											<td>Gregorio Del Pilar</td>
+											<td style="border-style:none;"><a href="#" ><img id="image" src ="images/load.png" height="12" width="12"></a></td>
+									</tr>
+								
+							</table>
+						</div><!--div_transact-->
+					
+					</div><!--div1-->
+					
+					<div id="div2">
+						
+						<p id="details1">Details</p>
+						
+						<div class="div_details">
+							<table class="detailstable">
+									<tr>
+											<th>Quantity</th>
+											<th>Unit</th>
+											<th>Item Code</th>
+											<th>Category</th>
+											<th>Unit Price</th>
+											<th>Total Amount</th>
+										
+											
+									<tr>
+									
+									<tr>
+											<td>1</td>
+											<td>PCS</td>
+											<td>CE-D-000082</td>
+											<td>Computer Equipment</td>
+											<td>700.00</td>
+											<td>700.00</td>
+											
+											
+									</tr>
+									
+									<tr>
+											<td>1</td>
+											<td>PCS</td>
+											<td>CE-D-000083</td>
+											<td>Computer Equipment</td>
+											<td>700.00</td>
+											<td>700.00</td>
+											</tr>
+									
+									<tr>
+											<td>1</td>
+											<td>PCS</td>
+											<td>CE-D-000084</td>
+											<td>Computer Equipment</td>
+											<td>700.00</td>
+											<td>700.00</td>
+											</tr>
+									
+									<tr>
+											<td>1</td>
+											<td>PCS</td>
+											<td>CE-D-000085</td>
+											<td>Computer Equipment</td>
+											<td>700.00</td>
+											<td>700.00</td>
+											
+											</tr>
+									
+									<tr>
+											<td>1</td>
+											<td>PCS</td>
+											<td>CE-D-000086</td>
+											<td>Computer Equipment</td>
+											<td>1200.00</td>
+											<td>1200.00</td>
+											</tr>
+									
+									<tr>
+											<td>1</td>
+											<td>PCS</td>
+											<td>CE-D-000087</td>
+											<td>Computer Equipment</td>
+											<td>1000.00</td>
+											<td>1000.00</td>
+											</tr>
+										
+						
+						
+							</table>
+						</div><!--div_details-->
+						
+					
+					</div>
+					
+				
+				</div>
+				
+				<div id="tabs-location" class="panel">
+					<div id="tablocation1">
+							<p id="cust">Customer -</p> <p id="location_name">Jc Evangelista</p>
+					
+						
+						<div>
+				
+							<ul class="crudlocation">
+												<li><a href="#div_customerlocation" ><img src="images/addSmall.png" width="18" height="18"></a></li>
+												<li><a href="#" ><img src="images/editSmall.png" width="18" height="18"></a></li>
+												<li><a href="#" ><img src="images/deleteSmall.png" width="18" height="18"></a></li>
+												<li><a href="#" ><img src="images/restoreSmall.png"  width="18" height="18"></a></li>
+							
+						
+							
+							</ul>
+			
+						</div>
+						
+						
+						<div id="div_customerlocation"> 
+							<div class="div_locationcontent">
+											
+											<a href="#" class="cancel">&times;</a> 
+												<p class="title">Customer Profile</p>
+												
+								<div class="div_locationwhiteArea">
+												<p class="contacts">Location</p>
+												<hr class="hr1"></hr>
+
+									<div class="div_locationimage">
+												<image src="images/locationIcon.png" height=170 width=170>
+									</div>
+												
+									<div class="div_locationFields" id="sectionHide">
+													
+									<form id="form" method="post"  action="#" onsubmit="return validate(this)">
+											
+											<p class="locationcustcode">Customer Code</p>
+											<p  class="txt_locationcustcode"><input id="blackborder" type="text" disabled class="textbox" placeholder="<Auto>"></p>
+											
+											<p class="locationtype1">Location Type</p>
+											<p  class="txt_loctype1"><input id="blackborder" type="text" disabled class="textbox" placeholder="Main"></p>
+											
+											<p class="city">City</p>
+											<p  class="txt_city"><input id="blackborder" type="text" class="textbox"></p>
+											
+											<p class="barangay">Barangay</p>
+											<p  class="txt_barangay"><input id="blackborder" type="text" class="textbox"></p>
+											
+											<p class="subdivision">Subdivision</p>
+											<p  class="txt_subdivision"><input id="blackborder" type="text" class="textbox"></p>
+											
+											<p class="num1">Unit/ Bldg / House </p>
+											<p class="num2">Lot/ Blk. / Phase No. </p>
+											<p  class="txt_num"><input id="blackborder" type="text" class="textbox"></p>
+											
+											
+									</div><!--div_contactFields-->
+											
+									<br>
+								
+									<div class="locationbuttons">
+											
+												<input id="btn" class="inputin" type="submit" value="SAVE" onclick="showHideform()"/>&nbsp;
+												<input class="inputin" type="button" value="CLEAR" onclick="this.form.reset()"/>
+												
+											
+									</div><!--locationbuttons-->
+							
+								</div><!--div_locationwhiteArea-->
+									</form>
+														
+					</div><!--div_locationcontent-->	
+		
+				</div><!--div_customerlocation-->
+											
+				<div id="cover" align="center"> </div>
+						
+						
+						
+					
+						<div class="div_location">
+							<table class="locationtable">
+									<tr>
+											<th></th>
+											<th>Location Type</th>
+											<th>Unit/Bldg/House/Lot/Blk./Phase No.</th>
+											<th>Street Name</th>
+											<th>Barangay</th>
+											<th>Subdivision</th>
+											<th>City</th>
+											
+											
+									<tr>
+									
+									<tr>
+											<td><a href="#" ><img id="image" src ="images/load.png" height="12" width="12"></a></td>
+											<td>Branch</td>
+											<td>1944</td>
+											<td>Modesto St.</td>
+											<td>Brgy. 689</td>
+											<td></td>
+											<td>Malate, Manila</td>
+											<td style="border-style:none;"><a href="#" ><img id="image" src ="images/load.png" height="12" width="12"></a></td>
+											
+									</tr>
+									
+									<tr>
+											<td><a href="#" ><img id="image" src ="images/load.png" height="12" width="12"></a></td>
+											<td>Main Office</td>
+											<td>105</td>
+											<td>A.V Cruz St.</td>
+											<td>Kalawaan</td>
+											<td></td>
+											<td>Pasig City</td>
+											<td style="border-style:none;"><a href="#" ><img id="image" src ="images/load.png" height="12" width="12"></a></td>
+									</tr>
+									
+									<tr>
+											<td><a href="#" ><img id="image" src ="images/load.png" height="12" width="12"></a></td>
+											<td>Main Office</td>
+											<td>Unit 514 VGP Center 6772</td>
+											<td>Ayala Ave</td>
+											<td></td>
+											<td>Legazpi Village</td>
+											<td>Makati City</td>
+											<td style="border-style:none;"><a href="#" ><img id="image" src ="images/load.png" height="12" width="12"></a></td>
+									</tr>
+								
+							</table>
+						</div><!--div_location-->
+				
+					
+					</div>
+				
+					<div id="tablocation2">
+							<p id="contact1">Contact</p>
+						
+						<div>
+				
+							<ul class="crudcontact">
+												<li><a href="#div_createcontact" ><img src="images/addSmall.png" width="18" height="18"></a></li>
+												<li><a href="#" ><img src="images/editSmall.png" width="18" height="18"></a></li>
+												<li><a href="#" ><img src="images/deleteSmall.png" width="18" height="18"></a></li>
+												<li><a href="#" ><img src="images/restoreSmall.png"  width="18" height="18"></a></li>
+							</ul>
+			
+						</div>
+						
+						
+						
+						<div id="div_createcontact"> 
+							<div class="div_contactcontent">
+											
+											<a href="#" class="cancel">&times;</a> 
+												<p class="title">Customer Profile</p>
+												
+								<div class="div_contactwhiteArea">
+												<p class="contacts">Contact</p>
+												<hr class="hr1"></hr>
+
+									<div class="div_contactimage">
+												<image src="images/contactIcon.png" height=170 width=170>
+									</div>
+												
+									<div class="div_contactFields" id="sectionHide">
+													
+									<form id="form" method="post"  action="#" onsubmit="return validate(this)">
+											
+											<p class="custcode1">Customer Code</p>
+											<p  class="txt_custcode1"><input id="blackborder" type="text" disabled class="textbox" placeholder="<Auto>"></p>
+											
+											<p class="locationtype">Location Type</p>
+											<p  class="txt_loctype"><input id="blackborder" type="text" disabled class="textbox" placeholder="Main"></p>
+											
+											<p class="contactname">Contact Name</p>
+											<p  class="txt_contactname"><input id="blackborder" type="text" class="textbox"></p>
+											
+											<p class="jobtitle">Job Title</p>
+											<p class="cmb_jobtitle">
+													<select class="textbox" id="blackborder">
+														<option value="#">Owner/Executive</option>
+														<option value="#">Web Developer</option>
+														
+													</select> 
+											</p>
+											
+											<p class="dept">Department</p>
+											<p class="cmb_dept">
+													<select class="textbox" id="blackborder">
+														<option value="#">Executive Department</option>
+														<option value="#">Information Technology Department</option>
+														
+													</select> 
+											</p>
+											
+											<p class="phonenum1">Phone Number</p>
+											<p  class="txt_phonenum1"><input id="blackborder" type="text" class="textbox"></p>
+											
+											<p class="faxnum1">Fax Number</p>
+											<p  class="txt_faxnum1"><input id="blackborder" type="text" class="textbox"></p>
+											
+											
+											
+									</div><!--div_contactFields-->
+											
+									<br>
+								
+									<div class="contactbuttons">
+											
+												<input id="btn" class="inputin" type="submit" value="SAVE" onclick="showHideform()"/>&nbsp;
+												<input class="inputin" type="button" value="CLEAR" onclick="this.form.reset()"/>
+												
+											
+									</div><!--NEXT AND CANCEL Button-->
+							
+								</div><!--div_contactwhiteArea-->
+									</form>
+														
+					</div><!--div_contactcontent-->	
+		
+				</div><!--div_createcontact-->
+											
+				<div id="cover" align="center"> </div>
+						
+						
+						
+						
+						<div class="div_contact">
+							<table class="contacttable">
+									<tr>
+											<th></th>
+											<th>Contact Name</th>
+											<th>Job Title</th>
+											<th>Department</th>
+											<th>Work Email</th>
+											<th>Phone No.</th>
+											<th>Mobile No.</th>
+											<th>Fax No.</th>
+										
+											
+									<tr>
+									
+									<tr>
+											<td><a href="#" ><img id="image" src ="images/load.png" height="12" width="12"></a></td>
+											<td>Rosejelynn Bulante</td>
+											<td>Administrator</td>
+											<td>Human Resource</td>
+											<td>rosejelynn@yahoo.com</td>
+											<td></td>
+											<td>09123412341</td>
+											<td></td>
+											
+											
+									</tr>
+									
+									<tr>
+											<td><a href="#" ><img id="image" src ="images/load.png" height="12" width="12"></a></td>
+											<td>Darwin Senados</td>
+											<td>Owner/Executive</td>
+											<td></td>
+											<td>darwin_senados@yahoo.com</td>
+											<td></td>
+											<td>09165853421</td>
+											<td></td>
+									</tr>
+									
+									<tr>
+											<td><a href="#" ><img id="image" src ="images/load.png" height="12" width="12"></a></td>
+											<td>Consorcia Senados</td>
+											<td>Web Developer</td>
+											<td>Information Technology Dept.</td>
+											<td>connie.senados@yahoo.com</td>
+											<td></td>
+											<td>09109765432</td>
+											<td></td>
+											</tr>
+									
+									<tr>
+											<td><a href="#" ><img id="image" src ="images/load.png" height="12" width="12"></a></td>
+											<td>Kimberly Jean Senados</td>
+											<td>Web Developer</td>
+											<td>Information Technology Dept.</td>
+											<td>kimberlyjeansenados@yahoo.com</td>
+											<td></td>
+											<td>09155025400</td>
+											<td></td>
+											
+											</tr>
+								
+							</table>
+						</div><!--div_contact-->
+						
+					
+					</div>
+				
+				
+				</div>
+				
+				<div id="tabs-issueditem" class="panel">
+					<div id="issueditem1">
+							<p id="issued">Issued Items-</p> <p id="issueditem_name">Jc Evangelista</p>
+							
+							<div class="div_issueditem">
+							<table class="issueditemtable">
+									<tr>
+											<th>Withdrawal No.</th>
+											<th>Date Issued</th>
+											<th>Purpose</th>
+											<th>Remarks</th>
+											
+											
+									<tr>
+									
+									<tr>
+											<td>WITH-2011-000001</td>
+											<td>Jun-01-2011</td>
+											<td>Dispose</td>
+											<td></td>
+											<td style="border-style:none;"><a href="#" ><img id="image" src ="images/load.png" height="12" width="12"></a></td>
+											
+									</tr>
+									
+									<tr>
+											<td>WITH-2011-000002</td>
+											<td>Jun-02-2011</td>
+											<td>Repair</td>
+											<td></td>
+											<td style="border-style:none;"><a href="#" ><img id="image" src ="images/load.png" height="12" width="12"></a></td>
+									</tr>
+									
+									<tr>
+											<td>WITH-2011-000003</td>
+											<td>Jun-03-2011</td>
+											<td>Dispose</td>
+											<td></td>
+											<td style="border-style:none;"><a href="#" ><img id="image" src ="images/load.png" height="12" width="12"></a></td>
+									</tr>
+									
+									<tr>
+											<td>WITH-2011-000004</td>
+											<td>Jun-04-2011</td>
+											<td>Dispose</td>
+											<td></td>
+											<td style="border-style:none;"><a href="#" ><img id="image" src ="images/load.png" height="12" width="12"></a></td>
+									</tr>
+									
+									<tr>
+											<td>WITH-2011-000005</td>
+											<td>Jun-05-2011</td>
+											<td>Repair</td>
+											<td></td>
+											<td style="border-style:none;"><a href="#" ><img id="image" src ="images/load.png" height="12" width="12"></a></td>
+									</tr>
+									
+									<tr>
+											<td>WITH-2011-000006</td>
+											<td>Jun-06-2011</td>
+											<td>Repair</td>
+											<td></td>
+											<td style="border-style:none;"><a href="#" ><img id="image" src ="images/load.png" height="12" width="12"></a></td>
+									</tr>
+								
+							</table>
+						</div><!--div_transact-->
+							
+							
+							
+					
+					</div>
+			
+					<div id="issueditem2">
+						<p id="details1">Details</p>
+						
+						<div class="div_detailsissue">
+							<table class="detailsissuetable">
+									<tr>
+											<th>Quantity</th>
+											<th>Unit</th>
+											<th>Item Code</th>
+											<th>Brand</th>
+											<th>Category</th>
+											<th>Sub Category</th>
+											<th>Item Description</th>
+											
+										
+											
+									<tr>
+									
+									<tr>
+											<td>1</td>
+											<td>PCS</td>
+											<td>CE-D-000082</td>
+											<td>A4tech</td>
+											<td>Computer Equipment</td>
+											<td>Keyboard</td>
+											<td>Keyboard for desktop</td>
+											
+											
+									</tr>
+									
+									<tr>
+											<td>1</td>
+											<td>PCS</td>
+											<td>CE-D-000083</td>
+											<td>A4tech</td>
+											<td>Computer Equipment</td>
+											<td>Keyboard</td>
+											<td>Keyboard for desktop</td>
+									</tr>
+									
+									<tr>
+											<td>1</td>
+											<td>PCS</td>
+											<td>CE-D-000084</td>
+											<td>A4tech</td>
+											<td>Computer Equipment</td>
+											<td>Keyboard</td>
+											<td>Keyboard for desktop</td>
+									</tr>
+									
+									<tr>
+											<td>1</td>
+											<td>PCS</td>
+											<td>CE-D-000085</td>
+											<td>A4tech</td>
+											<td>Computer Equipment</td>
+											<td>Keyboard</td>
+											<td>Keyboard for desktop</td>
+									</tr>
+									
+									<tr>
+											<td>1</td>
+											<td>PCS</td>
+											<td>CE-D-000086</td>
+											<td>A4tech</td>
+											<td>Computer Equipment</td>
+											<td>Keyboard</td>
+											<td>Keyboard for desktop</td>
+									</tr>
+									
+									<tr>
+											<td>1</td>
+											<td>PCS</td>
+											<td>CE-D-000087</td>
+											<td>A4tech</td>
+											<td>Computer Equipment</td>
+											<td>Keyboard</td>
+											<td>Keyboard for desktop</td>
+									</tr>
+										
+						
+						
+							</table>
+						</div><!--div_detailsissue-->
+					
+					</div><!--issueditem2-->
+				</div><!--tabs-issueditem-->
+				
+				<div id="tabs-checkpayment" class="panel">
+						<div id="checks">
+						
+							<div class="div_checkpayment">
+							<table class="checkpaymenttable">
+									<tr>
+											<th>Check No.</th>
+											<th>Account No.</th>
+											<th>Account Name</th>
+											<th>Amount</th>
+											<th>Bank</th>
+											<th>Address</th>
+											<th>Date Issued</th>
+											<th>Due Date</th>
+											<th>Date Posted</th>
+											
+										
+											
+									<tr>
+									
+									<tr>
+											<td>111111</td>
+											<td>1599-3254-12</td>
+											<td>SMESoft Inc.</td>
+											<td>10,000.00</td>
+											<td>Bank of the Philippine Island</td>
+											<td>Ayala, Makati City</td>
+											<td>Sat Dec 03, 2011</td>
+											<td>Mon Dec 19, 2011</td>
+											<td>Thurs Dec 25, 2011</td>
+											
+											
+									</tr>
+									
+									<tr>
+											<td>111111</td>
+											<td>1599-3254-12</td>
+											<td>SMESoft Inc.</td>
+											<td>10,000.00</td>
+											<td>Bank of the Philippine Island</td>
+											<td>Ayala, Makati City</td>
+											<td>Sat Dec 03, 2011</td>
+											<td>Mon Dec 19, 2011</td>
+											<td>Thurs Dec 25, 2011</td>
+											
+											
+									</tr>
+									
+									<tr>
+											<td>111111</td>
+											<td>1599-3254-12</td>
+											<td>SMESoft Inc.</td>
+											<td>10,000.00</td>
+											<td>Bank of the Philippine Island</td>
+											<td>Ayala, Makati City</td>
+											<td>Sat Dec 03, 2011</td>
+											<td>Mon Dec 19, 2011</td>
+											<td>Thurs Dec 25, 2011</td>
+											
+											
+									</tr>
+									
+									<tr>
+											<td>111111</td>
+											<td>1599-3254-12</td>
+											<td>SMESoft Inc.</td>
+											<td>10,000.00</td>
+											<td>Bank of the Philippine Island</td>
+											<td>Ayala, Makati City</td>
+											<td>Sat Dec 03, 2011</td>
+											<td>Mon Dec 19, 2011</td>
+											<td>Thurs Dec 25, 2011</td>
+											
+											
+									</tr>
+									
+									<tr>
+											<td>111111</td>
+											<td>1599-3254-12</td>
+											<td>SMESoft Inc.</td>
+											<td>10,000.00</td>
+											<td>Bank of the Philippine Island</td>
+											<td>Ayala, Makati City</td>
+											<td>Sat Dec 03, 2011</td>
+											<td>Mon Dec 19, 2011</td>
+											<td>Thurs Dec 25, 2011</td>
+											
+											
+									</tr>
+									
+									<tr>
+											<td>111111</td>
+											<td>1599-3254-12</td>
+											<td>SMESoft Inc.</td>
+											<td>10,000.00</td>
+											<td>Bank of the Philippine Island</td>
+											<td>Ayala, Makati City</td>
+											<td>Sat Dec 03, 2011</td>
+											<td>Mon Dec 19, 2011</td>
+											<td>Thurs Dec 25, 2011</td>
+											
+											
+									</tr>
+									
+							</table>
+						</div><!--div_detailsissue-->
+					
+						
+						
+						
+						</div>
+					
+				</div>
+				
+				
+		
+			</div><!--TABS-->
+			
+			
+		</div>
+		
+		
+			
+			</div><!--content-->
+			<br><br><br>
+			
+		<footer>
+			<div class="footer1">
+				<div class="contact">
+						<p>Get Connected</p>
+						
+						<ul class="footerimage">
+									<li><a href="#" ><img src="images/facebook.png" width="25" height="25"></a></li>
+									<li><a href="#" ><img src="images/instagram.png"  width="25" height="25"></a></li>
+									<li><a href="#" ><img src="images/twitter.png"  width="25" height="25"></a></li>
+						</ul>
+				</div><!--contact-->
+				
+				<div class="linktab">
+							<p><a href="Home.html">HOME</a> | <a href="#">CRM</a> | <a href="#">SALES</a> | <a href="#">ACCOUNTING</a> |  
+							<a href="#">PURCHASING |</a>
+							<a href="EmployeeProfile.html" id="active">PERSONNEL</a> | <a href="#">ASSET MANAGEMENT</a> | <a href="#">SYSTEM RECORDS</a> | 
+							<a href="#">REPORTS</a> | <a href="#">SECURITY</a></p>
+				</div><!--linktab-->
+				
+				<div class="copyright">
+					
+						<p>Copyright 2015  smesoft.com.ph All Rights Reserved</p>
+				</div><!--copyright-->
+			
+			</div><!--footer1>-->
+		</footer>
+
+		</div><!--centerbody-->
+		</center>
+
+	</div><!--whole-->
+	
+</body>
+</html>

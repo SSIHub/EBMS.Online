@@ -1,0 +1,1479 @@
+<html>
+<head>
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+<link type="text/css" rel="stylesheet" href="css/employeetabinformation.css"/>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+<link type="text/css" rel="stylesheet" href="css/css-home.css"/>
+<link type="text/css" rel="stylesheet" href="css/css-sales.css"/>
+
+<script type="text/javascript">
+$(function(){
+$("#tabs").tabs();
+
+
+});
+
+
+</script>
+<title>EBMS-Sales</title>
+
+
+</head>
+<body>
+	<div class="whole">
+		<center>
+		<div class="centerbody">
+			<div class="header">	
+				<img src ="images/EBMS1.png" height="25%" width="100%">
+			
+			</div><!--header-->
+			
+			
+			<div class="menubar">
+			
+				<div class="div_welcome">
+					<img src ="images/emp.png" height="30" width="30">
+					<p>Welcome JAYCEE</p>
+					
+					<div class="level">
+						<p>Administrator</p>
+					
+					</div><!--level-->
+					
+				
+				</div><!--div_welcome-->
+				
+				<div class="menu">
+					
+					<ul class="cssMenu">
+							<li><a href="Home.html">HOME</a></li>
+							<li><a href="Crm.html">CRM</a></li>
+							<li><a href="#" id="active">SALES</a>
+								<ul>
+									<li><a href="OrderSlip.html">Order Slip</a></li>
+									<li><a href="DeliveryReceiptRecords.html">Delivery Receipt</a></li>
+								</ul>
+							</li>	
+								
+								
+							<li><a href="Accounting.html">ACCOUNTING</a></li>
+							<li><a href="#">PURCHASING</a>
+							
+							<ul>
+									<li><a href="PurchaseRequisition.html">Purchase Requisition</a></li>
+									<li><a href="PurchaseOrder.html">Purchase Order</a></li>
+									<li><a href="SepplierManagement.html">Supplier Management</a></li>
+								</ul>
+							
+							
+							
+							</li>
+							<li><a href="#">PERSONNEL</a>
+								<ul>
+									<li><a href="EmployeeProfile.html">Employee Profile</a></li>
+									<li><a href="EmployeeSchedule.html">Employee Schedule</a></li>
+									<li><a href="EmployeeCashAdvance.html">Employee Cash Advance</a></li>
+									<li><a href="EmployeeDTR.html">Employee DTR</a></li>
+									<li><a href="Payroll.html">Payroll</a></li>
+									<li><a href="TimeSheetRecords.html">Time Sheet Records</a></li>
+								
+								</ul>
+							
+							
+							
+							
+							</li>
+							<li><a href="AssetManagement.html">ASSET MANAGEMENT</a></li>
+							<li><a href="SystemRecords.html">SYSTEM RECORDS</a></li>
+							<li><a href="Reports.html">REPORTS</a></li>
+							<li><a href="Security.html">SECURITY</a></li>
+					</ul>
+				
+					
+				</div><!--menu-->
+				
+			
+				
+			</div><!--menubar-->
+			
+			<div class="content">
+			
+					<div class="summarybar">
+					<p>SUMMARY<p>
+				</div>
+				
+				<div class="summarycontent">
+					<p>As of 05/21/2015</p>
+					<hr></hr>
+					<p style="font-weight:bold;">NAME &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VALUE</p>
+					<hr></hr>
+					
+					<div class="datasummary">
+							<table style="width:200px">
+									 <tr>
+										<td><img src ="images/emp.png" height="15" width="15"></td>
+										<td>New Customer</td>		
+										<td>1</td>
+									</tr>
+									  
+									  <tr>
+										<td><img src ="images/emp.png" height="15" width="15"></td>
+										<td>Total Active</td>		
+										<td>13</td>
+										
+									  </tr>
+									  
+									  <tr>
+										<td><img src ="images/emp.png" height="15" width="15"></td>
+										<td>Total Inactive</td>		
+										<td>9</td>
+										
+									  </tr>
+									  
+									  <tr>
+										<td><img src ="images/emp.png" height="15" width="15"></td>
+										<td>Total Order</td>		
+										<td>0</td>
+										
+									  </tr>
+									  
+									  
+									  
+									  <tr>
+										<td><img src ="images/emp.png" height="15" width="15"></td>
+										<td>Total Collected</td>		
+										<td>P 0.00</td>
+										
+									  </tr>
+									  
+									  <tr>
+										<td><img src ="images/emp.png" height="15" width="15"></td>
+										<td>Cash on Hand</td>		
+										<td>P 0.00</td>
+										
+									  </tr>
+									  
+									  <tr>
+										<td><img src ="images/emp.png" height="15" width="15"></td>
+										<td>Total Sales</td>		
+										<td>P 0.00</td>
+										
+									  </tr>
+									  
+									  <tr>
+										<td><img src ="images/emp.png" height="15" width="15"></td>
+										<td>Exp. Voucher</td>		
+										<td>P 0.00</td>
+										
+									  </tr>
+									  
+									  <tr>
+										<td><img src ="images/emp.png" height="15" width="15"></td>
+										<td>Exp. A/P</td>		
+										<td>P 0.00</td>
+										
+									  </tr>
+						</table>
+					</div><!--datasummary-->
+					
+					
+				</div><!--summarycontent-->
+				
+				<div class="attendancebar">
+					<p>ATTENDANCE<p>
+				</div><!--attendancebar-->
+				
+				<div class="attendancecontent">
+						<div class="labelname">
+							<p>NAME <font color="green">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tue Apr 21,2015 </font><p>
+						</div><!--labelname-->
+						
+						
+						<hr></hr>
+						
+						<div class="attendancename">
+							<table class="aName"style="width:200px">
+									 <tr>
+										<td><img src ="images/emp.png" height="15" width="15"></td>
+										<td>Rosejelynn Bulante</td>		
+										
+									</tr>
+									  
+									  <tr>
+										<td><img src ="images/emp.png" height="15" width="15"></td>
+										<td>Kimberly Jean Senados</td>		
+										
+										
+									  </tr>
+									  
+									  <tr>
+										<td><img src ="images/emp.png" height="15" width="15"></td>
+										<td>Joseph John Javier Jr.</td>		
+										
+										
+									  </tr>
+									  
+							</table>
+						</div><!--attendancename-->
+				</div><!--attendancecontent-->
+				
+				<div class="c_order">
+					<p class="order">Order</p>
+				
+				</div>
+				
+				<div class="b_order">
+					<p class="order1">SALES > Order</p>
+				
+				</div>
+				
+				<div class="crudbuttonbar">
+				<ul class="buttons">
+				
+						
+						<li><a href="#createOrder"><img src="images/createIcon.png" height="32"></a></li>
+						<li><a href="#editOrder"><img src="images/editIcon.png" height="32"></a></li>
+						<li><a href="#customerPayment" ><img src="images/deleteIcon.png" height="32"></a></li>
+						<li><a href="#" ><img src="images/restoreIcon.png" height="32"></a></li>
+						<li><a href="#deliveryReceiptbutton"><img src="images/import.png" height="32"></a></li>
+						
+				<div id="createOrder"> 
+					<div class="div_ordercontent">
+						<a href="#" class="cancel">&times;</a> 
+						<p class="title">Order Slip</p>
+												
+						<div class="div_orderwhiteArea">
+							<div class="div_orderfields" id="sectionHide">
+													
+							<form id="form" method="post"  action="#" onsubmit="return validate(this)">
+									<div class="info">
+									
+										<p class="cname">Name</p>
+										<p class="txt_name"><input type="text" id="blackborder" class="txtboxes" title="Full Name"></p>
+										
+										<p class="c_location">Location</p>
+										<p class="txt_location1"><input type="text" id="blackborder" class="txtboxes"></p>
+										
+										<p class="csalesperson">Sales Person</p>
+										<p class="txt_sales"><input type="text" disabled id="blackborder" class="txtboxes"></p>
+										
+										<p class="cremarks">Remarks</p>
+										<p class="txt_remarks"><textarea id="blackborder" rows="7" cols="23"></textarea></p>
+									
+									</div><!--info-->
+									
+									<div>
+										<fieldset class="f_paymentinfo">
+										<legend class="payment_info">Payment Information</legend>
+											<p class="cgrossamt">Gross Amount</p>
+											<p class="txt_gross"><input type="text" disabled id="blackborder" class="txtboxes"></p>
+											
+											
+											<p class="cnetamt">Net Amount</p>
+											<p class="txt_net"><input type="text" disabled id="blackborder" class="txtboxes"></p>
+											
+											<p class="cdisc"><input type="checkbox">&nbsp;&nbsp;Discount(%)</p>
+											<p class="txt_disc"><input type="text" disabled id="blackborder" class="txtboxes"></p>
+										
+										
+										</fieldset>
+									
+									</div>
+							<p class="prodlist">Product List</p>
+							
+							<div class="div_tableorder">
+									
+									<table class="tableorder">
+										
+										<tr>
+											<th>Item Code</th>
+											<th>Name</th>
+											<th>Description</th>
+											<th>Category</th>
+											<th>Unit Price</th>
+										<tr>
+										
+										<tr>
+											<td>WR-PWR-RND-000001</td>
+											<td>Aquabest</td>
+											<td>5 Gallons Round Purified Water(Refill)</td>
+											<td>Purified Water</td>
+											<td>50.00</td>
+										<tr>
+									
+										<tr>
+											<td>WR-PWR-SLM-000001</td>
+											<td>Aquabest</td>
+											<td>5 Gallons Slim Purified Water(Refill)</td>
+											<td>Purified Water</td>
+											<td>45.00</td>
+										<tr>
+											<tr>
+											<td>WR-ALK-RDA-000001</td>
+											<td>Wilkins</td>
+											<td>5 Gallons Round Alkaline Water(Refill)</td>
+											<td>Alkaline Water</td>
+											<td>75.00</td>
+										<tr>
+											<tr>
+											<td>WR-MIN-RNM-000001</td>
+											<td>Wilkins</td>
+											<td>5 Gallons Round Mineral Water(Refill)</td>
+											<td>Mineral Water</td>
+											<td>35.00</td>
+										<tr>
+											<tr>
+											<td>WR-MIN-SLM-000001</td>
+											<td>Wilkins</td>
+											<td>5 Gallons Slim Mineral Water(Refill)</td>
+											<td>Mineral Water</td>
+											<td>30.00</td>
+										<tr>
+										
+										
+										
+										
+										<tr>
+											<tr>
+											<td>WR-PWR-RNP-000002</td>
+											<td>Aquabest</td>
+											<td>5 Gallons Round Purified Water(Refill)</td>
+											<td>Purified Water</td>
+											<td>50.00</td>
+										<tr>
+										<tr>
+											<tr>
+											<td>SC-PWR-RNP-000003</td>
+											<td>Aquabest</td>
+											<td>5 Gallons Round Purified Water(Refill)</td>
+											<td>Purified Water</td>
+											<td>50.00</td>
+										<tr>
+										
+										
+										
+										
+										<tr>
+											<tr>
+											<td>WR-MIN-SLM-000002</td>
+											<td>Wilkins</td>
+											<td>5 Gallons Slim Mineral Water(Refill)</td>
+											<td>Mineral Water</td>
+											<td>40.00</td>
+										<tr>
+										<tr>
+											<tr>
+											<td>SC-PWR-RNP-000004</td>
+											<td>Aquabest</td>
+											<td>5 Gallons Round Purified Water(Refill)</td>
+											<td>Purified Water</td>
+											<td>70.00</td>
+										<tr>
+										
+										
+										<tr>
+											<tr>
+											<td>WR-MIN-SLM-000003</td>
+											<td>Wilkins</td>
+											<td>5 Gallons Slim Mineral Water(Refill)</td>
+											<td>Mineral Water</td>
+											<td>45.00</td>
+										<tr>
+										<tr>
+											<tr>
+											<td>WR-PWR-RNP-000003</td>
+											<td>Aquabest</td>
+											<td>5 Gallons Round Purified Water(Refill)</td>
+											<td>Purified Water</td>
+											<td>55.00</td>
+										<tr>
+										
+										<tr>
+											<tr>
+											<td>WR-PWR-RNP-000004</td>
+											<td>Aquabest</td>
+											<td>5 Gallons Round Purified Water(Refill)</td>
+											<td>Purified Water</td>
+											<td>60.00</td>
+										<tr>
+										<tr>
+											<tr>
+											<td>WR-PWR-RNP-000001</td>
+											<td>Wilkins</td>
+											<td>5 Gallons Round Purified Water(Refill)</td>
+											<td>Purified Water</td>
+											<td>60.00</td>
+										<tr>
+										
+										<tr>
+											<tr>
+											<td>WR-MIN-SLM-000004</td>
+											<td>Wilkins</td>
+											<td>5 Gallons Slim Mineral Water(Refill)</td>
+											<td>Mineral Water</td>
+											<td>30.00</td>
+										<tr>
+										<tr>
+											<tr>
+											<td>WR-MIN-SLM-000005</td>
+											<td>Wilkins</td>
+											<td>5 Gallons Slim Mineral Water(Refill)</td>
+											<td>Mineral Water</td>
+											<td>35.00</td>
+										<tr>
+										
+										
+									
+									</table>
+									
+							</div><!--div_tableorder-->
+												
+							
+							<p class="orderedlist">Ordered List</p>
+							
+							<div class="orderedlist">
+								<table class="tableorderedlist">
+										<tr>
+											<th>Quantity</th>
+											<th>Unit</th>
+											<th>Item Code</th>
+											<th>Name</th>
+											<th>Unit Price</th>
+											<th>Amount</th>
+										<tr>
+										
+										<tr>
+											<td>5</td>
+											<td>PCS</td>
+											<td>WR-MIN-SLM-000005</td>
+											<td>Wilkins</td>
+											<td>35.00</td>
+											<td>175.00</td>
+										
+										<tr>
+										
+										<tr>
+											<td>2</td>
+											<td>PCS</td>
+											<td>WR-MIN-SLM-000004</td>
+											<td>Wilkins</td>
+											<td>30.00</td>
+											<td>60.00</td>
+										
+										<tr>
+										
+										<tr>
+											<td>3</td>
+											<td>PCS</td>
+											<td>WR-PWR-RNP-000001</td>
+											<td>Wilkins</td>
+											<td>60.00</td>
+											<td>180.00</td>
+											
+										<tr>
+										
+										<tr>
+											<td>2</td>
+											<td>PCS</td>
+											<td>SC-PWR-RNP-000004</td>
+											<td>Aquabest</td>
+											<td>70.00</td>
+											<td>140.00</td>
+										
+										<tr>
+										
+										<tr>
+											<td>2</td>
+											<td>PCS</td>
+											<td>>WR-ALK-RDA-000001</td>
+											<td>Wilkins</td>
+											<td>75.00</td>
+											<td>150.00</td>
+										
+										<tr>	
+										<tr>
+											<td>2</td>
+											<td>PCS</td>
+											<td>>WR-ALK-RDA-000001</td>
+											<td>Wilkins</td>
+											<td>75.00</td>
+											<td>150.00</td>
+										
+										<tr>	
+										<tr>
+											<td>2</td>
+											<td>PCS</td>
+											<td>>WR-ALK-RDA-000001</td>
+											<td>Wilkins</td>
+											<td>75.00</td>
+											<td>150.00</td>
+										
+										<tr>	
+										<tr>
+											<td>2</td>
+											<td>PCS</td>
+											<td>>WR-ALK-RDA-000001</td>
+											<td>Wilkins</td>
+											<td>75.00</td>
+											<td>150.00</td>
+										
+										<tr><tr>
+											<td>2</td>
+											<td>PCS</td>
+											<td>>WR-ALK-RDA-000001</td>
+											<td>Wilkins</td>
+											<td>75.00</td>
+											<td>150.00</td>
+										
+										<tr>
+								</table>
+							
+							
+							</div>
+							
+												
+							</div><!--div_orderfields-->
+											
+							<br>
+											
+							<div class="orderbuttons">
+									<input id="btnsave" id="btn" class="inputin" type="submit" value="SAVE">&nbsp;
+									<input class="inputin" type="button" value="CLEAR" onclick="this.form.reset()"/>		
+									
+												
+							</div><!--NEXT AND CANCEL Button-->
+							
+						</div><!--div_orderwhiteArea-->
+							</form>
+														
+							</div><!--div_ordercontent-->
+		
+			</div><!--div_createOrder-->
+											
+					<div id="cover" align="center"></div>
+						
+						
+			<!--Customer Payment Popup-->			
+						
+					<div id="customerPayment"> 
+					<div class="div_customerPaymentcontent">
+						<a href="#" class="cancel">&times;</a> 
+						<p class="title">Customer Payment</p>
+												
+						<div class="div_customerPaymentwhiteArea">
+							<div class="div_customerpaymentfields" id="sectionHide">
+													
+							<form id="form" method="post"  action="#" onsubmit="return validate(this)">
+									<div class="paymentFields1">
+										
+										<p class="transactno"> Transaction No.</p>
+										<p class="txt_transactno"><input type="text" disabled id="blackborder" class="txtboxtransact"></p>
+										
+										<p class="transactdate"> Transaction Date</p>
+										<p class="txt_transactdate"><input type="text" id="blackborder" class="txtboxtransact"></p>
+										
+										<p class="customerName"> Customer Name</p>
+										<p class="txt_customerName"><input type="text" id="blackborder" class="txtboxtransact"></p>
+										
+										<p class="transactlocation"> Location</p>
+										<p class="txt_transactlocation"><textarea id="blackborder" rows="7" class="txtboxtransact"></textarea></p>
+										
+										<p class="accounttype"> Account Type</p>
+										<p class="cmb_accounttype">
+											<select id="blackborder" class="txtboxtransact">
+												<option>Savings</option>
+												<option>Current</option>
+											</select>
+										</p>
+									
+										<p class="accountno"> Account No.</p>
+										<p class="txt_accountno"><input type="text" id="blackborder" class="txtboxtransact"></p>
+										
+										<p class="accountname"> Account Name</p>
+										<p class="txt_accountname"><input type="text" id="blackborder" class="txtboxtransact"></p>
+									
+										<p class="checktype"> Check Type</p>
+										<p class="cmb_checktype">
+											<select id="blackborder" class="txtboxtransact">
+												<option>ON DATED CHECK</option>
+												<option>POST DATED CHECK</option>
+											</select>
+										</p>
+									
+									
+									</div><!--paymentFields1-->
+									
+									<div class="paymentFields2">
+											<p class="doctype"> Doc. Type</p>
+											<p class="txt_doctype"><input type="text" disabled id="blackborder" class="txtboxtransact"></p>
+											
+											<p class="refno"> Ref. No.</p>
+											<p class="txt_refno"><input type="text" disabled id="blackborder" class="txtboxtransact"></p>
+											
+											<p class="paymenttype"> Payment Type</p>
+											<p class="cmb_paymenttype">
+											<select id="blackborder" class="txtboxtransact">
+												<option>Cash</option>
+												<option>Check</option>
+											</select>
+											</p>
+											
+											<p class="particulars"> Particulars</p>
+											<p class="txt_particulars"><input type="text" disabled id="blackborder" class="txtboxtransact"></p>
+											
+											<p class="amount"> Amount</p>
+											<p class="txt_amount1"><input type="text" disabled id="blackborder" class="txtboxtransact"></p>
+											
+											<p class="bankname"> Bank Name</p>
+											<p class="txt_bankname1"><input type="text" disabled id="blackborder" class="txtboxtransact"></p>
+											
+											<p class="add1"> Address</p>
+											<p class="txt_address1"><textarea id="blackborder" rows="7" class="txtboxtransact"></textarea></p>
+											
+											<p class="checkno"> Check No.</p>
+											<p class="txt_checkno"><input type="text" disabled id="blackborder" class="txtboxtransact"></p>
+											
+											<p class="checkdateissue"> Check Date Issue</p>
+											<p class="txt_checkdateissue"><input type="text" disabled id="blackborder" class="txtboxtransact"></p>
+											
+											<p class="checkduedate"> Check Due Date</p>
+											<p class="txt_checkduedate"><input type="text" disabled id="blackborder" class="txtboxtransact"></p>
+											
+											<p class="bal">Balance</p>
+											<p class="txt_bal"><input type="text" disabled id="blackborder" class="txtboxtransact"></p>
+											
+											<p class="fromcollection">From Collection</p>
+											<p class="txt_fromcollection"><input type="checkbox"></p>
+											
+									</div>
+									
+							
+							</div><!--div_customerpaymentfields-->
+											
+							<br>
+											
+							<div class="customerPaymentbuttons">
+									<input id="btn" class="inputin" type="submit" value="SAVE">&nbsp;
+									<input class="inputin" type="button" value="CLEAR" onclick="this.form.reset()"/>
+							</div><!--customerPaymentbuttons-->
+							
+						</div><!--div_customerPaymentwhiteArea-->
+							</form>
+														
+							</div><!--div_customerPaymentcontent-->
+		
+			</div><!--customerPayment"-->
+											
+					<div id="cover" align="center"></div>	
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+				<!--EDITORDER--->
+						
+						<div id="editOrder"> 
+					<div class="div_ordercontent">
+						<a href="#" class="cancel">&times;</a> 
+						<p class="title">Order Slip</p>
+												
+						<div class="div_orderwhiteArea">
+							<div class="div_orderfields" id="sectionHide">
+													
+							<form id="form" method="post"  action="#" onsubmit="return validate(this)">
+									<div class="info">
+									
+										<p class="cname">Name</p>
+										<p class="txt_name"><input type="text" id="blackborder" class="txtboxes"></p>
+										
+										<p class="c_location">Location</p>
+										<p class="txt_location1"><input type="text" id="blackborder" class="txtboxes"></p>
+										
+										<p class="csalesperson">Sales Person</p>
+										<p class="txt_sales"><input type="text" disabled id="blackborder" class="txtboxes"></p>
+										
+										<p class="cremarks">Remarks</p>
+										<p class="txt_remarks"><textarea id="blackborder" rows="7" cols="23"></textarea></p>
+									
+									</div><!--info-->
+									
+									<div>
+										<fieldset class="f_paymentinfo1">
+										<legend class="payment_info">Payment Information</legend>
+											<p class="cterms">Terms</p>
+											<p class="txt_terms"><input type="text" disabled id="blackborder" class="txtboxes"></p>
+											
+											<p class="cdeposit">Deposit</p>
+											<p class="txt_deposit"><input type="text" disabled id="blackborder" class="txtboxes"></p>
+											
+										
+										
+											<p class="cgrossamt1">Gross Amount</p>
+											<p class="txt_gross"><input type="text" disabled id="blackborder" class="txtboxes"></p>
+											
+											
+											<p class="cnetamt1">Net Amount</p>
+											<p class="txt_net"><input type="text" disabled id="blackborder" class="txtboxes"></p>
+											
+											<p class="cdisc1"><input type="checkbox">&nbsp;&nbsp;Discount(%)</p>
+											<p class="txt_disc"><input type="text" disabled id="blackborder" class="txtboxes"></p>
+										
+										
+										</fieldset>
+									
+									</div>
+							<p class="prodlistedit">Product List</p>
+							
+							<div class="div_tableorderedit">
+									
+									<table class="tableorderedit">
+										
+										<tr>
+											<th>Item Code</th>
+											<th>Name</th>
+											<th>Description</th>
+											<th>Category</th>
+											<th>Unit Price</th>
+										<tr>
+										
+										<tr>
+											<td>WR-PWR-RND-000001</td>
+											<td>Aquabest</td>
+											<td>5 Gallons Round Purified Water(Refill)</td>
+											<td>Purified Water</td>
+											<td>50.00</td>
+										<tr>
+									
+										<tr>
+											<td>WR-PWR-SLM-000001</td>
+											<td>Aquabest</td>
+											<td>5 Gallons Slim Purified Water(Refill)</td>
+											<td>Purified Water</td>
+											<td>45.00</td>
+										<tr>
+											<tr>
+											<td>WR-ALK-RDA-000001</td>
+											<td>Wilkins</td>
+											<td>5 Gallons Round Alkaline Water(Refill)</td>
+											<td>Alkaline Water</td>
+											<td>75.00</td>
+										<tr>
+											<tr>
+											<td>WR-MIN-RNM-000001</td>
+											<td>Wilkins</td>
+											<td>5 Gallons Round Mineral Water(Refill)</td>
+											<td>Mineral Water</td>
+											<td>35.00</td>
+										<tr>
+											<tr>
+											<td>WR-MIN-SLM-000001</td>
+											<td>Wilkins</td>
+											<td>5 Gallons Slim Mineral Water(Refill)</td>
+											<td>Mineral Water</td>
+											<td>30.00</td>
+										<tr>
+										
+										
+										
+										
+										<tr>
+											<tr>
+											<td>WR-PWR-RNP-000002</td>
+											<td>Aquabest</td>
+											<td>5 Gallons Round Purified Water(Refill)</td>
+											<td>Purified Water</td>
+											<td>50.00</td>
+										<tr>
+										<tr>
+											<tr>
+											<td>SC-PWR-RNP-000003</td>
+											<td>Aquabest</td>
+											<td>5 Gallons Round Purified Water(Refill)</td>
+											<td>Purified Water</td>
+											<td>50.00</td>
+										<tr>
+										
+										
+										
+										
+										<tr>
+											<tr>
+											<td>WR-MIN-SLM-000002</td>
+											<td>Wilkins</td>
+											<td>5 Gallons Slim Mineral Water(Refill)</td>
+											<td>Mineral Water</td>
+											<td>40.00</td>
+										<tr>
+										<tr>
+											<tr>
+											<td>SC-PWR-RNP-000004</td>
+											<td>Aquabest</td>
+											<td>5 Gallons Round Purified Water(Refill)</td>
+											<td>Purified Water</td>
+											<td>70.00</td>
+										<tr>
+										
+										
+										<tr>
+											<tr>
+											<td>WR-MIN-SLM-000003</td>
+											<td>Wilkins</td>
+											<td>5 Gallons Slim Mineral Water(Refill)</td>
+											<td>Mineral Water</td>
+											<td>45.00</td>
+										<tr>
+										<tr>
+											<tr>
+											<td>WR-PWR-RNP-000003</td>
+											<td>Aquabest</td>
+											<td>5 Gallons Round Purified Water(Refill)</td>
+											<td>Purified Water</td>
+											<td>55.00</td>
+										<tr>
+										
+										<tr>
+											<tr>
+											<td>WR-PWR-RNP-000004</td>
+											<td>Aquabest</td>
+											<td>5 Gallons Round Purified Water(Refill)</td>
+											<td>Purified Water</td>
+											<td>60.00</td>
+										<tr>
+										<tr>
+											<tr>
+											<td>WR-PWR-RNP-000001</td>
+											<td>Wilkins</td>
+											<td>5 Gallons Round Purified Water(Refill)</td>
+											<td>Purified Water</td>
+											<td>60.00</td>
+										<tr>
+										
+										<tr>
+											<tr>
+											<td>WR-MIN-SLM-000004</td>
+											<td>Wilkins</td>
+											<td>5 Gallons Slim Mineral Water(Refill)</td>
+											<td>Mineral Water</td>
+											<td>30.00</td>
+										<tr>
+										<tr>
+											<tr>
+											<td>WR-MIN-SLM-000005</td>
+											<td>Wilkins</td>
+											<td>5 Gallons Slim Mineral Water(Refill)</td>
+											<td>Mineral Water</td>
+											<td>35.00</td>
+										<tr>
+										
+										
+									
+									</table>
+									
+							</div><!--div_tableorder-->
+												
+							
+							<p class="orderedlistedit">Ordered List</p>
+							
+							<div class="orderedlistedit">
+								<table class="tableorderedlistedit">
+										<tr>
+											<th>Quantity</th>
+											<th>Unit</th>
+											<th>Item Code</th>
+											<th>Name</th>
+											<th>Unit Price</th>
+											<th>Amount</th>
+										<tr>
+										
+										<tr>
+											<td>5</td>
+											<td>PCS</td>
+											<td>WR-MIN-SLM-000005</td>
+											<td>Wilkins</td>
+											<td>35.00</td>
+											<td>175.00</td>
+										
+										<tr>
+										
+										<tr>
+											<td>2</td>
+											<td>PCS</td>
+											<td>WR-MIN-SLM-000004</td>
+											<td>Wilkins</td>
+											<td>30.00</td>
+											<td>60.00</td>
+										
+										<tr>
+										
+										<tr>
+											<td>3</td>
+											<td>PCS</td>
+											<td>WR-PWR-RNP-000001</td>
+											<td>Wilkins</td>
+											<td>60.00</td>
+											<td>180.00</td>
+											
+										<tr>
+										
+										<tr>
+											<td>2</td>
+											<td>PCS</td>
+											<td>SC-PWR-RNP-000004</td>
+											<td>Aquabest</td>
+											<td>70.00</td>
+											<td>140.00</td>
+										
+										<tr>
+										
+										<tr>
+											<td>2</td>
+											<td>PCS</td>
+											<td>>WR-ALK-RDA-000001</td>
+											<td>Wilkins</td>
+											<td>75.00</td>
+											<td>150.00</td>
+										
+										<tr>	
+										<tr>
+											<td>2</td>
+											<td>PCS</td>
+											<td>>WR-ALK-RDA-000001</td>
+											<td>Wilkins</td>
+											<td>75.00</td>
+											<td>150.00</td>
+										
+										<tr>	
+										<tr>
+											<td>2</td>
+											<td>PCS</td>
+											<td>>WR-ALK-RDA-000001</td>
+											<td>Wilkins</td>
+											<td>75.00</td>
+											<td>150.00</td>
+										
+										<tr>	
+										<tr>
+											<td>2</td>
+											<td>PCS</td>
+											<td>>WR-ALK-RDA-000001</td>
+											<td>Wilkins</td>
+											<td>75.00</td>
+											<td>150.00</td>
+										
+										<tr><tr>
+											<td>2</td>
+											<td>PCS</td>
+											<td>>WR-ALK-RDA-000001</td>
+											<td>Wilkins</td>
+											<td>75.00</td>
+											<td>150.00</td>
+										
+										<tr>
+								</table>
+							
+							
+							</div>
+							
+												
+							</div><!--div_orderfields-->
+											
+							<br>
+											
+							<div class="orderbuttonsedit">
+									<input id="btn" class="inputin" type="submit" value="SAVE">&nbsp;
+									<input class="inputin" type="button" value="CLEAR" onclick="this.form.reset()"/>		
+									
+												
+							</div><!--NEXT AND CANCEL Button-->
+							
+						</div><!--div_orderwhiteArea-->
+							</form>
+														
+							</div><!--div_ordercontent-->
+		
+			</div><!--div_editOrder-->
+											
+					<div id="cover" align="center"></div>
+						
+						
+						
+				<!--Delivery Receipt-->
+				
+				<div id="deliveryReceiptbutton"> 
+					<div class="div_deliverycontent">
+							<a href="#" class="cancel">&times;</a> 
+												<p class="title">Delivery Receipt</p>
+												
+								<div class="div_deliverywhiteArea">
+									<form>
+										
+										<div class="drinfo">
+											<fieldset class="f_delivery">
+											<legend class="l_drinfo">Delivery Receipt Information</legend>
+													
+													<p class="cdr">DR No.</p>
+													<p class="txt_dr"><input type="text" disabled id="blackborder" class="dr_txtbox" placeholder="<Auto>"></p>
+													
+													<p class="crno">Reference No.</p>
+													<p class="txt_rno"><input type="text" disabled id="blackborder" class="dr_txtbox"></p>
+													
+													<p class="cdrby">Delivered By</p>
+													<p class="txt_drby"><input type="text" id="blackborder" class="dr_txtbox"></p>
+													
+													<p class="csalesper">Sales Person</p>
+													<p class="txt_salesper"><input type="text" disabled id="blackborder" class="dr_txtbox"></p>
+												
+											
+											<fieldset>
+
+										</div><!--drinfo-->
+										
+										<div class="otherinfo">
+											<fieldset class="f_otherinfo">
+											<legend class="l_oinfo">Other Information</legend>
+											
+													<p class="clocation2">Location</p>
+													<p class="txt_location2"><input type="text" disabled id="blackborder" class="dr_txtbox"></p>
+													
+													<p class="cship">Ship To</p>
+													<p><textarea class="txt_ship" cols="25" rows="4" id="blackborder"></textarea></p>
+													
+													<p class="carea">Area</p>
+													<p class="txt_area"><input type="text" disabled id="blackborder" class="dr_txtbox"></p>
+													
+													<p class="cattention">Attention</p>
+													<p class="txt_attention"><input type="text" disabled id="blackborder" class="dr_txtbox"></p>
+													
+											<fieldset>
+										
+										</div>
+										
+										<div class="customerinfo">
+										
+											<fieldset class="f_custinfo">
+											<legend class="l_custinfo">Customer Information</legend>
+												
+													<p class="ccustomer">Customer</p>
+													<p class="txt_customer"><input type="text" disabled id="blackborder" class="dr_txtbox" placeholder="Kim Senados"></p>
+													
+													<p class="ccity">City</p>
+													<p class="txt_city"><input type="text" disabled id="blackborder" class="dr_txtbox" placeholder="Makati"></p>
+											
+													<p class="cbrgy">Barangay</p>
+													<p class="txt_brgy"><input type="text" disabled id="blackborder" class="dr_txtbox" placeholder="Brgy. 689"></p>
+													
+													<p class="cadd">Address</p>
+													<p class="txt_add"><input type="text" disabled id="blackborder" class="dr_txtbox" placeholder="Makati"></p>
+													
+													<p class="c_area">Area</p>
+													<p class="txt_aarea"><input type="text" disabled id="blackborder" class="dr_txtbox" placeholder="Remedios St."></p>
+											
+											</fieldset>
+										
+										
+										</div>
+										
+										<div class="ordereditem">
+										
+											<fieldset class="f_orderitem">
+											<legend class="l_orderitem">Ordered Item</legend>
+												<table class="dr_order">
+													<tr>
+														<th>Quantity</th>
+														<th>Item Code</th>
+														<th>Unit Price</th>
+														<th>Amount</th>
+													
+													</tr>
+													
+													<tr>
+														<td>5</td>
+														<td>WR-MIN-SLM-000005</td>
+														<td>35.00</td>
+														<td>175.00</td>
+													
+													<tr>
+										
+													<tr>
+														<td>2</td>
+														
+														<td>WR-MIN-SLM-000004</td>
+													
+														<td>30.00</td>
+														<td>60.00</td>
+													
+													<tr>
+													
+													<tr>
+														<td>3</td>
+														
+														<td>WR-PWR-RNP-000001</td>
+														
+														<td>60.00</td>
+														<td>180.00</td>
+														
+													<tr>
+													
+													<tr>
+														<td>2</td>
+														
+														<td>SC-PWR-RNP-000004</td>
+														<td>Aquabest</td>
+														
+														<td>140.00</td>
+													
+													<tr>
+													
+													<tr>
+														<td>2</td>
+														
+														<td>>WR-ALK-RDA-000001</td>
+														
+														<td>75.00</td>
+														<td>150.00</td>
+													
+													<tr>	
+													
+												
+												
+												</table>
+												
+											<p class="c_remarks">Remarks</p>
+											<p class="txt_rremarks"><input type="text" disabled id="blackborder" class="dr_txtbox"></p>
+											
+											<p class="c_gamt">Gross Amount</p>
+											<p class="txt_gamt"><input type="text" disabled id="blackborder" class="dr_txtbox"></p>
+											
+											<p class="c_disc">Discount</p>
+											<p class="txt_discount"><input type="text" disabled id="blackborder" class="dr_txtbox" placeholder="0%"></p>
+											
+											<p class="c_netamt">Net Amount</p>
+											<p class="txt_netamt"><input type="text" disabled id="blackborder" class="dr_txtbox" placeholder="705.00"></p>
+											
+											
+											
+											
+											</fieldset>
+										
+										
+										</div>
+										
+										<div class="drbuttons">
+											<input id="btn" class="inputin" type="submit" value="SAVE">&nbsp;
+											<input class="inputin" type="button" value="CLEAR" onclick="this.form.reset()"/>
+												
+											
+										</div><!--drbuttons-->
+									</form>
+							
+								</div><!--div_deliverywhiteArea-->
+									
+														
+						</div>	<!--div_deliverycontent-->
+		
+						</div><!--deliveryReceiptbutton-->
+											
+									<div id="cover" 
+											align="center"> 
+									</div>
+				
+						
+						
+						
+						
+				</ul>
+				</div><!--crudbuttonbar-->
+				
+				
+				<div class="searchbox">
+					<input class="search" type="text" placeholder=" Search...">
+					<p class="searchicon"><a href="#"><img src ="images/searchbut.png" height="15" width="15"></a></p>
+				
+				</div><!--searchbox-->
+				
+				<div class="printicon">
+					<a href="#"><img src ="images/printIcon.png" height="25" width="25"></a>
+				</div><!--printicon-->
+			
+				
+				<div class="div_sales">
+				
+									<table class="salestable" style="width:77%">
+									  <tr> 
+									    
+										<th></th>
+										<th>OS.#</th>		
+										<th>Date Created</th>
+										<th>Sold To</th>
+										<th>Location</th>
+										<th>Address</th>
+										<th>Amount Due</th>
+										
+									  </tr>
+									  
+									  <tr>
+									
+										<td ><img src ="images/time.png" height="15" width="15"></td>
+										<td>OS-2011FD-000001</td>		
+										<td>Wednesday, May 20,2015</td>
+										<td>Emilio Aguinaldo</td>
+										<td>Malate, Manila</td>
+										<td>Remedios</td>
+										<td>760.00</td>
+										
+									
+										
+									  </tr>
+									  
+									  <tr>
+									
+										<td><img src ="images/time.png" height="15" width="15"></td>
+										<td>OS-2011FD-000002</td>		
+										<td>Thursday, May 21,2015</td>
+										<td>Jose Laurel</td>
+										<td>Malate, Manila</td>
+										<td>Remedios</td>
+										<td>560.00</td>
+										
+									
+									  </tr>
+									  
+									  <tr>
+									  
+										<td><img src ="images/time.png" height="15" width="15"></td>
+										<td>OS-2011FD-000003</td>		
+										<td>Friday, May 22,2015</td>
+										<td>Antonio Trillanes</td>
+										<td>Malate, Manila</td>
+										<td>Remedios</td>
+										<td>660.00</td>
+									
+									  </tr>
+									  
+									   <tr>
+									   
+										<td><img src ="images/time.png" height="15" width="15"></td>
+										<td>OS-2011ACCT-000004</td>		
+										<td>Saturday, May 23,2015</td>
+										<td>Bong Revilla</td>
+										<td>Malate, Manila</td>
+										<td>Remedios</td>
+										<td>500.00</td>
+										
+									  </tr>
+									  
+									   <tr>
+									
+										<td><img src ="images/time.png" height="15" width="15"></td>
+										<td>OS-2011ACCT-000005</td>		
+										<td>Sunday, May 24,2015</td>
+										<td>Nancy Binay</td>
+										<td>Malate, Manila</td>
+										<td>Remedios</td>
+										<td>6,710.00</td>
+										
+									  </tr>
+									  
+									
+									  
+									  <tr>
+									  
+										<td><img src ="images/time.png" height="15" width="15"></td>
+										<td>OS-2011IT-000006</td>		
+										<td>Monday, May 25,2015</td>
+										<td>Sonny Anggara</td>
+										<td>Malate, Manila</td>
+										<td>Remedios</td>
+										<td>4,320.00</td>
+										
+									  </tr>
+									  
+									  <tr>
+									
+										<td><img src ="images/time.png" height="15" width="15"></td>
+										<td>OS-2011IT-000007</td>		
+										<td>Tuesday, May 26,2015</td>
+										<td>Chiz Escudero</td>
+										<td>Malate, Manila</td>
+										<td>Remedios</td>
+										<td>11,110.00</td>
+										
+									  </tr>
+									  
+									  <tr>
+								
+										<td><img src ="images/time.png" height="15" width="15"></td>
+										<td>OS-2011IT-000008</td>		
+										<td>Wednesday, May 27,2015</td>
+										<td>Ferdinand Marcos</td>
+										<td>Malate, Manila</td>
+										<td>Remedios</td>
+										<td>7,000.00</td>
+										
+									  </tr>
+									  
+									  <tr>
+									  
+										<td><img src ="images/time.png" height="15" width="15"></td>
+										<td>OS-2011IT-000009</td>		
+										<td>Thursday, May 28,2015</td>
+										<td>Diosdado Macapagal</td>
+										<td>Malate, Manila</td>
+										<td>Remedios</td>
+										<td>25,000.00</td>
+										
+									  </tr>
+									  
+									  <tr>
+									
+										<td><img src ="images/time.png" height="15" width="15"></td>
+										<td>OS-2011IT-000010</td>		
+										<td>Friday, May 29,2015</td>
+										<td>Cory Aquino</td>
+										<td>Malate, Manila</td>
+										<td>Remedios</td>
+										<td>4,320.00</td>
+									
+									  </tr>
+									  
+									  
+									   <tr>
+									 
+										<td><img src ="images/time.png" height="15" width="15"></td>
+										<td>OS-2011HR-000011</td>		
+										<td>Saturday, May 30,2015</td>
+										<td>Fidel Ramos</td>
+										<td>Malate, Manila</td>
+										<td>Remedios</td>
+										<td>5,1200.00</td>
+										
+									  </tr>
+									  
+									  
+									  <tr>
+									
+										<td><img src ="images/time.png" height="15" width="15"></td>
+										<td>OS-2011FD-000012</td>		
+										<td>Sunday, May 31,2015</td>
+										<td>Erap Estrada</td>
+										<td>Malate, Manila</td>
+										<td>Remedios</td>
+										<td>5,100.00</td>
+										
+									  </tr>
+									  
+									 
+									  
+									  <tr>
+									
+										<td><img src ="images/time.png" height="15" width="15"></td>
+										<td>OS-2011FD-000013</td>		
+										<td>Monday, June 01,2015</td>
+										<td>Lito Lapid</td>
+										<td>Malate, Manila</td>
+										<td>Remedios</td>
+										<td>2,500.00</td>
+									
+									  </tr>
+									  
+									  <tr>
+									 
+										<td><img src ="images/time.png" height="15" width="15"></td>
+										<td>OS-2011ACCT-000014</td>		
+										<td>Tuesday, June 02,2015</td>
+										<td>Joel Torre</td>
+										<td>Malate, Manila</td>
+										<td>Remedios</td>
+										<td>25,000.00</td>
+										
+									  </tr>
+									  
+									  <tr>
+									 
+										<td><img src ="images/time.png" height="15" width="15"></td>
+										<td>OS-2011IT-000015</td>		
+										<td>Wednesday, June 03,2015</td>
+										<td>Gerald Anderson</td>
+										<td>Malate, Manila</td>
+										<td>Remedios</td>
+										<td>15,000.00</td>
+										
+									  </tr>
+									 
+									 
+			</table>
+				</div><!--timesheet-->
+				
+			
+			<!--TABS-->
+			<div id="tabs">
+				<ul>
+					<li><a href="#tabs-1">OS #</a></li>
+			
+					<!--<li><a href="#tabs-2">Tab 2</a></li>-->
+				
+				</ul>
+				
+				<div id="tabs-1">
+					<p>123781291982193729847</p>
+				
+				</div>
+				<!--
+				<div id="tabs-2">
+					<p>123781291982193729847387453847387438473847384738473874387</p>
+				
+				</div>-->
+			
+			
+			</div><!--TABS-->
+			
+			
+			
+			
+			</div><!--content-->
+			
+		<footer>
+			<div class="footer1">
+				<div class="contact">
+						<p>Get Connected</p>
+						
+						<ul class="footerimage">
+									<li><a href="#" ><img src="images/facebook.png" width="25" height="25"></a></li>
+									<li><a href="#" ><img src="images/instagram.png"  width="25" height="25"></a></li>
+									<li><a href="#" ><img src="images/twitter.png"  width="25" height="25"></a></li>
+						</ul>
+				</div><!--contact-->
+				
+				<div class="linktab">
+							<p><a href="Home.html">HOME</a> | <a href="#">CRM</a> | <a href="#" id="active">SALES</a> | <a href="#">ACCOUNTING</a> |  
+							<a href="#">PURCHASING |</a>
+							<a href="#">PERSONNEL</a> | <a href="#">ASSET MANAGEMENT</a> | <a href="#">SYSTEM RECORDS</a> | 
+							<a href="#">REPORTS</a> | <a href="#">SECURITY</a></p>
+				</div><!--linktab-->
+				
+				<div class="copyright">
+					
+						<p>Copyright 2015  smesoft.com.ph All Rights Reserved</p>
+				</div><!--copyright-->
+			
+			</div><!--footer1>-->
+		</footer>
+		</div><!--centerbody-->
+		</center>
+	
+	
+	
+	
+	</div><!--whole-->
+</body>
+</html>

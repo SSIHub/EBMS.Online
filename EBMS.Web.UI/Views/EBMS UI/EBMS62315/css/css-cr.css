@@ -1,0 +1,59 @@
+table.crmtable
+
+{
+margin-left:220px;
+ padding: 10px;
+
+}
+
+table.crmtable td
+{
+border: 1px solid #d1d6eb;
+font:13px 'Corbel';
+background:white;
+
+}
+
+table.crmtable th
+{
+border: 1px solid #d1d6eb;
+font:15px 'Corbel';
+font-weight:bold;
+background:#d1d6eb;
+
+}
+
+.container{
+    width: 100%;
+}
+
+.panel{
+    height: 160px;
+    overflow: auto;
+}
+
+
+#tabscrm
+{
+margin-top:10px;
+margin-left:215px;
+width:76%;
+font-weight:bold;
+font: 12px 'Corbel';
+
+}
+.crud
+{
+margin-left:640px;
+margin-top:-30px;
+
+
+}
+
+.crud li
+{
+display:inline-block;
+margin-right:-8px;
+}
+
+

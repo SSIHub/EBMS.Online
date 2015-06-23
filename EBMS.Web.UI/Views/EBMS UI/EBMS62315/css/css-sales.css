@@ -1,0 +1,1131 @@
+table.salestable
+
+{margin-left:220px;
+ padding: 10px;
+
+}
+
+table.salestable td
+{
+border: 1px solid #d1d6eb;
+font:13px 'Corbel';
+background:white;
+
+}
+
+table.salestable th
+{
+border: 1px solid #d1d6eb;
+font:15px 'Corbel';
+font-weight:bold;
+background:#d1d6eb;
+
+}
+
+.order
+{
+font:25px 'Corbel';
+font-weight:bold;
+margin-top:-425px;
+margin-left:-470px;
+
+}
+
+.order1
+{
+font:12px 'Corbel';
+font-weight:bold;
+margin-top:-415px;
+margin-left:880px;
+}
+
+
+#tabs
+{
+margin-top:10px;
+margin-left:215px;
+width:76%;
+height:25%;
+font: 10px 'Corbel';
+}
+
+/*Create Order*/
+#createOrder:target, #createOrder:target + #cover
+{ 
+display:block; 
+opacity:10; 
+} 
+
+
+#createOrder
+{ 
+height:580px; 
+width:800px; 
+margin:0 auto; 
+position:relative; 
+z-index:10; display:none; 
+background:#717276; 
+border:5px solid #717276; 
+border-radius:0px;
+margin-top: -100px;
+margin-left:-150px;
+}
+
+.div_ordercontent
+{
+background:#717276;
+height:100%;
+width:100%;
+}
+
+.div_orderwhiteArea
+{
+margin-top:25px;
+margin-left:-2px;
+background:white;
+height:94%;
+width:99%;
+}
+
+.cname
+{
+font:16px 'Corbel';
+font-weight:bold;
+margin-top:20px;
+margin-left:-700;
+}
+
+.c_location
+{
+font:16px 'Corbel';
+font-weight:bold;
+margin-top:20px;
+margin-left:-680;
+}
+
+.csalesperson
+{
+font:16px 'Corbel';
+font-weight:bold;
+margin-top:20px;
+margin-left:-652;
+}
+
+.cremarks
+{
+font:16px 'Corbel';
+font-weight:bold;
+margin-top:20px;
+margin-left:-680;
+}
+
+.txtboxes
+{
+width:180px;
+}
+
+.txt_name,.txt_location1,.txt_sales,.txt_remarks
+{
+margin-top:-20px;
+margin-left:-330px;
+
+}
+
+/*fieldset order*/
+.f_paymentinfo
+{
+
+border:1px solid black;
+border-radius:5px;
+height:170px;
+width:290px;
+margin-top:20px;
+margin-left:-450;
+
+}
+
+.payment_info
+{
+    color:black;
+	font: 15px 'Corbel';
+	font-weight:bold;
+	padding: 2px 5px;
+	margin-left:-80px;
+}
+
+.cgrossamt
+{
+font:14px 'Corbel';
+font-weight:bold;
+margin-top:20px;
+margin-left:-190;
+}
+
+.cnetamt
+{
+font:14px 'Corbel';
+font-weight:bold;
+margin-top:20px;
+margin-left:-200;
+}
+
+.cdisc
+{
+font:14px 'Corbel';
+font-weight:bold;
+margin-top:20px;
+margin-left:-188;
+}
+
+.txt_gross,.txt_net,.txt_disc
+{
+margin-top:-20px;
+margin-left:100px;
+
+}
+
+
+/*fieldset order*/
+
+/*Product List*/
+
+
+
+
+.prodlist
+{
+font:18px 'Corbel';
+font-weight:bold;
+margin-top:-435px;
+
+}
+
+.orderedlist
+{
+font:18px 'Corbel';
+font-weight:bold;
+margin-top:20px;
+
+}
+
+
+
+div.div_tableorder
+{
+width: 55%;
+max-height:37%;
+font-size: 12px; 
+overflow: auto;
+margin-top:10px;
+margin-left: 330px;
+
+}
+
+
+table.tableorder
+
+{
+ padding: 10px;
+ margin-left: 0px;
+ margin-top:-1px;
+
+}
+
+table.tableorder td
+{
+border: 1px solid #d1d6eb;
+font:13px 'Corbel';
+background:transparent;
+
+}
+
+table.tableorder th
+{
+border: 1px solid #d1d6eb;
+font:15px 'Corbel';
+font-weight:bold;
+background:#d1d6eb;
+
+}
+
+div.orderedlist
+{
+width: 60%;
+max-height:35%;
+font-size: 12px; 
+overflow: auto;
+margin-top:10px;
+margin-left: 300px;
+
+}
+
+table.tableorderedlist
+
+{
+ padding: 10px;
+ margin-left: 0px;
+ margin-top:-1px;
+
+}
+
+table.tableorderedlist td
+{
+border: 1px solid #d1d6eb;
+font:13px 'Corbel';
+background:transparent;
+
+}
+
+table.tableorderedlist th
+{
+border: 1px solid #d1d6eb;
+font:15px 'Corbel';
+font-weight:bold;
+background:#d1d6eb;
+
+}
+
+.orderbuttons
+{
+
+float:right;
+height:25px;
+width:150px;
+margin-top:10px;
+
+
+}
+
+
+
+/*Product List*/
+
+
+/*Create Order*/
+
+
+/*EditOrder*/
+#editOrder:target, #editOrder:target + #cover
+{ 
+display:block; 
+opacity:10; 
+} 
+
+
+#editOrder
+{ 
+height:580px; 
+width:800px; 
+margin:0 auto; 
+position:relative; 
+z-index:10; display:none; 
+background:#717276; 
+border:5px solid #717276; 
+border-radius:0px;
+margin-top: -100px;
+margin-left:-150px;
+}
+
+.f_paymentinfo1
+{
+
+border:1px solid black;
+border-radius:5px;
+height:190px;
+width:290px;
+margin-top:20px;
+margin-left:-450;
+
+}
+
+
+.cterms
+{
+font:14px 'Corbel';
+font-weight:bold;
+margin-top:10px;
+margin-left:-230;
+}
+
+.cdeposit
+{
+font:14px 'Corbel';
+font-weight:bold;
+margin-top:10px;
+margin-left:-230;
+}
+
+.cgrossamt1
+{
+font:14px 'Corbel';
+font-weight:bold;
+margin-top:10px;
+margin-left:-190;
+}
+
+.cnetamt1
+{
+font:14px 'Corbel';
+font-weight:bold;
+margin-top:10px;
+margin-left:-200;
+}
+
+.cdisc1
+{
+font:14px 'Corbel';
+font-weight:bold;
+margin-top:10px;
+margin-left:-188;
+}
+
+.txt_terms, .txt_deposit
+{
+margin-top:-20px;
+margin-left:100px;
+
+}
+
+
+
+.prodlistedit
+{
+font:18px 'Corbel';
+font-weight:bold;
+margin-top:-460px;
+
+}
+
+.orderedlistedit
+{
+font:18px 'Corbel';
+font-weight:bold;
+margin-top:20px;
+
+}
+
+
+
+div.div_tableorderedit
+{
+width: 55%;
+max-height:37%;
+font-size: 12px; 
+overflow: auto;
+margin-top:10px;
+margin-left: 330px;
+
+}
+
+
+table.tableorderedit
+
+{
+ padding: 10px;
+ margin-left: 0px;
+ margin-top:-1px;
+
+}
+
+table.tableorderedit td
+{
+border: 1px solid #d1d6eb;
+font:13px 'Corbel';
+background:transparent;
+
+}
+
+table.tableorderedit th
+{
+border: 1px solid #d1d6eb;
+font:15px 'Corbel';
+font-weight:bold;
+background:#d1d6eb;
+
+}
+
+
+div.orderedlistedit
+{
+width: 60%;
+max-height:35%;
+font-size: 12px; 
+overflow: auto;
+margin-top:10px;
+margin-left: 300px;
+
+}
+
+table.tableorderedlistedit
+
+{
+ padding: 10px;
+ margin-left: 0px;
+ margin-top:-1px;
+
+}
+
+table.tableorderedlistedit td
+{
+border: 1px solid #d1d6eb;
+font:13px 'Corbel';
+background:transparent;
+
+}
+
+table.tableorderedlistedit th
+{
+border: 1px solid #d1d6eb;
+font:15px 'Corbel';
+font-weight:bold;
+background:#d1d6eb;
+
+}
+
+.orderbuttonsedit
+{
+
+float:right;
+height:25px;
+width:150px;
+margin-top:10px;
+
+
+}
+
+/*EditOrder*/
+
+
+
+/*Import Delivery Receipt*/
+#deliveryReceiptbutton:target, #deliveryReceiptbutton:target + #cover
+{ 
+display:block; 
+opacity:10; 
+} 
+
+
+#deliveryReceiptbutton
+{ 
+height:600px; 
+width:780px; 
+margin:0 auto; 
+position:relative; 
+z-index:10; display:none; 
+background:#717276; 
+border:5px solid #717276; 
+border-radius:0px;
+margin-top: -100px;
+margin-left:-150px;
+}
+
+.div_deliverycontent
+{
+background:#717276;
+height:100%;
+width:100%;
+}
+
+.div_deliverywhiteArea
+{
+margin-top:25px;
+margin-left:-2px;
+background:white;
+height:94%;
+width:99%;
+}
+
+/*fieldset delivery*/
+.dr_txtbox
+{
+width:200px;
+
+}
+
+.f_delivery
+{
+
+border:1px solid black;
+border-radius:5px;
+height:200px;
+width:320px;
+margin-top:10px;
+margin-left:-400;
+
+}
+
+.l_drinfo
+{
+    color:black;
+	font: 15px 'Corbel';
+	font-weight:bold;
+	padding: 2px 5px;
+	margin-left:-80px;
+}
+
+.f_otherinfo
+{
+
+border:1px solid black;
+border-radius:5px;
+height:210px;
+width:320px;
+margin-top:20px;
+margin-left:-400;
+
+}
+
+
+.f_custinfo
+{
+
+border:1px solid black;
+border-radius:5px;
+height:210px;
+width:340px;
+margin-top:-442px;
+margin-left:340;
+
+}
+
+.l_custinfo
+{
+    color:black;
+	font: 15px 'Corbel';
+	font-weight:bold;
+	padding: 2px 5px;
+	margin-left:-80px;
+}
+
+.l_oinfo
+{
+    color:black;
+	font: 15px 'Corbel';
+	font-weight:bold;
+	padding: 2px 5px;
+	margin-left:-120px;
+}
+
+.f_orderitem
+{
+
+border:1px solid black;
+border-radius:5px;
+height:270px;
+width:340px;
+margin-top:-210px;
+margin-left:340;
+
+}
+
+.l_orderitem
+{
+    color:black;
+	font: 15px 'Corbel';
+	font-weight:bold;
+	padding: 2px 5px;
+	margin-left:-150px;
+}
+
+
+
+
+.cdr
+{
+font:14px 'Corbel';
+font-weight:bold;
+margin-top:20px;
+margin-left:-252;
+}
+
+.cdrby
+{
+font:14px 'Corbel';
+font-weight:bold;
+margin-top:20px;
+margin-left:-217;
+}
+.crno
+{
+font:14px 'Corbel';
+font-weight:bold;
+margin-top:20px;
+margin-left:-210;
+}
+
+.csalesper
+{
+font:14px 'Corbel';
+font-weight:bold;
+margin-top:20px;
+margin-left:-212;
+}
+
+.clocation2
+{
+font:14px 'Corbel';
+font-weight:bold;
+margin-top:20px;
+margin-left:-240;
+}
+
+.cship
+{
+font:14px 'Corbel';
+font-weight:bold;
+margin-top:10px;
+margin-left:-248;
+}
+
+.carea
+{
+font:14px 'Corbel';
+font-weight:bold;
+margin-top:10px;
+margin-left:-257;
+}
+
+.cattention
+{
+font:14px 'Corbel';
+font-weight:bold;
+margin-top:10px;
+margin-left:-235;
+}
+
+.ccustomer
+{
+font:14px 'Corbel';
+font-weight:bold;
+margin-top:15px;
+margin-left:-252;
+}
+
+.ccity
+{
+font:14px 'Corbel';
+font-weight:bold;
+margin-top:15px;
+margin-left:-285;
+}
+
+.cbrgy
+{
+font:14px 'Corbel';
+font-weight:bold;
+margin-top:15px;
+margin-left:-250;
+}
+
+.cadd
+{
+font:14px 'Corbel';
+font-weight:bold;
+margin-top:15px;
+margin-left:-255;
+}
+
+.c_area
+{
+font:14px 'Corbel';
+font-weight:bold;
+margin-top:15px;
+margin-left:-272;
+}
+
+.c_remarks
+{
+font:14px 'Corbel';
+font-weight:bold;
+margin-top:15px;
+margin-left:-255;
+}
+
+.c_gamt
+{
+font:14px 'Corbel';
+font-weight:bold;
+margin-top:15px;
+margin-left:-240;
+}
+
+.c_disc
+{
+font:14px 'Corbel';
+font-weight:bold;
+margin-top:15px;
+margin-left:-240;
+}
+
+.c_netamt
+{
+font:14px 'Corbel';
+font-weight:bold;
+margin-top:15px;
+margin-left:-240;
+}
+
+
+.txt_dr,.txt_rno,.txt_drby,.txt_salesper,.txt_location2,.txt_ship,.txt_area,.txt_attention,.txt_customer,.txt_city,.txt_brgy,.txt_add,.txt_aarea,.txt_rremarks,.txt_gamt,.txt_discount,.txt_netamt
+{
+margin-top:-20px;
+margin-left:90px;
+
+}
+
+table.dr_order
+
+{
+ padding: 10px;
+ margin-left: 0px;
+ margin-top:-1px;
+
+}
+
+table.dr_order th
+{
+border: 1px solid #d1d6eb;
+font:15px 'Corbel';
+font-weight:bold;
+background:#d1d6eb;
+
+}
+
+table.dr_order td
+{
+border: 1px solid #d1d6eb;
+font:13px 'Corbel';
+background:transparent;
+
+}
+
+.drbuttons
+{
+
+float:right;
+height:25px;
+width:150px;
+margin-top:10px;
+
+
+}
+
+
+/*fieldset delivery*/
+
+
+
+/*Import Delivery Receipt*/
+
+
+/*Delivery Receipt Records*/
+div.div_drrecords
+{
+height: 100%x; 
+width: 77%; 
+font-size: 12px; 
+overflow: auto;
+margin-left:220px;
+
+
+}
+
+table.drrecords
+
+{
+text-align: center; 
+ padding: 10px;
+ 
+
+}
+
+table.drrecords td
+{
+border: 1px solid #d1d6eb;
+font:13px 'Corbel';
+background:white;
+
+}
+
+table.drrecords th
+{
+border: 1px solid #d1d6eb;
+font:15px 'Corbel';
+font-weight:bold;
+background:#d1d6eb;
+
+}
+
+/*Delivery Receipt Records*/
+
+
+/*Customer Payment*/
+#customerPayment:target, #customerPayment:target + #cover
+{ 
+display:block; 
+opacity:10; 
+} 
+
+
+#customerPayment
+{ 
+height:580px; 
+width:800px; 
+margin:0 auto; 
+position:relative; 
+z-index:10; display:none; 
+background:#717276; 
+border:5px solid #717276; 
+border-radius:0px;
+margin-top: -120px;
+margin-left:-150px;
+}
+
+.div_customerPaymentcontent
+{
+background:#717276;
+height:100%;
+width:100%;
+}
+
+.div_customerPaymentwhiteArea
+{
+margin-top:25px;
+margin-left:-2px;
+background:white;
+height:94%;
+width:99%;
+}
+
+.paymentFields1
+{
+width:370px;
+height:420px;
+border:transparent;
+margin-top:20px;
+margin-left:-390;
+
+}
+
+
+.paymentFields2
+{
+width:370px;
+height:470px;
+border:transparent;
+margin-top:-423px;
+margin-left:390;
+
+}
+
+.txtboxtransact
+{
+width:230;
+
+}
+
+.transactno
+{
+font:15px 'Corbel';
+font-weight:bold;
+margin-top:10px;
+margin-left:-270;
+
+}
+
+.transactdate
+{
+font:15px 'Corbel';
+font-weight:bold;
+margin-top:15px;
+margin-left:-263;
+
+}
+.customerName
+{
+font:15px 'Corbel';
+font-weight:bold;
+margin-top:15px;
+margin-left:-268;
+
+}
+
+.transactlocation
+{
+font:15px 'Corbel';
+font-weight:bold;
+margin-top:15px;
+margin-left:-315;
+
+}
+
+.accounttype
+{
+font:15px 'Corbel';
+font-weight:bold;
+margin-top:15px;
+margin-left:-282;
+
+}
+
+.accountno
+{
+font:15px 'Corbel';
+font-weight:bold;
+margin-top:15px;
+margin-left:-290;
+
+}
+
+.accountname
+{
+font:15px 'Corbel';
+font-weight:bold;
+margin-top:15px;
+margin-left:-278;
+
+}
+
+.checktype
+{
+font:15px 'Corbel';
+font-weight:bold;
+margin-top:15px;
+margin-left:-297;
+
+}
+
+.doctype
+{
+font:15px 'Corbel';
+font-weight:bold;
+margin-top:10px;
+margin-left:-308;
+
+}
+
+.refno
+{
+font:15px 'Corbel';
+font-weight:bold;
+margin-top:10px;
+margin-left:-319;
+
+}
+.paymenttype
+{
+font:15px 'Corbel';
+font-weight:bold;
+margin-top:10px;
+margin-left:-277;
+
+}
+
+.particulars
+{
+font:15px 'Corbel';
+font-weight:bold;
+margin-top:10px;
+margin-left:-303;
+
+}
+
+.bankname
+{
+font:15px 'Corbel';
+font-weight:bold;
+margin-top:10px;
+margin-left:-299;
+
+}
+.amount
+{
+font:15px 'Corbel';
+font-weight:bold;
+margin-top:10px;
+margin-left:-320;
+
+}
+
+.add1
+{
+font:15px 'Corbel';
+font-weight:bold;
+margin-top:10px;
+margin-left:-320;
+
+}
+
+.checkno
+{
+font:15px 'Corbel';
+font-weight:bold;
+margin-top:10px;
+margin-left:-309;
+
+}
+
+.checkdateissue
+{
+font:15px 'Corbel';
+font-weight:bold;
+margin-top:10px;
+margin-left:-280;
+margin-left:-265;
+
+}
+.checkduedate
+{
+font:15px 'Corbel';
+font-weight:bold;
+margin-top:10px;
+margin-left:-280;
+margin-left:-270;
+
+}
+
+.bal
+{
+font:15px 'Corbel';
+font-weight:bold;
+margin-top:10px;
+margin-left:-280;
+margin-left:-320;
+
+}
+
+.fromcollection
+{
+font:15px 'Corbel';
+font-weight:bold;
+margin-top:10px;
+margin-left:-280;
+margin-left:-270;
+
+}
+
+.txt_transactno,.txt_transactdate,.txt_customerName,.txt_transactlocation,.cmb_accounttype,.txt_accountno,.txt_accountname,.cmb_checktype,.txt_doctype,.txt_refno,.cmb_paymenttype,.txt_particulars,.txt_amount1,.txt_bankname1,.txt_address1,.txt_checkno,.txt_checkdateissue,.txt_checkduedate,.txt_bal
+{
+margin-top:-20px;
+margin-left:130px;
+
+}
+
+.txt_fromcollection
+{
+margin-top:-18px;
+margin-left:-90px;
+
+}
+
+.customerPaymentbuttons
+{
+
+float:right;
+height:25px;
+width:150px;
+
+
+}
+
+/*Customer Payment*/

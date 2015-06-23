@@ -1,0 +1,44 @@
+p.name1
+{
+margin-top:20px;
+margin-left:-435px;
+font:15px 'Corbel';
+font-weight:bold;
+padding:10px;
+color:#7cbc42;
+}
+
+p.name2
+{
+margin-top:20px;
+margin-left:-390px;
+font:15px 'Corbel';
+font-weight:bold;
+padding:10px;
+color:#7cbc42;
+}
+
+
+
+.hours
+{
+width:30px;
+border: solid 1px black;
+box-shadow: inset 1px 1px 2px#707070;
+}
+
+.minutes
+{
+width:30px;
+border: solid 1px black;
+box-shadow: inset 1px 1px 2px#707070;
+}
+
+table.tabdata1 td:nth-child(odd) {
+    background: white;
+}
+
+table.tabdata1 td:nth-child(even) {
+    background: white;
+}
+

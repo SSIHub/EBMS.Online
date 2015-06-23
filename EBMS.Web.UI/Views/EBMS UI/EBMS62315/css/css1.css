@@ -1,0 +1,209 @@
+#ipasa
+{
+background:#7cbc42;
+box-shadow: 
+  0 1px 2px rgb(180,170,185), /*bottom external highlight*/
+  0 -1px 1px blue, /*top external shadow*/ 
+  inset 0 -1px 1px green, /*bottom internal shadow*/ 
+  inset 0 1px 1px yellow; /*top internal highlight*/
+}
+
+
+
+
+}
+
+.txtbox
+{
+width:180px;
+}
+
+
+#lastname
+{
+border: solid 1px black;
+box-shadow: inset 1px 1px 2px#707070;
+}
+
+#middlename
+{
+border: solid 1px black;
+box-shadow: inset 1px 1px 2px#707070;
+}
+
+#firstname
+{
+border: solid 1px black;
+box-shadow: inset 1px 1px 2px#707070;
+}
+
+#address
+{
+border: solid 1px black;
+box-shadow: inset 1px 1px 2px#707070;
+}
+
+#birthday
+{
+border: solid 1px black;
+box-shadow: inset 1px 1px 2px#707070;
+}
+
+#contactno
+{
+border: solid 1px black;
+box-shadow: inset 1px 1px 2px#707070;
+}
+
+#email
+{
+border: solid 1px black;
+box-shadow: inset 1px 1px 2px#707070;
+}
+
+
+#schoolname
+{
+width:200px;
+border: solid 1px black;
+box-shadow: inset 1px 1px 2px#707070;
+}
+
+#datehired
+{
+border: solid 1px black;
+box-shadow: inset 1px 1px 2px#707070;
+}
+
+#department
+{
+border: solid 1px black;
+box-shadow: inset 1px 1px 2px#707070;
+}
+
+#position
+{
+border: solid 1px black;
+box-shadow: inset 1px 1px 2px#707070;
+}
+
+#employmentstatus
+{
+border: solid 1px black;
+box-shadow: inset 1px 1px 2px#707070;
+}
+
+#companyname
+{
+border: solid 1px black;
+box-shadow: inset 1px 1px 2px#707070;
+}
+
+#startdate
+{
+border: solid 1px black;
+box-shadow: inset 1px 1px 2px#707070;
+}
+
+#enddate
+{
+border: solid 1px black;
+box-shadow: inset 1px 1px 2px#707070;
+}
+
+
+#workdescription
+{
+border: solid 1px black;
+box-shadow: inset 1px 1px 2px#707070;
+}
+
+
+.txtarea
+{
+margin-top:1px;
+}
+
+
+.lbl_address
+{
+margin-top:10px;
+margin-left:-310px;
+
+}
+
+.lbl_remarks
+{
+margin-top:10px;
+margin-left:-320px;
+}
+
+.lbl_workexperience
+{
+font: 16px 'corbel';
+font-weight:bold;
+color: #7cbc42;
+margin-left:-220px;
+}
+
+.gilid
+{
+margin-top: -15px;
+margin-left:50px;
+}
+
+
+.lbl_gender
+{
+margin-top:5px;
+margin-left:-43px 
+
+}
+
+.radBut
+{
+margin-top:0px;
+}
+
+.linkEmployeeInfo
+{
+margin-left:-200px;
+font:15px 'Corbel';
+font-weight:bold;
+
+}
+
+.div_employeeImage
+{
+height:200px;
+width:170px;
+margin-top:-50px;
+margin-right:-420px;
+
+}
+
+.save_cancel
+ {
+    padding:2px 5px;
+    -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+   border-radius: 5px;
+    background: -moz-linear-gradient(top, #f6e6b4 0%, #ed9017 100%); /* firefox */
+   /* border: solid #ccc 3px; */
+    box-shadow: 0 1px 2px #fff, 0 -1px 1px #666, inset 0 -1px 1px rgba(0,0,0,0.5), inset 0 1px 1px rgba(255,255,255,0.8);
+    -moz-box-shadow: 0 1px 2px #fff, 0 -1px 1px #666, inset 0 -1px 1px rgba(0,0,0,0.5), inset 0 1px 1px rgba(255,255,255,0.8);
+    -webkit-box-shadow: 0 1px 2px #fff, 0 -1px 1px #666, inset 0 -1px 1px rgba(0,0,0,0.5), inset 0 1px 1px rgba(255,255,255,0.8);
+    text-shadow: 0 1px 2px #fff;
+
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d1d6eb), color-stop(100%,#717276)); /* webkit */
+	font:12px 'corbel';
+}
+
+.savecancelbut
+{
+float:right;
+margin-top: 5px;
+margin-right:10px;
+
+}
+
